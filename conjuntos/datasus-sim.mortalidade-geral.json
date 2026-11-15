@@ -1,0 +1,400 @@
+{
+  "$schema": "../../docs/conjunto-v3.schema.json",
+  "conjunto": "datasus-sim.mortalidade-geral",
+  "nome": "SIM - mortalidade geral (microdados anuais)",
+  "versaoDefinicao": 1,
+  "tipo": "ORGANIZADO",
+  "edicaoPor": "ARQUIVO",
+  "fontes": {
+    "funcao": "datasus-sim",
+    "arquivos": [
+      "sim-mortalidade-geral-*"
+    ],
+    "membros": [
+      "*.csv"
+    ],
+    "encoding": "utf-8",
+    "delimiter": ";"
+  },
+  "cabecalho": {
+    "linha": 1
+  },
+  "colunas": {
+    "origem": [
+      "origem"
+    ],
+    "tipobito": [
+      "tipobito"
+    ],
+    "dtobito": [
+      "dtobito"
+    ],
+    "horaobito": [
+      "horaobito"
+    ],
+    "natural": [
+      "natural"
+    ],
+    "codmunnatu": [
+      "codmunnatu"
+    ],
+    "dtnasc": [
+      "dtnasc"
+    ],
+    "idade": [
+      "idade"
+    ],
+    "sexo": [
+      "sexo"
+    ],
+    "racacor": [
+      "racacor"
+    ],
+    "estciv": [
+      "estciv"
+    ],
+    "esc": [
+      "esc"
+    ],
+    "esc2010": [
+      "esc2010"
+    ],
+    "seriescfal": [
+      "seriescfal"
+    ],
+    "ocup": [
+      "ocup"
+    ],
+    "codmunres": [
+      "codmunres"
+    ],
+    "lococor": [
+      "lococor"
+    ],
+    "codestab": [
+      "codestab"
+    ],
+    "estabdescr": [
+      "estabdescr"
+    ],
+    "codmunocor": [
+      "codmunocor"
+    ],
+    "idademae": [
+      "idademae"
+    ],
+    "escmae": [
+      "escmae"
+    ],
+    "escmae2010": [
+      "escmae2010"
+    ],
+    "seriescmae": [
+      "seriescmae"
+    ],
+    "ocupmae": [
+      "ocupmae"
+    ],
+    "qtdfilvivo": [
+      "qtdfilvivo"
+    ],
+    "qtdfilmort": [
+      "qtdfilmort"
+    ],
+    "gravidez": [
+      "gravidez"
+    ],
+    "semagestac": [
+      "semagestac"
+    ],
+    "gestacao": [
+      "gestacao"
+    ],
+    "parto": [
+      "parto"
+    ],
+    "obitoparto": [
+      "obitoparto"
+    ],
+    "peso": [
+      "peso"
+    ],
+    "tpmorteoco": [
+      "tpmorteoco"
+    ],
+    "obitograv": [
+      "obitograv"
+    ],
+    "obitopuerp": [
+      "obitopuerp"
+    ],
+    "assistmed": [
+      "assistmed"
+    ],
+    "exame": [
+      "exame"
+    ],
+    "cirurgia": [
+      "cirurgia"
+    ],
+    "necropsia": [
+      "necropsia"
+    ],
+    "linhaa": [
+      "linhaa"
+    ],
+    "linhab": [
+      "linhab"
+    ],
+    "linhac": [
+      "linhac"
+    ],
+    "linhad": [
+      "linhad"
+    ],
+    "linhaii": [
+      "linhaii"
+    ],
+    "causabas": [
+      "causabas"
+    ],
+    "cb_pre": [
+      "cb_pre"
+    ],
+    "comunsvoim": [
+      "comunsvoim"
+    ],
+    "dtatestado": [
+      "dtatestado"
+    ],
+    "circobito": [
+      "circobito"
+    ],
+    "acidtrab": [
+      "acidtrab"
+    ],
+    "fonte": [
+      "fonte"
+    ],
+    "numerolote": [
+      "numerolote"
+    ],
+    "tppos": [
+      "tppos"
+    ],
+    "dtinvestig": [
+      "dtinvestig"
+    ],
+    "causabas_o": [
+      "causabas_o"
+    ],
+    "dtcadastro": [
+      "dtcadastro"
+    ],
+    "atestante": [
+      "atestante"
+    ],
+    "stcodifica": [
+      "stcodifica"
+    ],
+    "codificado": [
+      "codificado"
+    ],
+    "versaosist": [
+      "versaosist"
+    ],
+    "versaoscb": [
+      "versaoscb"
+    ],
+    "fonteinv": [
+      "fonteinv"
+    ],
+    "dtrecebim": [
+      "dtrecebim"
+    ],
+    "atestado": [
+      "atestado"
+    ],
+    "dtrecoriga": [
+      "dtrecoriga"
+    ],
+    "causamat": [
+      "causamat"
+    ],
+    "escmaeagr1": [
+      "escmaeagr1"
+    ],
+    "escfalagr1": [
+      "escfalagr1"
+    ],
+    "stdoepidem": [
+      "stdoepidem"
+    ],
+    "stdonova": [
+      "stdonova"
+    ],
+    "difdata": [
+      "difdata"
+    ],
+    "nudiasobco": [
+      "nudiasobco"
+    ],
+    "nudiasobin": [
+      "nudiasobin"
+    ],
+    "dtcadinv": [
+      "dtcadinv"
+    ],
+    "tpobitocor": [
+      "tpobitocor"
+    ],
+    "dtconinv": [
+      "dtconinv"
+    ],
+    "fontes": [
+      "fontes"
+    ],
+    "tpresginfo": [
+      "tpresginfo"
+    ],
+    "tpnivelinv": [
+      "tpnivelinv"
+    ],
+    "nudiasinf": [
+      "nudiasinf"
+    ],
+    "dtcadinf": [
+      "dtcadinf"
+    ],
+    "morteparto": [
+      "morteparto"
+    ],
+    "dtconcaso": [
+      "dtconcaso"
+    ],
+    "fontesinf": [
+      "fontesinf"
+    ],
+    "altcausa": [
+      "altcausa"
+    ],
+    "contador": [
+      "contador"
+    ],
+    "opor_do": [
+      "opor_do"
+    ],
+    "tp_altera": [
+      "tp_altera"
+    ],
+    "cb_alt": [
+      "cb_alt"
+    ],
+    "covid_clas": [
+      "covid_clas"
+    ],
+    "mat_clas": [
+      "mat_clas"
+    ]
+  },
+  "filtroLinhas": "true",
+  "saida": [
+    "origem",
+    "tipobito",
+    "dtobito",
+    "horaobito",
+    "natural",
+    "codmunnatu",
+    "dtnasc",
+    "idade",
+    "sexo",
+    "racacor",
+    "estciv",
+    "esc",
+    "esc2010",
+    "seriescfal",
+    "ocup",
+    "codmunres",
+    "lococor",
+    "codestab",
+    "estabdescr",
+    "codmunocor",
+    "idademae",
+    "escmae",
+    "escmae2010",
+    "seriescmae",
+    "ocupmae",
+    "qtdfilvivo",
+    "qtdfilmort",
+    "gravidez",
+    "semagestac",
+    "gestacao",
+    "parto",
+    "obitoparto",
+    "peso",
+    "tpmorteoco",
+    "obitograv",
+    "obitopuerp",
+    "assistmed",
+    "exame",
+    "cirurgia",
+    "necropsia",
+    "linhaa",
+    "linhab",
+    "linhac",
+    "linhad",
+    "linhaii",
+    "causabas",
+    "cb_pre",
+    "comunsvoim",
+    "dtatestado",
+    "circobito",
+    "acidtrab",
+    "fonte",
+    "numerolote",
+    "tppos",
+    "dtinvestig",
+    "causabas_o",
+    "dtcadastro",
+    "atestante",
+    "stcodifica",
+    "codificado",
+    "versaosist",
+    "versaoscb",
+    "fonteinv",
+    "dtrecebim",
+    "atestado",
+    "dtrecoriga",
+    "causamat",
+    "escmaeagr1",
+    "escfalagr1",
+    "stdoepidem",
+    "stdonova",
+    "difdata",
+    "nudiasobco",
+    "nudiasobin",
+    "dtcadinv",
+    "tpobitocor",
+    "dtconinv",
+    "fontes",
+    "tpresginfo",
+    "tpnivelinv",
+    "nudiasinf",
+    "dtcadinf",
+    "morteparto",
+    "dtconcaso",
+    "fontesinf",
+    "altcausa",
+    "contador",
+    "opor_do",
+    "tp_altera",
+    "cb_alt",
+    "covid_clas",
+    "mat_clas"
+  ],
+  "chave": [],
+  "validacoes": {
+    "linhasMinPorAba": 1,
+    "chaveUnica": false
+  }
+}

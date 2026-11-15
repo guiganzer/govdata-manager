@@ -1,0 +1,50 @@
+{
+  "$schema": "../../docs/conjunto-v3.schema.json",
+  "conjunto": "rfb-cnpj.municipios-2026-06",
+  "nome": "CNPJ - municipios 2026-06",
+  "versaoDefinicao": 1,
+  "tipo": "ORGANIZADO",
+  "edicaoPor": "ARQUIVO",
+  "fontes": {
+    "funcao": "rfb-cnpj",
+    "arquivos": [
+      "rfb-cnpj-2026-06-municipios"
+    ],
+    "membros": [
+      "*.MUNICCSV"
+    ],
+    "encoding": "utf-8",
+    "delimiter": ";"
+  },
+  "cabecalho": {
+    "semCabecalho": true
+  },
+  "colunas": {
+    "codigo_municipio": [
+      "c1"
+    ],
+    "nome_municipio": [
+      "c2"
+    ]
+  },
+  "filtroLinhas": "true",
+  "saida": [
+    "codigo_municipio",
+    "nome_municipio"
+  ],
+  "chave": [
+    "codigo_municipio"
+  ],
+  "municipioCodigo": {
+    "coluna": "codigo_municipio",
+    "tipo": "RFB"
+  },
+  "validacoes": {
+    "linhasMinPorAba": 1,
+    "chaveUnica": true,
+    "obrigatorias": [
+      "codigo_municipio",
+      "nome_municipio"
+    ]
+  }
+}

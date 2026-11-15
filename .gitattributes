@@ -1,0 +1,8 @@
+* text=auto
+*.sh text eol=lf
+govdata-downloads text eol=lf
+govdata-organizer text eol=lf
+*.py text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+licenses/third-party/** -text

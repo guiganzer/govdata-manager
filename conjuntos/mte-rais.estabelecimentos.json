@@ -1,0 +1,126 @@
+{
+  "$schema": "../../docs/conjunto-v3.schema.json",
+  "conjunto": "mte-rais.estabelecimentos",
+  "nome": "RAIS - estabelecimentos, formato 2021-2022 (microdados anuais)",
+  "versaoDefinicao": 1,
+  "tipo": "ORGANIZADO",
+  "edicaoPor": "ARQUIVO",
+  "fontes": {
+    "funcao": "mte-rais",
+    "arquivos": [
+      "mte-rais-estab-pub-2021",
+      "mte-rais-estab-pub-2022"
+    ],
+    "encoding": "windows-1252",
+    "delimiter": ";"
+  },
+  "cabecalho": {
+    "linha": 1
+  },
+  "colunas": {
+    "bairros_sp": [
+      "Bairros SP"
+    ],
+    "bairros_fortaleza": [
+      "Bairros Fortaleza"
+    ],
+    "bairros_rj": [
+      "Bairros RJ"
+    ],
+    "cnae_2_0_classe": [
+      "CNAE 2.0 Classe"
+    ],
+    "cnae_95_classe": [
+      "CNAE 95 Classe"
+    ],
+    "distritos_sp": [
+      "Distritos SP"
+    ],
+    "qtd_vinculos_clt": [
+      "Qtd Vínculos CLT"
+    ],
+    "qtd_vinculos_ativos": [
+      "Qtd Vínculos Ativos"
+    ],
+    "qtd_vinculos_estatutarios": [
+      "Qtd Vínculos Estatutários"
+    ],
+    "ind_atividade_ano": [
+      "Ind Atividade Ano"
+    ],
+    "ind_cei_vinculado": [
+      "Ind CEI Vinculado"
+    ],
+    "ind_estab_participa_pat": [
+      "Ind Estab Participa PAT"
+    ],
+    "ind_rais_negativa": [
+      "Ind Rais Negativa"
+    ],
+    "ind_simples": [
+      "Ind Simples"
+    ],
+    "municipio": [
+      "Município"
+    ],
+    "natureza_juridica": [
+      "Natureza Jurídica"
+    ],
+    "regioes_adm_df": [
+      "Regiões Adm DF"
+    ],
+    "cnae_2_0_subclasse": [
+      "CNAE 2.0 Subclasse"
+    ],
+    "tamanho_estabelecimento": [
+      "Tamanho Estabelecimento"
+    ],
+    "tipo_estab": [
+      "Tipo Estab"
+    ],
+    "tipo_estab_cnpj_cei": [
+      "c21"
+    ],
+    "uf": [
+      "UF"
+    ],
+    "ibge_subsetor": [
+      "IBGE Subsetor"
+    ],
+    "cep_estab": [
+      "CEP Estab"
+    ]
+  },
+  "filtroLinhas": "true",
+  "saida": [
+    "bairros_sp",
+    "bairros_fortaleza",
+    "bairros_rj",
+    "cnae_2_0_classe",
+    "cnae_95_classe",
+    "distritos_sp",
+    "qtd_vinculos_clt",
+    "qtd_vinculos_ativos",
+    "qtd_vinculos_estatutarios",
+    "ind_atividade_ano",
+    "ind_cei_vinculado",
+    "ind_estab_participa_pat",
+    "ind_rais_negativa",
+    "ind_simples",
+    "municipio",
+    "natureza_juridica",
+    "regioes_adm_df",
+    "cnae_2_0_subclasse",
+    "tamanho_estabelecimento",
+    "tipo_estab",
+    "tipo_estab_cnpj_cei",
+    "uf",
+    "ibge_subsetor",
+    "cep_estab"
+  ],
+  "chave": [],
+  "validacoes": {
+    "linhasMinPorAba": 1,
+    "chaveUnica": false
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "postgres": {
+    "host": "127.0.0.1",
+    "port": 5432,
+    "database": "dados_publicos",
+    "username": "govdata_arquivo_loader",
+    "passwordFile": "/etc/govdata-manager/arquivo-loader.password",
+    "connectionTimeoutSeconds": 15,
+    "commandTimeoutSeconds": 0
+  },
+  "parquetRoot": "/mnt/dados/govdata-manager/dados/server/storage/releases",
+  "publicationStatePath": "/mnt/dados/govdata-manager/dados/server/storage/publications-v3.json",
+  "duckDb": {
+    "threads": 1,
+    "memoryLimit": "768MB",
+    "tempDirectory": "/mnt/dados/govdata-manager/dados/server/arquivo/tmp"
+  },
+  "chunkRows": 20000,
+  "leaseMinutes": 360
+}

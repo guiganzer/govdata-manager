@@ -1,0 +1,96 @@
+{
+  "conjunto": "firjan-ifdm.ranking",
+  "nome": "IFDM 2025: ranking municipal por dimensão",
+  "versaoDefinicao": 1,
+  "tipo": "ORGANIZADO",
+  "edicaoPor": "ARQUIVO",
+  "fontes": {
+    "funcao": "firjan-ifdm",
+    "arquivos": [
+      "firjan-ifdm-2025-ranking"
+    ],
+    "abas": [
+      "IFDM*"
+    ]
+  },
+  "cabecalho": {
+    "linha": 2
+  },
+  "colunas": {
+    "ranking_nacional": [
+      "c1"
+    ],
+    "ranking_estadual": [
+      "c2"
+    ],
+    "regiao": [
+      "Região"
+    ],
+    "uf": [
+      "UF"
+    ],
+    "municipio": [
+      "Município"
+    ],
+    "ifdm": [
+      "IFDM"
+    ],
+    "educacao": [
+      "Educação"
+    ],
+    "saude": [
+      "Saúde"
+    ],
+    "emprego_renda": [
+      "Emprego & Renda"
+    ]
+  },
+  "derivadas": {
+    "dimensao": "_aba",
+    "ano_base": "'2023'"
+  },
+  "filtroLinhas": "uf IS NOT NULL AND municipio IS NOT NULL",
+  "saida": [
+    "ano_base",
+    "dimensao",
+    "ranking_nacional",
+    "ranking_estadual",
+    "regiao",
+    "uf",
+    "municipio",
+    "ifdm",
+    "educacao",
+    "saude",
+    "emprego_renda"
+  ],
+  "chave": [
+    "ano_base",
+    "dimensao",
+    "uf",
+    "municipio"
+  ],
+  "municipioCodigo": {
+    "coluna": "municipio",
+    "tipo": "NOME_UF"
+  },
+  "validacoes": {
+    "linhasMinPorAba": 5000,
+    "chaveUnica": true,
+    "obrigatorias": [
+      "uf",
+      "municipio",
+      "ifdm"
+    ],
+    "colunasPresentes": [
+      "ranking_nacional",
+      "ranking_estadual",
+      "regiao",
+      "uf",
+      "municipio",
+      "ifdm",
+      "educacao",
+      "saude",
+      "emprego_renda"
+    ]
+  }
+}

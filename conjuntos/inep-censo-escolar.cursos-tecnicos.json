@@ -1,0 +1,265 @@
+{
+  "$schema": "../../docs/conjunto-v3.schema.json",
+  "conjunto": "inep-censo-escolar.cursos-tecnicos",
+  "nome": "Cursos técnicos por escola do Censo Escolar",
+  "versaoDefinicao": 1,
+  "tipo": "ORGANIZADO",
+  "edicaoPor": "ARQUIVO",
+  "fontes": {
+    "funcao": "inep-censo-escolar",
+    "arquivos": [
+      "inep-microdados-censo-escolar-2023",
+      "inep-microdados-censo-escolar-2024",
+      "inep-microdados-censo-escolar-2025"
+    ],
+    "membros": [
+      "*suplemento_cursos_tecnicos_*.csv",
+      "*Tabela_Curso_Tecnico_*.csv"
+    ],
+    "encoding": "windows-1252",
+    "delimiter": ";"
+  },
+  "cabecalho": {
+    "contemUmDe": [
+      "NU_ANO_CENSO"
+    ]
+  },
+  "colunas": {
+    "nu_ano_censo": [
+      "NU_ANO_CENSO"
+    ],
+    "no_regiao": [
+      "NO_REGIAO"
+    ],
+    "co_regiao": [
+      "CO_REGIAO"
+    ],
+    "no_uf": [
+      "NO_UF"
+    ],
+    "sg_uf": [
+      "SG_UF"
+    ],
+    "co_uf": [
+      "CO_UF"
+    ],
+    "no_municipio": [
+      "NO_MUNICIPIO"
+    ],
+    "co_municipio": [
+      "CO_MUNICIPIO"
+    ],
+    "tp_localizacao": [
+      "TP_LOCALIZACAO"
+    ],
+    "tp_localizacao_diferenciada": [
+      "TP_LOCALIZACAO_DIFERENCIADA"
+    ],
+    "tp_dependencia": [
+      "TP_DEPENDENCIA"
+    ],
+    "no_entidade": [
+      "NO_ENTIDADE"
+    ],
+    "co_entidade": [
+      "CO_ENTIDADE"
+    ],
+    "no_area_curso_profissional": [
+      "NO_AREA_CURSO_PROFISSIONAL"
+    ],
+    "id_area_curso_profissional": [
+      "ID_AREA_CURSO_PROFISSIONAL"
+    ],
+    "no_curso_educ_profissional": [
+      "NO_CURSO_EDUC_PROFISSIONAL"
+    ],
+    "co_curso_educ_profissional": [
+      "CO_CURSO_EDUC_PROFISSIONAL"
+    ],
+    "qt_curso_tec": [
+      "QT_CURSO_TEC"
+    ],
+    "qt_mat_curso_tec": [
+      "QT_MAT_CURSO_TEC"
+    ],
+    "qt_curso_tec_ct": [
+      "QT_CURSO_TEC_CT"
+    ],
+    "qt_mat_curso_tec_ct": [
+      "QT_MAT_CURSO_TEC_CT"
+    ],
+    "qt_curso_tec_nm": [
+      "QT_CURSO_TEC_NM"
+    ],
+    "qt_mat_curso_tec_nm": [
+      "QT_MAT_CURSO_TEC_NM"
+    ],
+    "qt_curso_tec_conc": [
+      "QT_CURSO_TEC_CONC"
+    ],
+    "qt_mat_curso_tec_conc": [
+      "QT_MAT_CURSO_TEC_CONC"
+    ],
+    "qt_curso_tec_subs": [
+      "QT_CURSO_TEC_SUBS"
+    ],
+    "qt_mat_tec_subs": [
+      "QT_MAT_TEC_SUBS"
+    ],
+    "qt_curso_tec_eja": [
+      "QT_CURSO_TEC_EJA"
+    ],
+    "qt_mat_tec_eja": [
+      "QT_MAT_TEC_EJA"
+    ],
+    "no_regiao_geog_interm": [
+      "NO_REGIAO_GEOG_INTERM"
+    ],
+    "co_regiao_geog_interm": [
+      "CO_REGIAO_GEOG_INTERM"
+    ],
+    "no_regiao_geog_imed": [
+      "NO_REGIAO_GEOG_IMED"
+    ],
+    "co_regiao_geog_imed": [
+      "CO_REGIAO_GEOG_IMED"
+    ],
+    "no_distrito": [
+      "NO_DISTRITO"
+    ],
+    "co_distrito": [
+      "CO_DISTRITO"
+    ],
+    "no_subdistrito": [
+      "NO_SUBDISTRITO"
+    ],
+    "co_subdistrito": [
+      "CO_SUBDISTRITO"
+    ],
+    "co_rede": [
+      "CO_REDE"
+    ],
+    "tp_categoria_escola_privada": [
+      "TP_CATEGORIA_ESCOLA_PRIVADA"
+    ],
+    "in_poder_publico_parceria": [
+      "IN_PODER_PUBLICO_PARCERIA"
+    ],
+    "tp_poder_publico_parceria": [
+      "TP_PODER_PUBLICO_PARCERIA"
+    ],
+    "qt_curso_tec_iftp": [
+      "QT_CURSO_TEC_IFTP"
+    ],
+    "qt_mat_curso_tec_iftp": [
+      "QT_MAT_CURSO_TEC_IFTP"
+    ],
+    "qt_curso_tec_iftp_mt": [
+      "QT_CURSO_TEC_IFTP_MT"
+    ],
+    "qt_mat_curso_tec_iftp_mt": [
+      "QT_MAT_CURSO_TEC_IFTP_MT"
+    ],
+    "qt_curso_tec_iftp_otme": [
+      "QT_CURSO_TEC_IFTP_OTME"
+    ],
+    "qt_mat_curso_tec_iftp_otme": [
+      "QT_MAT_CURSO_TEC_IFTP_OTME"
+    ],
+    "qt_curso_tec_iftp_oe": [
+      "QT_CURSO_TEC_IFTP_OE"
+    ],
+    "qt_mat_curso_tec_iftp_oe": [
+      "QT_MAT_CURSO_TEC_IFTP_OE"
+    ],
+    "qt_mat_curso_tec_subs": [
+      "QT_MAT_CURSO_TEC_SUBS"
+    ],
+    "qt_curso_tec_iftp_ct": [
+      "QT_CURSO_TEC_IFTP_CT"
+    ],
+    "qt_mat_curso_tec_iftp_ct": [
+      "QT_MAT_CURSO_TEC_IFTP_CT"
+    ],
+    "qt_mat_curso_tec_eja": [
+      "QT_MAT_CURSO_TEC_EJA"
+    ]
+  },
+  "filtroLinhas": "regexp_full_match(co_entidade, '[0-9]+')",
+  "saida": [
+    "nu_ano_censo",
+    "no_regiao",
+    "co_regiao",
+    "no_uf",
+    "sg_uf",
+    "co_uf",
+    "no_municipio",
+    "co_municipio",
+    "tp_localizacao",
+    "tp_localizacao_diferenciada",
+    "tp_dependencia",
+    "no_entidade",
+    "co_entidade",
+    "no_area_curso_profissional",
+    "id_area_curso_profissional",
+    "no_curso_educ_profissional",
+    "co_curso_educ_profissional",
+    "qt_curso_tec",
+    "qt_mat_curso_tec",
+    "qt_curso_tec_ct",
+    "qt_mat_curso_tec_ct",
+    "qt_curso_tec_nm",
+    "qt_mat_curso_tec_nm",
+    "qt_curso_tec_conc",
+    "qt_mat_curso_tec_conc",
+    "qt_curso_tec_subs",
+    "qt_mat_tec_subs",
+    "qt_curso_tec_eja",
+    "qt_mat_tec_eja",
+    "no_regiao_geog_interm",
+    "co_regiao_geog_interm",
+    "no_regiao_geog_imed",
+    "co_regiao_geog_imed",
+    "no_distrito",
+    "co_distrito",
+    "no_subdistrito",
+    "co_subdistrito",
+    "co_rede",
+    "tp_categoria_escola_privada",
+    "in_poder_publico_parceria",
+    "tp_poder_publico_parceria",
+    "qt_curso_tec_iftp",
+    "qt_mat_curso_tec_iftp",
+    "qt_curso_tec_iftp_mt",
+    "qt_mat_curso_tec_iftp_mt",
+    "qt_curso_tec_iftp_otme",
+    "qt_mat_curso_tec_iftp_otme",
+    "qt_curso_tec_iftp_oe",
+    "qt_mat_curso_tec_iftp_oe",
+    "qt_mat_curso_tec_subs",
+    "qt_curso_tec_iftp_ct",
+    "qt_mat_curso_tec_iftp_ct",
+    "qt_mat_curso_tec_eja"
+  ],
+  "chave": [
+    "nu_ano_censo",
+    "co_entidade",
+    "id_area_curso_profissional",
+    "co_curso_educ_profissional"
+  ],
+  "municipioCodigo": {
+    "coluna": "co_municipio",
+    "tipo": "IBGE7"
+  },
+  "validacoes": {
+    "linhasMinPorAba": 20000,
+    "chaveUnica": true,
+    "obrigatorias": [
+      "nu_ano_censo",
+      "co_entidade",
+      "id_area_curso_profissional",
+      "co_curso_educ_profissional",
+      "co_municipio"
+    ]
+  }
+}

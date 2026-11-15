@@ -1,0 +1,150 @@
+{
+  "$schema": "../../docs/conjunto-v3.schema.json",
+  "conjunto": "ibge-censo-2022.municipios-basico",
+  "nome": "Censo Demográfico 2022, agregados básicos por município",
+  "versaoDefinicao": 1,
+  "tipo": "ORGANIZADO",
+  "edicaoPor": "ARQUIVO",
+  "fontes": {
+    "funcao": "ibge-censo-demografico-2022",
+    "arquivos": [
+      "ibge-censo-2022-agregados-municipios-basico-*"
+    ],
+    "membros": [
+      "*Agregados_por_municipios_basico_BR.csv"
+    ],
+    "encoding": "windows-1252",
+    "delimiter": ";"
+  },
+  "cabecalho": {
+    "contemUmDe": [
+      "CD_MUN"
+    ]
+  },
+  "colunas": {
+    "cd_mun": [
+      "CD_MUN"
+    ],
+    "nm_mun": [
+      "NM_MUN"
+    ],
+    "cd_regiao": [
+      "CD_REGIAO"
+    ],
+    "nm_regiao": [
+      "NM_REGIAO"
+    ],
+    "cd_uf": [
+      "CD_UF"
+    ],
+    "nm_uf": [
+      "NM_UF"
+    ],
+    "cd_nu": [
+      "CD_NU"
+    ],
+    "nm_nu": [
+      "NM_NU"
+    ],
+    "cd_aglom": [
+      "CD_AGLOM"
+    ],
+    "nm_aglom": [
+      "NM_AGLOM"
+    ],
+    "cd_rgint": [
+      "CD_RGINT"
+    ],
+    "nm_rgint": [
+      "NM_RGINT"
+    ],
+    "cd_rgi": [
+      "CD_RGI"
+    ],
+    "nm_rgi": [
+      "NM_RGI"
+    ],
+    "cd_concurb": [
+      "CD_CONCURB"
+    ],
+    "nm_concurb": [
+      "NM_CONCURB"
+    ],
+    "area_km2": [
+      "AREA_KM2"
+    ],
+    "v0001": [
+      "v0001"
+    ],
+    "v0002": [
+      "v0002"
+    ],
+    "v0003": [
+      "v0003"
+    ],
+    "v0004": [
+      "v0004"
+    ],
+    "v0005": [
+      "v0005"
+    ],
+    "v0006": [
+      "v0006"
+    ],
+    "v0007": [
+      "v0007"
+    ],
+    "v0008": [
+      "v0008"
+    ],
+    "v0009": [
+      "v0009"
+    ]
+  },
+  "filtroLinhas": "regexp_full_match(cd_mun, '[0-9]{7}')",
+  "saida": [
+    "cd_mun",
+    "nm_mun",
+    "cd_regiao",
+    "nm_regiao",
+    "cd_uf",
+    "nm_uf",
+    "cd_nu",
+    "nm_nu",
+    "cd_aglom",
+    "nm_aglom",
+    "cd_rgint",
+    "nm_rgint",
+    "cd_rgi",
+    "nm_rgi",
+    "cd_concurb",
+    "nm_concurb",
+    "area_km2",
+    "v0001",
+    "v0002",
+    "v0003",
+    "v0004",
+    "v0005",
+    "v0006",
+    "v0007",
+    "v0008",
+    "v0009"
+  ],
+  "chave": [
+    "cd_mun"
+  ],
+  "municipioCodigo": {
+    "coluna": "cd_mun",
+    "tipo": "IBGE7"
+  },
+  "validacoes": {
+    "linhasMinPorAba": 5570,
+    "chaveUnica": true,
+    "obrigatorias": [
+      "cd_mun",
+      "nm_mun",
+      "cd_uf",
+      "v0001"
+    ]
+  }
+}

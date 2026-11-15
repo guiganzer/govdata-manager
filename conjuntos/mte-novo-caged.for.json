@@ -1,0 +1,141 @@
+{
+  "$schema": "../../docs/conjunto-v3.schema.json",
+  "conjunto": "mte-novo-caged.for",
+  "nome": "Novo CAGED FOR - movimentacoes declaradas fora do prazo (microdados mensais)",
+  "versaoDefinicao": 1,
+  "tipo": "ORGANIZADO",
+  "edicaoPor": "ARQUIVO",
+  "fontes": {
+    "funcao": "mte-novo-caged",
+    "arquivos": [
+      "mte-novo-caged-for-*"
+    ],
+    "encoding": "utf-8",
+    "delimiter": ";"
+  },
+  "cabecalho": {
+    "linha": 1
+  },
+  "colunas": {
+    "competenciamov": [
+      "competênciamov"
+    ],
+    "regiao": [
+      "região"
+    ],
+    "uf": [
+      "uf"
+    ],
+    "municipio": [
+      "município"
+    ],
+    "secao": [
+      "seção"
+    ],
+    "subclasse": [
+      "subclasse"
+    ],
+    "saldomovimentacao": [
+      "saldomovimentação"
+    ],
+    "cbo2002ocupacao": [
+      "cbo2002ocupação"
+    ],
+    "categoria": [
+      "categoria"
+    ],
+    "graudeinstrucao": [
+      "graudeinstrução"
+    ],
+    "idade": [
+      "idade"
+    ],
+    "horascontratuais": [
+      "horascontratuais"
+    ],
+    "racacor": [
+      "raçacor"
+    ],
+    "sexo": [
+      "sexo"
+    ],
+    "tipoempregador": [
+      "tipoempregador"
+    ],
+    "tipoestabelecimento": [
+      "tipoestabelecimento"
+    ],
+    "tipomovimentacao": [
+      "tipomovimentação"
+    ],
+    "tipodedeficiencia": [
+      "tipodedeficiência"
+    ],
+    "indtrabintermitente": [
+      "indtrabintermitente"
+    ],
+    "indtrabparcial": [
+      "indtrabparcial"
+    ],
+    "salario": [
+      "salário"
+    ],
+    "tamestabjan": [
+      "tamestabjan"
+    ],
+    "indicadoraprendiz": [
+      "indicadoraprendiz"
+    ],
+    "origemdainformacao": [
+      "origemdainformação"
+    ],
+    "competenciadec": [
+      "competênciadec"
+    ],
+    "indicadordeforadoprazo": [
+      "indicadordeforadoprazo"
+    ],
+    "unidadesalariocodigo": [
+      "unidadesaláriocódigo"
+    ],
+    "valorsalariofixo": [
+      "valorsaláriofixo"
+    ]
+  },
+  "filtroLinhas": "true",
+  "saida": [
+    "competenciamov",
+    "regiao",
+    "uf",
+    "municipio",
+    "secao",
+    "subclasse",
+    "saldomovimentacao",
+    "cbo2002ocupacao",
+    "categoria",
+    "graudeinstrucao",
+    "idade",
+    "horascontratuais",
+    "racacor",
+    "sexo",
+    "tipoempregador",
+    "tipoestabelecimento",
+    "tipomovimentacao",
+    "tipodedeficiencia",
+    "indtrabintermitente",
+    "indtrabparcial",
+    "salario",
+    "tamestabjan",
+    "indicadoraprendiz",
+    "origemdainformacao",
+    "competenciadec",
+    "indicadordeforadoprazo",
+    "unidadesalariocodigo",
+    "valorsalariofixo"
+  ],
+  "chave": [],
+  "validacoes": {
+    "linhasMinPorAba": 1,
+    "chaveUnica": false
+  }
+}

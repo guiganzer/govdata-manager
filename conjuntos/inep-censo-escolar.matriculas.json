@@ -1,0 +1,1098 @@
+{
+  "$schema": "../../docs/conjunto-v3.schema.json",
+  "conjunto": "inep-censo-escolar.matriculas",
+  "nome": "Matrículas por escola do Censo Escolar (2025)",
+  "versaoDefinicao": 1,
+  "tipo": "ORGANIZADO",
+  "edicaoPor": "ARQUIVO",
+  "fontes": {
+    "funcao": "inep-censo-escolar",
+    "arquivos": [
+      "inep-microdados-censo-escolar-2025"
+    ],
+    "membros": [
+      "*Tabela_Matricula_*.csv"
+    ],
+    "encoding": "windows-1252",
+    "delimiter": ";"
+  },
+  "cabecalho": {
+    "contemUmDe": [
+      "NU_ANO_CENSO"
+    ]
+  },
+  "colunas": {
+    "nu_ano_censo": [
+      "NU_ANO_CENSO"
+    ],
+    "no_regiao": [
+      "NO_REGIAO"
+    ],
+    "co_regiao": [
+      "CO_REGIAO"
+    ],
+    "no_uf": [
+      "NO_UF"
+    ],
+    "sg_uf": [
+      "SG_UF"
+    ],
+    "co_uf": [
+      "CO_UF"
+    ],
+    "no_municipio": [
+      "NO_MUNICIPIO"
+    ],
+    "co_municipio": [
+      "CO_MUNICIPIO"
+    ],
+    "no_regiao_geog_interm": [
+      "NO_REGIAO_GEOG_INTERM"
+    ],
+    "co_regiao_geog_interm": [
+      "CO_REGIAO_GEOG_INTERM"
+    ],
+    "no_regiao_geog_imed": [
+      "NO_REGIAO_GEOG_IMED"
+    ],
+    "co_regiao_geog_imed": [
+      "CO_REGIAO_GEOG_IMED"
+    ],
+    "no_distrito": [
+      "NO_DISTRITO"
+    ],
+    "co_distrito": [
+      "CO_DISTRITO"
+    ],
+    "no_subdistrito": [
+      "NO_SUBDISTRITO"
+    ],
+    "co_subdistrito": [
+      "CO_SUBDISTRITO"
+    ],
+    "no_entidade": [
+      "NO_ENTIDADE"
+    ],
+    "co_entidade": [
+      "CO_ENTIDADE"
+    ],
+    "co_rede": [
+      "CO_REDE"
+    ],
+    "tp_dependencia": [
+      "TP_DEPENDENCIA"
+    ],
+    "tp_categoria_escola_privada": [
+      "TP_CATEGORIA_ESCOLA_PRIVADA"
+    ],
+    "tp_localizacao": [
+      "TP_LOCALIZACAO"
+    ],
+    "tp_localizacao_diferenciada": [
+      "TP_LOCALIZACAO_DIFERENCIADA"
+    ],
+    "in_poder_publico_parceria": [
+      "IN_PODER_PUBLICO_PARCERIA"
+    ],
+    "tp_poder_publico_parceria": [
+      "TP_PODER_PUBLICO_PARCERIA"
+    ],
+    "qt_mat_bas": [
+      "QT_MAT_BAS"
+    ],
+    "qt_mat_inf": [
+      "QT_MAT_INF"
+    ],
+    "qt_mat_inf_cre": [
+      "QT_MAT_INF_CRE"
+    ],
+    "qt_mat_inf_pre": [
+      "QT_MAT_INF_PRE"
+    ],
+    "qt_mat_fund": [
+      "QT_MAT_FUND"
+    ],
+    "qt_mat_fund_ai": [
+      "QT_MAT_FUND_AI"
+    ],
+    "qt_mat_fund_ai_1": [
+      "QT_MAT_FUND_AI_1"
+    ],
+    "qt_mat_fund_ai_2": [
+      "QT_MAT_FUND_AI_2"
+    ],
+    "qt_mat_fund_ai_3": [
+      "QT_MAT_FUND_AI_3"
+    ],
+    "qt_mat_fund_ai_4": [
+      "QT_MAT_FUND_AI_4"
+    ],
+    "qt_mat_fund_ai_5": [
+      "QT_MAT_FUND_AI_5"
+    ],
+    "qt_mat_fund_af": [
+      "QT_MAT_FUND_AF"
+    ],
+    "qt_mat_fund_af_6": [
+      "QT_MAT_FUND_AF_6"
+    ],
+    "qt_mat_fund_af_7": [
+      "QT_MAT_FUND_AF_7"
+    ],
+    "qt_mat_fund_af_8": [
+      "QT_MAT_FUND_AF_8"
+    ],
+    "qt_mat_fund_af_9": [
+      "QT_MAT_FUND_AF_9"
+    ],
+    "qt_mat_med": [
+      "QT_MAT_MED"
+    ],
+    "qt_mat_med_1": [
+      "QT_MAT_MED_1"
+    ],
+    "qt_mat_med_2": [
+      "QT_MAT_MED_2"
+    ],
+    "qt_mat_med_3": [
+      "QT_MAT_MED_3"
+    ],
+    "qt_mat_med_4": [
+      "QT_MAT_MED_4"
+    ],
+    "qt_mat_med_ns": [
+      "QT_MAT_MED_NS"
+    ],
+    "qt_mat_med_prop": [
+      "QT_MAT_MED_PROP"
+    ],
+    "qt_mat_med_prop_1": [
+      "QT_MAT_MED_PROP_1"
+    ],
+    "qt_mat_med_prop_2": [
+      "QT_MAT_MED_PROP_2"
+    ],
+    "qt_mat_med_prop_3": [
+      "QT_MAT_MED_PROP_3"
+    ],
+    "qt_mat_med_prop_4": [
+      "QT_MAT_MED_PROP_4"
+    ],
+    "qt_mat_med_prop_ns": [
+      "QT_MAT_MED_PROP_NS"
+    ],
+    "qt_mat_med_iftp_ct": [
+      "QT_MAT_MED_IFTP_CT"
+    ],
+    "qt_mat_med_iftp_ct_mt": [
+      "QT_MAT_MED_IFTP_CT_MT"
+    ],
+    "qt_mat_med_iftp_ct_otme": [
+      "QT_MAT_MED_IFTP_CT_OTME"
+    ],
+    "qt_mat_med_iftp_ct_oe": [
+      "QT_MAT_MED_IFTP_CT_OE"
+    ],
+    "qt_mat_med_iftp_ct_1": [
+      "QT_MAT_MED_IFTP_CT_1"
+    ],
+    "qt_mat_med_iftp_ct_2": [
+      "QT_MAT_MED_IFTP_CT_2"
+    ],
+    "qt_mat_med_iftp_ct_3": [
+      "QT_MAT_MED_IFTP_CT_3"
+    ],
+    "qt_mat_med_iftp_ct_4": [
+      "QT_MAT_MED_IFTP_CT_4"
+    ],
+    "qt_mat_med_iftp_ct_ns": [
+      "QT_MAT_MED_IFTP_CT_NS"
+    ],
+    "qt_mat_med_iftp_qp": [
+      "QT_MAT_MED_IFTP_QP"
+    ],
+    "qt_mat_med_iftp_qp_mt": [
+      "QT_MAT_MED_IFTP_QP_MT"
+    ],
+    "qt_mat_med_iftp_qp_otme": [
+      "QT_MAT_MED_IFTP_QP_OTME"
+    ],
+    "qt_mat_med_iftp_qp_oe": [
+      "QT_MAT_MED_IFTP_QP_OE"
+    ],
+    "qt_mat_med_iftp_qp_1": [
+      "QT_MAT_MED_IFTP_QP_1"
+    ],
+    "qt_mat_med_iftp_qp_2": [
+      "QT_MAT_MED_IFTP_QP_2"
+    ],
+    "qt_mat_med_iftp_qp_3": [
+      "QT_MAT_MED_IFTP_QP_3"
+    ],
+    "qt_mat_med_iftp_qp_4": [
+      "QT_MAT_MED_IFTP_QP_4"
+    ],
+    "qt_mat_med_iftp_qp_ns": [
+      "QT_MAT_MED_IFTP_QP_NS"
+    ],
+    "qt_mat_med_nm": [
+      "QT_MAT_MED_NM"
+    ],
+    "qt_mat_med_nm_1": [
+      "QT_MAT_MED_NM_1"
+    ],
+    "qt_mat_med_nm_2": [
+      "QT_MAT_MED_NM_2"
+    ],
+    "qt_mat_med_nm_3": [
+      "QT_MAT_MED_NM_3"
+    ],
+    "qt_mat_med_nm_4": [
+      "QT_MAT_MED_NM_4"
+    ],
+    "qt_mat_med_ifa": [
+      "QT_MAT_MED_IFA"
+    ],
+    "qt_mat_med_ifa_ling": [
+      "QT_MAT_MED_IFA_LING"
+    ],
+    "qt_mat_med_ifa_ling_mt": [
+      "QT_MAT_MED_IFA_LING_MT"
+    ],
+    "qt_mat_med_ifa_ling_otme": [
+      "QT_MAT_MED_IFA_LING_OTME"
+    ],
+    "qt_mat_med_ifa_ling_oe": [
+      "QT_MAT_MED_IFA_LING_OE"
+    ],
+    "qt_mat_med_ifa_mate": [
+      "QT_MAT_MED_IFA_MATE"
+    ],
+    "qt_mat_med_ifa_mate_mt": [
+      "QT_MAT_MED_IFA_MATE_MT"
+    ],
+    "qt_mat_med_ifa_mate_otme": [
+      "QT_MAT_MED_IFA_MATE_OTME"
+    ],
+    "qt_mat_med_ifa_mate_oe": [
+      "QT_MAT_MED_IFA_MATE_OE"
+    ],
+    "qt_mat_med_ifa_cienc": [
+      "QT_MAT_MED_IFA_CIENC"
+    ],
+    "qt_mat_med_ifa_cienc_mt": [
+      "QT_MAT_MED_IFA_CIENC_MT"
+    ],
+    "qt_mat_med_ifa_cienc_otme": [
+      "QT_MAT_MED_IFA_CIENC_OTME"
+    ],
+    "qt_mat_med_ifa_cienc_oe": [
+      "QT_MAT_MED_IFA_CIENC_OE"
+    ],
+    "qt_mat_med_ifa_huma": [
+      "QT_MAT_MED_IFA_HUMA"
+    ],
+    "qt_mat_med_ifa_huma_mt": [
+      "QT_MAT_MED_IFA_HUMA_MT"
+    ],
+    "qt_mat_med_ifa_huma_otme": [
+      "QT_MAT_MED_IFA_HUMA_OTME"
+    ],
+    "qt_mat_med_ifa_huma_oe": [
+      "QT_MAT_MED_IFA_HUMA_OE"
+    ],
+    "qt_mat_prof": [
+      "QT_MAT_PROF"
+    ],
+    "qt_mat_prof_tec": [
+      "QT_MAT_PROF_TEC"
+    ],
+    "qt_mat_prof_tec_conc": [
+      "QT_MAT_PROF_TEC_CONC"
+    ],
+    "qt_mat_prof_tec_subs": [
+      "QT_MAT_PROF_TEC_SUBS"
+    ],
+    "qt_mat_prof_tec_iftp_ct": [
+      "QT_MAT_PROF_TEC_IFTP_CT"
+    ],
+    "qt_mat_prof_nao_tec": [
+      "QT_MAT_PROF_NAO_TEC"
+    ],
+    "qt_mat_prof_iftp_qp": [
+      "QT_MAT_PROF_IFTP_QP"
+    ],
+    "qt_mat_prof_fic_conc": [
+      "QT_MAT_PROF_FIC_CONC"
+    ],
+    "qt_mat_eja": [
+      "QT_MAT_EJA"
+    ],
+    "qt_mat_eja_fund": [
+      "QT_MAT_EJA_FUND"
+    ],
+    "qt_mat_eja_fund_nprof": [
+      "QT_MAT_EJA_FUND_NPROF"
+    ],
+    "qt_mat_eja_fund_ai": [
+      "QT_MAT_EJA_FUND_AI"
+    ],
+    "qt_mat_eja_fund_af": [
+      "QT_MAT_EJA_FUND_AF"
+    ],
+    "qt_mat_eja_fund_fic": [
+      "QT_MAT_EJA_FUND_FIC"
+    ],
+    "qt_mat_eja_med": [
+      "QT_MAT_EJA_MED"
+    ],
+    "qt_mat_eja_med_nprof": [
+      "QT_MAT_EJA_MED_NPROF"
+    ],
+    "qt_mat_eja_med_fic": [
+      "QT_MAT_EJA_MED_FIC"
+    ],
+    "qt_mat_eja_med_tec": [
+      "QT_MAT_EJA_MED_TEC"
+    ],
+    "qt_mat_esp": [
+      "QT_MAT_ESP"
+    ],
+    "qt_mat_esp_inf": [
+      "QT_MAT_ESP_INF"
+    ],
+    "qt_mat_esp_inf_cre": [
+      "QT_MAT_ESP_INF_CRE"
+    ],
+    "qt_mat_esp_inf_pre": [
+      "QT_MAT_ESP_INF_PRE"
+    ],
+    "qt_mat_esp_fund": [
+      "QT_MAT_ESP_FUND"
+    ],
+    "qt_mat_esp_fund_ai": [
+      "QT_MAT_ESP_FUND_AI"
+    ],
+    "qt_mat_esp_fund_af": [
+      "QT_MAT_ESP_FUND_AF"
+    ],
+    "qt_mat_esp_med": [
+      "QT_MAT_ESP_MED"
+    ],
+    "qt_mat_esp_prof": [
+      "QT_MAT_ESP_PROF"
+    ],
+    "qt_mat_esp_prof_tec": [
+      "QT_MAT_ESP_PROF_TEC"
+    ],
+    "qt_mat_esp_eja": [
+      "QT_MAT_ESP_EJA"
+    ],
+    "qt_mat_esp_eja_fund": [
+      "QT_MAT_ESP_EJA_FUND"
+    ],
+    "qt_mat_esp_eja_med": [
+      "QT_MAT_ESP_EJA_MED"
+    ],
+    "qt_mat_esp_cc": [
+      "QT_MAT_ESP_CC"
+    ],
+    "qt_mat_esp_cc_inf": [
+      "QT_MAT_ESP_CC_INF"
+    ],
+    "qt_mat_esp_cc_inf_cre": [
+      "QT_MAT_ESP_CC_INF_CRE"
+    ],
+    "qt_mat_esp_cc_inf_pre": [
+      "QT_MAT_ESP_CC_INF_PRE"
+    ],
+    "qt_mat_esp_cc_fund": [
+      "QT_MAT_ESP_CC_FUND"
+    ],
+    "qt_mat_esp_cc_fund_ai": [
+      "QT_MAT_ESP_CC_FUND_AI"
+    ],
+    "qt_mat_esp_cc_fund_af": [
+      "QT_MAT_ESP_CC_FUND_AF"
+    ],
+    "qt_mat_esp_cc_med": [
+      "QT_MAT_ESP_CC_MED"
+    ],
+    "qt_mat_esp_cc_prof": [
+      "QT_MAT_ESP_CC_PROF"
+    ],
+    "qt_mat_esp_cc_prof_tec": [
+      "QT_MAT_ESP_CC_PROF_TEC"
+    ],
+    "qt_mat_esp_cc_eja": [
+      "QT_MAT_ESP_CC_EJA"
+    ],
+    "qt_mat_esp_cc_eja_fund": [
+      "QT_MAT_ESP_CC_EJA_FUND"
+    ],
+    "qt_mat_esp_cc_eja_med": [
+      "QT_MAT_ESP_CC_EJA_MED"
+    ],
+    "qt_mat_esp_ce": [
+      "QT_MAT_ESP_CE"
+    ],
+    "qt_mat_esp_ce_inf": [
+      "QT_MAT_ESP_CE_INF"
+    ],
+    "qt_mat_esp_ce_inf_cre": [
+      "QT_MAT_ESP_CE_INF_CRE"
+    ],
+    "qt_mat_esp_ce_inf_pre": [
+      "QT_MAT_ESP_CE_INF_PRE"
+    ],
+    "qt_mat_esp_ce_fund": [
+      "QT_MAT_ESP_CE_FUND"
+    ],
+    "qt_mat_esp_ce_fund_ai": [
+      "QT_MAT_ESP_CE_FUND_AI"
+    ],
+    "qt_mat_esp_ce_fund_af": [
+      "QT_MAT_ESP_CE_FUND_AF"
+    ],
+    "qt_mat_esp_ce_med": [
+      "QT_MAT_ESP_CE_MED"
+    ],
+    "qt_mat_esp_ce_prof": [
+      "QT_MAT_ESP_CE_PROF"
+    ],
+    "qt_mat_esp_ce_prof_tec": [
+      "QT_MAT_ESP_CE_PROF_TEC"
+    ],
+    "qt_mat_esp_ce_eja": [
+      "QT_MAT_ESP_CE_EJA"
+    ],
+    "qt_mat_esp_ce_eja_fund": [
+      "QT_MAT_ESP_CE_EJA_FUND"
+    ],
+    "qt_mat_esp_ce_eja_med": [
+      "QT_MAT_ESP_CE_EJA_MED"
+    ],
+    "qt_mat_bas_fem": [
+      "QT_MAT_BAS_FEM"
+    ],
+    "qt_mat_bas_masc": [
+      "QT_MAT_BAS_MASC"
+    ],
+    "qt_mat_bas_nd": [
+      "QT_MAT_BAS_ND"
+    ],
+    "qt_mat_bas_branca": [
+      "QT_MAT_BAS_BRANCA"
+    ],
+    "qt_mat_bas_preta": [
+      "QT_MAT_BAS_PRETA"
+    ],
+    "qt_mat_bas_parda": [
+      "QT_MAT_BAS_PARDA"
+    ],
+    "qt_mat_bas_amarela": [
+      "QT_MAT_BAS_AMARELA"
+    ],
+    "qt_mat_bas_indigena": [
+      "QT_MAT_BAS_INDIGENA"
+    ],
+    "qt_mat_bas_0_3": [
+      "QT_MAT_BAS_0_3"
+    ],
+    "qt_mat_bas_4_5": [
+      "QT_MAT_BAS_4_5"
+    ],
+    "qt_mat_bas_6_10": [
+      "QT_MAT_BAS_6_10"
+    ],
+    "qt_mat_bas_11_14": [
+      "QT_MAT_BAS_11_14"
+    ],
+    "qt_mat_bas_15_17": [
+      "QT_MAT_BAS_15_17"
+    ],
+    "qt_mat_bas_18_mais": [
+      "QT_MAT_BAS_18_MAIS"
+    ],
+    "qt_mat_bas_0_3_ref_31_03": [
+      "QT_MAT_BAS_0_3_REF_31_03"
+    ],
+    "qt_mat_bas_4_5_ref_31_03": [
+      "QT_MAT_BAS_4_5_REF_31_03"
+    ],
+    "qt_mat_bas_6_10_ref_31_03": [
+      "QT_MAT_BAS_6_10_REF_31_03"
+    ],
+    "qt_mat_bas_11_14_ref_31_03": [
+      "QT_MAT_BAS_11_14_REF_31_03"
+    ],
+    "qt_mat_bas_15_17_ref_31_03": [
+      "QT_MAT_BAS_15_17_REF_31_03"
+    ],
+    "qt_mat_bas_18_mais_ref_31_03": [
+      "QT_MAT_BAS_18_MAIS_REF_31_03"
+    ],
+    "qt_mat_bas_d": [
+      "QT_MAT_BAS_D"
+    ],
+    "qt_mat_bas_dm": [
+      "QT_MAT_BAS_DM"
+    ],
+    "qt_mat_bas_dv": [
+      "QT_MAT_BAS_DV"
+    ],
+    "qt_mat_bas_n": [
+      "QT_MAT_BAS_N"
+    ],
+    "qt_mat_bas_ead": [
+      "QT_MAT_BAS_EAD"
+    ],
+    "qt_mat_inf_cre_d": [
+      "QT_MAT_INF_CRE_D"
+    ],
+    "qt_mat_inf_cre_dm": [
+      "QT_MAT_INF_CRE_DM"
+    ],
+    "qt_mat_inf_cre_dv": [
+      "QT_MAT_INF_CRE_DV"
+    ],
+    "qt_mat_inf_cre_n": [
+      "QT_MAT_INF_CRE_N"
+    ],
+    "qt_mat_inf_pre_d": [
+      "QT_MAT_INF_PRE_D"
+    ],
+    "qt_mat_inf_pre_dm": [
+      "QT_MAT_INF_PRE_DM"
+    ],
+    "qt_mat_inf_pre_dv": [
+      "QT_MAT_INF_PRE_DV"
+    ],
+    "qt_mat_inf_pre_n": [
+      "QT_MAT_INF_PRE_N"
+    ],
+    "qt_mat_fund_d": [
+      "QT_MAT_FUND_D"
+    ],
+    "qt_mat_fund_dm": [
+      "QT_MAT_FUND_DM"
+    ],
+    "qt_mat_fund_dv": [
+      "QT_MAT_FUND_DV"
+    ],
+    "qt_mat_fund_n": [
+      "QT_MAT_FUND_N"
+    ],
+    "qt_mat_fund_ai_d": [
+      "QT_MAT_FUND_AI_D"
+    ],
+    "qt_mat_fund_ai_dm": [
+      "QT_MAT_FUND_AI_DM"
+    ],
+    "qt_mat_fund_ai_dv": [
+      "QT_MAT_FUND_AI_DV"
+    ],
+    "qt_mat_fund_ai_n": [
+      "QT_MAT_FUND_AI_N"
+    ],
+    "qt_mat_fund_af_d": [
+      "QT_MAT_FUND_AF_D"
+    ],
+    "qt_mat_fund_af_dm": [
+      "QT_MAT_FUND_AF_DM"
+    ],
+    "qt_mat_fund_af_dv": [
+      "QT_MAT_FUND_AF_DV"
+    ],
+    "qt_mat_fund_af_n": [
+      "QT_MAT_FUND_AF_N"
+    ],
+    "qt_mat_med_d": [
+      "QT_MAT_MED_D"
+    ],
+    "qt_mat_med_dm": [
+      "QT_MAT_MED_DM"
+    ],
+    "qt_mat_med_dv": [
+      "QT_MAT_MED_DV"
+    ],
+    "qt_mat_med_n": [
+      "QT_MAT_MED_N"
+    ],
+    "qt_mat_med_ead": [
+      "QT_MAT_MED_EAD"
+    ],
+    "qt_mat_prof_d": [
+      "QT_MAT_PROF_D"
+    ],
+    "qt_mat_prof_dm": [
+      "QT_MAT_PROF_DM"
+    ],
+    "qt_mat_prof_dv": [
+      "QT_MAT_PROF_DV"
+    ],
+    "qt_mat_prof_n": [
+      "QT_MAT_PROF_N"
+    ],
+    "qt_mat_prof_ead": [
+      "QT_MAT_PROF_EAD"
+    ],
+    "qt_mat_prof_tec_d": [
+      "QT_MAT_PROF_TEC_D"
+    ],
+    "qt_mat_prof_tec_dm": [
+      "QT_MAT_PROF_TEC_DM"
+    ],
+    "qt_mat_prof_tec_dv": [
+      "QT_MAT_PROF_TEC_DV"
+    ],
+    "qt_mat_prof_tec_n": [
+      "QT_MAT_PROF_TEC_N"
+    ],
+    "qt_mat_prof_tec_ead": [
+      "QT_MAT_PROF_TEC_EAD"
+    ],
+    "qt_mat_eja_d": [
+      "QT_MAT_EJA_D"
+    ],
+    "qt_mat_eja_dm": [
+      "QT_MAT_EJA_DM"
+    ],
+    "qt_mat_eja_dv": [
+      "QT_MAT_EJA_DV"
+    ],
+    "qt_mat_eja_n": [
+      "QT_MAT_EJA_N"
+    ],
+    "qt_mat_eja_ead": [
+      "QT_MAT_EJA_EAD"
+    ],
+    "qt_mat_eja_fund_d": [
+      "QT_MAT_EJA_FUND_D"
+    ],
+    "qt_mat_eja_fund_dm": [
+      "QT_MAT_EJA_FUND_DM"
+    ],
+    "qt_mat_eja_fund_dv": [
+      "QT_MAT_EJA_FUND_DV"
+    ],
+    "qt_mat_eja_fund_n": [
+      "QT_MAT_EJA_FUND_N"
+    ],
+    "qt_mat_eja_fund_ead": [
+      "QT_MAT_EJA_FUND_EAD"
+    ],
+    "qt_mat_eja_med_d": [
+      "QT_MAT_EJA_MED_D"
+    ],
+    "qt_mat_eja_med_dm": [
+      "QT_MAT_EJA_MED_DM"
+    ],
+    "qt_mat_eja_med_dv": [
+      "QT_MAT_EJA_MED_DV"
+    ],
+    "qt_mat_eja_med_n": [
+      "QT_MAT_EJA_MED_N"
+    ],
+    "qt_mat_eja_med_ead": [
+      "QT_MAT_EJA_MED_EAD"
+    ],
+    "qt_mat_esp_d": [
+      "QT_MAT_ESP_D"
+    ],
+    "qt_mat_esp_dm": [
+      "QT_MAT_ESP_DM"
+    ],
+    "qt_mat_esp_dv": [
+      "QT_MAT_ESP_DV"
+    ],
+    "qt_mat_esp_n": [
+      "QT_MAT_ESP_N"
+    ],
+    "qt_mat_esp_ead": [
+      "QT_MAT_ESP_EAD"
+    ],
+    "qt_mat_esp_cc_d": [
+      "QT_MAT_ESP_CC_D"
+    ],
+    "qt_mat_esp_cc_dm": [
+      "QT_MAT_ESP_CC_DM"
+    ],
+    "qt_mat_esp_cc_dv": [
+      "QT_MAT_ESP_CC_DV"
+    ],
+    "qt_mat_esp_cc_n": [
+      "QT_MAT_ESP_CC_N"
+    ],
+    "qt_mat_esp_cc_ead": [
+      "QT_MAT_ESP_CC_EAD"
+    ],
+    "qt_mat_esp_ce_d": [
+      "QT_MAT_ESP_CE_D"
+    ],
+    "qt_mat_esp_ce_dm": [
+      "QT_MAT_ESP_CE_DM"
+    ],
+    "qt_mat_esp_ce_dv": [
+      "QT_MAT_ESP_CE_DV"
+    ],
+    "qt_mat_esp_ce_n": [
+      "QT_MAT_ESP_CE_N"
+    ],
+    "qt_mat_esp_ce_ead": [
+      "QT_MAT_ESP_CE_EAD"
+    ],
+    "qt_mat_bas_int": [
+      "QT_MAT_BAS_INT"
+    ],
+    "qt_mat_inf_int": [
+      "QT_MAT_INF_INT"
+    ],
+    "qt_mat_inf_cre_int": [
+      "QT_MAT_INF_CRE_INT"
+    ],
+    "qt_mat_inf_pre_int": [
+      "QT_MAT_INF_PRE_INT"
+    ],
+    "qt_mat_fund_int": [
+      "QT_MAT_FUND_INT"
+    ],
+    "qt_mat_fund_ai_int": [
+      "QT_MAT_FUND_AI_INT"
+    ],
+    "qt_mat_fund_af_int": [
+      "QT_MAT_FUND_AF_INT"
+    ],
+    "qt_mat_med_int": [
+      "QT_MAT_MED_INT"
+    ],
+    "qt_mat_prof_int": [
+      "QT_MAT_PROF_INT"
+    ],
+    "qt_mat_prof_tec_int": [
+      "QT_MAT_PROF_TEC_INT"
+    ],
+    "qt_mat_eja_int": [
+      "QT_MAT_EJA_INT"
+    ],
+    "qt_mat_eja_fund_int": [
+      "QT_MAT_EJA_FUND_INT"
+    ],
+    "qt_mat_eja_med_int": [
+      "QT_MAT_EJA_MED_INT"
+    ],
+    "qt_mat_esp_int": [
+      "QT_MAT_ESP_INT"
+    ],
+    "qt_mat_esp_cc_int": [
+      "QT_MAT_ESP_CC_INT"
+    ],
+    "qt_mat_esp_ce_int": [
+      "QT_MAT_ESP_CE_INT"
+    ],
+    "qt_mat_bas_libras": [
+      "QT_MAT_BAS_LIBRAS"
+    ],
+    "qt_mat_zr_urb": [
+      "QT_MAT_ZR_URB"
+    ],
+    "qt_mat_zr_rur": [
+      "QT_MAT_ZR_RUR"
+    ],
+    "qt_mat_zr_na": [
+      "QT_MAT_ZR_NA"
+    ],
+    "qt_transp_publico": [
+      "QT_TRANSP_PUBLICO"
+    ],
+    "qt_transp_resp_est": [
+      "QT_TRANSP_RESP_EST"
+    ],
+    "qt_transp_resp_mun": [
+      "QT_TRANSP_RESP_MUN"
+    ]
+  },
+  "filtroLinhas": "regexp_full_match(co_entidade, '[0-9]+')",
+  "saida": [
+    "nu_ano_censo",
+    "no_regiao",
+    "co_regiao",
+    "no_uf",
+    "sg_uf",
+    "co_uf",
+    "no_municipio",
+    "co_municipio",
+    "no_regiao_geog_interm",
+    "co_regiao_geog_interm",
+    "no_regiao_geog_imed",
+    "co_regiao_geog_imed",
+    "no_distrito",
+    "co_distrito",
+    "no_subdistrito",
+    "co_subdistrito",
+    "no_entidade",
+    "co_entidade",
+    "co_rede",
+    "tp_dependencia",
+    "tp_categoria_escola_privada",
+    "tp_localizacao",
+    "tp_localizacao_diferenciada",
+    "in_poder_publico_parceria",
+    "tp_poder_publico_parceria",
+    "qt_mat_bas",
+    "qt_mat_inf",
+    "qt_mat_inf_cre",
+    "qt_mat_inf_pre",
+    "qt_mat_fund",
+    "qt_mat_fund_ai",
+    "qt_mat_fund_ai_1",
+    "qt_mat_fund_ai_2",
+    "qt_mat_fund_ai_3",
+    "qt_mat_fund_ai_4",
+    "qt_mat_fund_ai_5",
+    "qt_mat_fund_af",
+    "qt_mat_fund_af_6",
+    "qt_mat_fund_af_7",
+    "qt_mat_fund_af_8",
+    "qt_mat_fund_af_9",
+    "qt_mat_med",
+    "qt_mat_med_1",
+    "qt_mat_med_2",
+    "qt_mat_med_3",
+    "qt_mat_med_4",
+    "qt_mat_med_ns",
+    "qt_mat_med_prop",
+    "qt_mat_med_prop_1",
+    "qt_mat_med_prop_2",
+    "qt_mat_med_prop_3",
+    "qt_mat_med_prop_4",
+    "qt_mat_med_prop_ns",
+    "qt_mat_med_iftp_ct",
+    "qt_mat_med_iftp_ct_mt",
+    "qt_mat_med_iftp_ct_otme",
+    "qt_mat_med_iftp_ct_oe",
+    "qt_mat_med_iftp_ct_1",
+    "qt_mat_med_iftp_ct_2",
+    "qt_mat_med_iftp_ct_3",
+    "qt_mat_med_iftp_ct_4",
+    "qt_mat_med_iftp_ct_ns",
+    "qt_mat_med_iftp_qp",
+    "qt_mat_med_iftp_qp_mt",
+    "qt_mat_med_iftp_qp_otme",
+    "qt_mat_med_iftp_qp_oe",
+    "qt_mat_med_iftp_qp_1",
+    "qt_mat_med_iftp_qp_2",
+    "qt_mat_med_iftp_qp_3",
+    "qt_mat_med_iftp_qp_4",
+    "qt_mat_med_iftp_qp_ns",
+    "qt_mat_med_nm",
+    "qt_mat_med_nm_1",
+    "qt_mat_med_nm_2",
+    "qt_mat_med_nm_3",
+    "qt_mat_med_nm_4",
+    "qt_mat_med_ifa",
+    "qt_mat_med_ifa_ling",
+    "qt_mat_med_ifa_ling_mt",
+    "qt_mat_med_ifa_ling_otme",
+    "qt_mat_med_ifa_ling_oe",
+    "qt_mat_med_ifa_mate",
+    "qt_mat_med_ifa_mate_mt",
+    "qt_mat_med_ifa_mate_otme",
+    "qt_mat_med_ifa_mate_oe",
+    "qt_mat_med_ifa_cienc",
+    "qt_mat_med_ifa_cienc_mt",
+    "qt_mat_med_ifa_cienc_otme",
+    "qt_mat_med_ifa_cienc_oe",
+    "qt_mat_med_ifa_huma",
+    "qt_mat_med_ifa_huma_mt",
+    "qt_mat_med_ifa_huma_otme",
+    "qt_mat_med_ifa_huma_oe",
+    "qt_mat_prof",
+    "qt_mat_prof_tec",
+    "qt_mat_prof_tec_conc",
+    "qt_mat_prof_tec_subs",
+    "qt_mat_prof_tec_iftp_ct",
+    "qt_mat_prof_nao_tec",
+    "qt_mat_prof_iftp_qp",
+    "qt_mat_prof_fic_conc",
+    "qt_mat_eja",
+    "qt_mat_eja_fund",
+    "qt_mat_eja_fund_nprof",
+    "qt_mat_eja_fund_ai",
+    "qt_mat_eja_fund_af",
+    "qt_mat_eja_fund_fic",
+    "qt_mat_eja_med",
+    "qt_mat_eja_med_nprof",
+    "qt_mat_eja_med_fic",
+    "qt_mat_eja_med_tec",
+    "qt_mat_esp",
+    "qt_mat_esp_inf",
+    "qt_mat_esp_inf_cre",
+    "qt_mat_esp_inf_pre",
+    "qt_mat_esp_fund",
+    "qt_mat_esp_fund_ai",
+    "qt_mat_esp_fund_af",
+    "qt_mat_esp_med",
+    "qt_mat_esp_prof",
+    "qt_mat_esp_prof_tec",
+    "qt_mat_esp_eja",
+    "qt_mat_esp_eja_fund",
+    "qt_mat_esp_eja_med",
+    "qt_mat_esp_cc",
+    "qt_mat_esp_cc_inf",
+    "qt_mat_esp_cc_inf_cre",
+    "qt_mat_esp_cc_inf_pre",
+    "qt_mat_esp_cc_fund",
+    "qt_mat_esp_cc_fund_ai",
+    "qt_mat_esp_cc_fund_af",
+    "qt_mat_esp_cc_med",
+    "qt_mat_esp_cc_prof",
+    "qt_mat_esp_cc_prof_tec",
+    "qt_mat_esp_cc_eja",
+    "qt_mat_esp_cc_eja_fund",
+    "qt_mat_esp_cc_eja_med",
+    "qt_mat_esp_ce",
+    "qt_mat_esp_ce_inf",
+    "qt_mat_esp_ce_inf_cre",
+    "qt_mat_esp_ce_inf_pre",
+    "qt_mat_esp_ce_fund",
+    "qt_mat_esp_ce_fund_ai",
+    "qt_mat_esp_ce_fund_af",
+    "qt_mat_esp_ce_med",
+    "qt_mat_esp_ce_prof",
+    "qt_mat_esp_ce_prof_tec",
+    "qt_mat_esp_ce_eja",
+    "qt_mat_esp_ce_eja_fund",
+    "qt_mat_esp_ce_eja_med",
+    "qt_mat_bas_fem",
+    "qt_mat_bas_masc",
+    "qt_mat_bas_nd",
+    "qt_mat_bas_branca",
+    "qt_mat_bas_preta",
+    "qt_mat_bas_parda",
+    "qt_mat_bas_amarela",
+    "qt_mat_bas_indigena",
+    "qt_mat_bas_0_3",
+    "qt_mat_bas_4_5",
+    "qt_mat_bas_6_10",
+    "qt_mat_bas_11_14",
+    "qt_mat_bas_15_17",
+    "qt_mat_bas_18_mais",
+    "qt_mat_bas_0_3_ref_31_03",
+    "qt_mat_bas_4_5_ref_31_03",
+    "qt_mat_bas_6_10_ref_31_03",
+    "qt_mat_bas_11_14_ref_31_03",
+    "qt_mat_bas_15_17_ref_31_03",
+    "qt_mat_bas_18_mais_ref_31_03",
+    "qt_mat_bas_d",
+    "qt_mat_bas_dm",
+    "qt_mat_bas_dv",
+    "qt_mat_bas_n",
+    "qt_mat_bas_ead",
+    "qt_mat_inf_cre_d",
+    "qt_mat_inf_cre_dm",
+    "qt_mat_inf_cre_dv",
+    "qt_mat_inf_cre_n",
+    "qt_mat_inf_pre_d",
+    "qt_mat_inf_pre_dm",
+    "qt_mat_inf_pre_dv",
+    "qt_mat_inf_pre_n",
+    "qt_mat_fund_d",
+    "qt_mat_fund_dm",
+    "qt_mat_fund_dv",
+    "qt_mat_fund_n",
+    "qt_mat_fund_ai_d",
+    "qt_mat_fund_ai_dm",
+    "qt_mat_fund_ai_dv",
+    "qt_mat_fund_ai_n",
+    "qt_mat_fund_af_d",
+    "qt_mat_fund_af_dm",
+    "qt_mat_fund_af_dv",
+    "qt_mat_fund_af_n",
+    "qt_mat_med_d",
+    "qt_mat_med_dm",
+    "qt_mat_med_dv",
+    "qt_mat_med_n",
+    "qt_mat_med_ead",
+    "qt_mat_prof_d",
+    "qt_mat_prof_dm",
+    "qt_mat_prof_dv",
+    "qt_mat_prof_n",
+    "qt_mat_prof_ead",
+    "qt_mat_prof_tec_d",
+    "qt_mat_prof_tec_dm",
+    "qt_mat_prof_tec_dv",
+    "qt_mat_prof_tec_n",
+    "qt_mat_prof_tec_ead",
+    "qt_mat_eja_d",
+    "qt_mat_eja_dm",
+    "qt_mat_eja_dv",
+    "qt_mat_eja_n",
+    "qt_mat_eja_ead",
+    "qt_mat_eja_fund_d",
+    "qt_mat_eja_fund_dm",
+    "qt_mat_eja_fund_dv",
+    "qt_mat_eja_fund_n",
+    "qt_mat_eja_fund_ead",
+    "qt_mat_eja_med_d",
+    "qt_mat_eja_med_dm",
+    "qt_mat_eja_med_dv",
+    "qt_mat_eja_med_n",
+    "qt_mat_eja_med_ead",
+    "qt_mat_esp_d",
+    "qt_mat_esp_dm",
+    "qt_mat_esp_dv",
+    "qt_mat_esp_n",
+    "qt_mat_esp_ead",
+    "qt_mat_esp_cc_d",
+    "qt_mat_esp_cc_dm",
+    "qt_mat_esp_cc_dv",
+    "qt_mat_esp_cc_n",
+    "qt_mat_esp_cc_ead",
+    "qt_mat_esp_ce_d",
+    "qt_mat_esp_ce_dm",
+    "qt_mat_esp_ce_dv",
+    "qt_mat_esp_ce_n",
+    "qt_mat_esp_ce_ead",
+    "qt_mat_bas_int",
+    "qt_mat_inf_int",
+    "qt_mat_inf_cre_int",
+    "qt_mat_inf_pre_int",
+    "qt_mat_fund_int",
+    "qt_mat_fund_ai_int",
+    "qt_mat_fund_af_int",
+    "qt_mat_med_int",
+    "qt_mat_prof_int",
+    "qt_mat_prof_tec_int",
+    "qt_mat_eja_int",
+    "qt_mat_eja_fund_int",
+    "qt_mat_eja_med_int",
+    "qt_mat_esp_int",
+    "qt_mat_esp_cc_int",
+    "qt_mat_esp_ce_int",
+    "qt_mat_bas_libras",
+    "qt_mat_zr_urb",
+    "qt_mat_zr_rur",
+    "qt_mat_zr_na",
+    "qt_transp_publico",
+    "qt_transp_resp_est",
+    "qt_transp_resp_mun"
+  ],
+  "chave": [
+    "nu_ano_censo",
+    "co_entidade"
+  ],
+  "municipioCodigo": {
+    "coluna": "co_municipio",
+    "tipo": "IBGE7"
+  },
+  "validacoes": {
+    "linhasMinPorAba": 150000,
+    "chaveUnica": true,
+    "obrigatorias": [
+      "nu_ano_censo",
+      "co_entidade",
+      "co_municipio"
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+project_root="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+export GOVDATA_HOME="$project_root/dados"
+exec "$project_root/dist/linux-x64/manual-organizer/GovData.Downloads.Organizer.Cli" "$@"

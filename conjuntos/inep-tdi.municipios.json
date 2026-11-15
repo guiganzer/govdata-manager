@@ -1,0 +1,47 @@
+{
+  "$schema": "../../docs/conjunto-v3.schema.json",
+  "conjunto": "inep-tdi.municipios",
+  "nome": "Taxa de distorção idade-série por município",
+  "versaoDefinicao": 1,
+  "tipo": "ORGANIZADO",
+  "edicaoPor": "ARQUIVO",
+  "fontes": {
+    "funcao": "inep-tdi",
+    "arquivos": ["inep-tdi-municipios-*"],
+    "membros": ["*.xls", "*.xlsx"]
+  },
+  "cabecalho": {
+    "contemUmDe": ["Código Município", "Código do Município", "PK_COD_MUNICIPIO", "CO_MUNICIPIO"]
+  },
+  "colunas": {
+    "ano": ["c1"],
+    "codigo_c4": ["c4"],
+    "codigo_c5": ["c5"],
+    "campo_c6": ["c6"],
+    "campo_c7": ["c7"],
+    "campo_c8": ["c8"],
+    "campo_c9": ["c9"],
+    "campo_c10": ["c10"],
+    "campo_c11": ["c11"],
+    "campo_c17": ["c17"],
+    "campo_c18": ["c18"],
+    "campo_c19": ["c19"]
+  },
+  "derivadas": {
+    "cod_ibge": "case when right(_arquivo,4) in ('2007','2008','2009','2015') then trim(codigo_c5) else trim(codigo_c4) end",
+    "localizacao": "case when right(_arquivo,4) in ('2006','2015') then trim(campo_c7) else trim(campo_c6) end",
+    "dependencia": "case when right(_arquivo,4) = '2006' then trim(campo_c6) when right(_arquivo,4) = '2015' then trim(campo_c8) else trim(campo_c7) end",
+    "fun_total": "nullif(nullif(trim(case when right(_arquivo,4) between '2007' and '2010' then campo_c19 when right(_arquivo,4) = '2015' then campo_c9 else campo_c8 end),'--'),'')",
+    "fun_ai": "nullif(nullif(trim(case when right(_arquivo,4) between '2007' and '2010' then campo_c17 when right(_arquivo,4) = '2015' then campo_c10 else campo_c9 end),'--'),'')",
+    "fun_af": "nullif(nullif(trim(case when right(_arquivo,4) between '2007' and '2010' then campo_c18 when right(_arquivo,4) = '2015' then campo_c11 else campo_c10 end),'--'),'')"
+  },
+  "filtroLinhas": "regexp_full_match(cod_ibge,'[0-9]{7}') and upper(localizacao) = 'TOTAL' and upper(dependencia) = 'MUNICIPAL'",
+  "saida": ["ano", "cod_ibge", "localizacao", "dependencia", "fun_total", "fun_ai", "fun_af"],
+  "chave": ["ano", "cod_ibge"],
+  "municipioCodigo": {"coluna": "cod_ibge", "tipo": "IBGE7"},
+  "validacoes": {
+    "linhasMinPorAba": 100,
+    "chaveUnica": true,
+    "obrigatorias": ["ano", "cod_ibge", "localizacao", "dependencia"]
+  }
+}

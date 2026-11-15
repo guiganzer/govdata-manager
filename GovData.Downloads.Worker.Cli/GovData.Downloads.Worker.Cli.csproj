@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>GovData.Downloads.Worker.Cli</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GovData.Downloads.Core\GovData.Downloads.Core.csproj" />
+    <Content Include="..\catalogos\origens-download.json" Link="download-origins.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

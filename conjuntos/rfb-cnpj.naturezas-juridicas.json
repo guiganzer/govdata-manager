@@ -1,0 +1,28 @@
+{
+  "$schema": "../../docs/conjunto-v3.schema.json",
+  "conjunto": "rfb-cnpj.naturezas-juridicas",
+  "nome": "Tabela de naturezas juridicas do CNPJ (2026-10)",
+  "versaoDefinicao": 1,
+  "tipo": "ORGANIZADO",
+  "edicaoPor": "ARQUIVO",
+  "fontes": {
+    "funcao": "rfb-cnpj",
+    "arquivos": ["rfb-cnpj-2026-10-naturezas"],
+    "membros": ["F.K03200$Z.D61010.NATJUCSV"],
+    "encoding": "windows-1252",
+    "delimiter": ";"
+  },
+  "cabecalho": { "semCabecalho": true },
+  "colunas": {
+    "codigo": ["c1"],
+    "descricao": ["c2"]
+  },
+  "filtroLinhas": "true",
+  "saida": ["codigo", "descricao"],
+  "chave": ["codigo"],
+  "validacoes": {
+    "linhasMinPorAba": 1,
+    "chaveUnica": true,
+    "obrigatorias": ["codigo", "descricao"]
+  }
+}

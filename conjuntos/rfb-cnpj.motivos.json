@@ -1,0 +1,28 @@
+{
+  "$schema": "../../docs/conjunto-v3.schema.json",
+  "conjunto": "rfb-cnpj.motivos",
+  "nome": "Tabela de motivos de situacao cadastral do CNPJ (2026-10)",
+  "versaoDefinicao": 1,
+  "tipo": "ORGANIZADO",
+  "edicaoPor": "ARQUIVO",
+  "fontes": {
+    "funcao": "rfb-cnpj",
+    "arquivos": ["rfb-cnpj-2026-10-motivos"],
+    "membros": ["F.K03200$Z.D61010.MOTICSV"],
+    "encoding": "utf-8",
+    "delimiter": ";"
+  },
+  "cabecalho": { "semCabecalho": true },
+  "colunas": {
+    "codigo": ["c1"],
+    "descricao": ["c2"]
+  },
+  "filtroLinhas": "true",
+  "saida": ["codigo", "descricao"],
+  "chave": ["codigo"],
+  "validacoes": {
+    "linhasMinPorAba": 1,
+    "chaveUnica": true,
+    "obrigatorias": ["codigo", "descricao"]
+  }
+}

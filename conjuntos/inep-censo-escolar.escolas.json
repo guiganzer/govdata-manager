@@ -1,0 +1,2078 @@
+{
+  "$schema": "../../docs/conjunto-v3.schema.json",
+  "conjunto": "inep-censo-escolar.escolas",
+  "nome": "Escolas do Censo Escolar, todas as colunas",
+  "versaoDefinicao": 1,
+  "tipo": "ORGANIZADO",
+  "edicaoPor": "ARQUIVO",
+  "fontes": {
+    "funcao": "inep-censo-escolar",
+    "arquivos": [
+      "inep-microdados-censo-escolar-2022",
+      "inep-microdados-censo-escolar-2023",
+      "inep-microdados-censo-escolar-2024",
+      "inep-microdados-censo-escolar-2025"
+    ],
+    "membros": [
+      "*microdados_ed_basica_*.csv",
+      "*Tabela_Escola_*.csv"
+    ],
+    "encoding": "windows-1252",
+    "delimiter": ";"
+  },
+  "cabecalho": {
+    "contemUmDe": [
+      "NU_ANO_CENSO"
+    ]
+  },
+  "colunas": {
+    "nu_ano_censo": [
+      "NU_ANO_CENSO"
+    ],
+    "no_regiao": [
+      "NO_REGIAO"
+    ],
+    "co_regiao": [
+      "CO_REGIAO"
+    ],
+    "no_uf": [
+      "NO_UF"
+    ],
+    "sg_uf": [
+      "SG_UF"
+    ],
+    "co_uf": [
+      "CO_UF"
+    ],
+    "no_municipio": [
+      "NO_MUNICIPIO"
+    ],
+    "co_municipio": [
+      "CO_MUNICIPIO"
+    ],
+    "no_mesorregiao": [
+      "NO_MESORREGIAO"
+    ],
+    "co_mesorregiao": [
+      "CO_MESORREGIAO"
+    ],
+    "no_microrregiao": [
+      "NO_MICRORREGIAO"
+    ],
+    "co_microrregiao": [
+      "CO_MICRORREGIAO"
+    ],
+    "co_distrito": [
+      "CO_DISTRITO"
+    ],
+    "no_entidade": [
+      "NO_ENTIDADE"
+    ],
+    "co_entidade": [
+      "CO_ENTIDADE"
+    ],
+    "tp_dependencia": [
+      "TP_DEPENDENCIA"
+    ],
+    "tp_categoria_escola_privada": [
+      "TP_CATEGORIA_ESCOLA_PRIVADA"
+    ],
+    "tp_localizacao": [
+      "TP_LOCALIZACAO"
+    ],
+    "tp_localizacao_diferenciada": [
+      "TP_LOCALIZACAO_DIFERENCIADA"
+    ],
+    "ds_endereco": [
+      "DS_ENDERECO"
+    ],
+    "nu_endereco": [
+      "NU_ENDERECO"
+    ],
+    "ds_complemento": [
+      "DS_COMPLEMENTO"
+    ],
+    "no_bairro": [
+      "NO_BAIRRO"
+    ],
+    "co_cep": [
+      "CO_CEP"
+    ],
+    "nu_ddd": [
+      "NU_DDD"
+    ],
+    "nu_telefone": [
+      "NU_TELEFONE"
+    ],
+    "tp_situacao_funcionamento": [
+      "TP_SITUACAO_FUNCIONAMENTO"
+    ],
+    "co_orgao_regional": [
+      "CO_ORGAO_REGIONAL"
+    ],
+    "dt_ano_letivo_inicio": [
+      "DT_ANO_LETIVO_INICIO"
+    ],
+    "dt_ano_letivo_termino": [
+      "DT_ANO_LETIVO_TERMINO"
+    ],
+    "in_vinculo_secretaria_educacao": [
+      "IN_VINCULO_SECRETARIA_EDUCACAO"
+    ],
+    "in_vinculo_seguranca_publica": [
+      "IN_VINCULO_SEGURANCA_PUBLICA"
+    ],
+    "in_vinculo_secretaria_saude": [
+      "IN_VINCULO_SECRETARIA_SAUDE"
+    ],
+    "in_vinculo_outro_orgao": [
+      "IN_VINCULO_OUTRO_ORGAO"
+    ],
+    "in_poder_publico_parceria": [
+      "IN_PODER_PUBLICO_PARCERIA"
+    ],
+    "tp_poder_publico_parceria": [
+      "TP_PODER_PUBLICO_PARCERIA"
+    ],
+    "in_conveniada_pp": [
+      "IN_CONVENIADA_PP"
+    ],
+    "tp_convenio_poder_publico": [
+      "TP_CONVENIO_PODER_PUBLICO"
+    ],
+    "in_forma_cont_termo_colabora": [
+      "IN_FORMA_CONT_TERMO_COLABORA"
+    ],
+    "in_forma_cont_termo_fomento": [
+      "IN_FORMA_CONT_TERMO_FOMENTO"
+    ],
+    "in_forma_cont_acordo_coop": [
+      "IN_FORMA_CONT_ACORDO_COOP"
+    ],
+    "in_forma_cont_prestacao_serv": [
+      "IN_FORMA_CONT_PRESTACAO_SERV"
+    ],
+    "in_forma_cont_coop_tec_fin": [
+      "IN_FORMA_CONT_COOP_TEC_FIN"
+    ],
+    "in_forma_cont_consorcio_pub": [
+      "IN_FORMA_CONT_CONSORCIO_PUB"
+    ],
+    "in_tipo_atend_escolarizacao": [
+      "IN_TIPO_ATEND_ESCOLARIZACAO"
+    ],
+    "in_tipo_atend_ac": [
+      "IN_TIPO_ATEND_AC"
+    ],
+    "in_tipo_atend_aee": [
+      "IN_TIPO_ATEND_AEE"
+    ],
+    "in_mant_escola_privada_emp": [
+      "IN_MANT_ESCOLA_PRIVADA_EMP"
+    ],
+    "in_mant_escola_privada_ong": [
+      "IN_MANT_ESCOLA_PRIVADA_ONG"
+    ],
+    "in_mant_escola_privada_oscip": [
+      "IN_MANT_ESCOLA_PRIVADA_OSCIP"
+    ],
+    "in_mant_escola_priv_ong_oscip": [
+      "IN_MANT_ESCOLA_PRIV_ONG_OSCIP"
+    ],
+    "in_mant_escola_privada_sind": [
+      "IN_MANT_ESCOLA_PRIVADA_SIND"
+    ],
+    "in_mant_escola_privada_sist_s": [
+      "IN_MANT_ESCOLA_PRIVADA_SIST_S"
+    ],
+    "in_mant_escola_privada_s_fins": [
+      "IN_MANT_ESCOLA_PRIVADA_S_FINS"
+    ],
+    "nu_cnpj_escola_privada": [
+      "NU_CNPJ_ESCOLA_PRIVADA"
+    ],
+    "nu_cnpj_mantenedora": [
+      "NU_CNPJ_MANTENEDORA"
+    ],
+    "tp_regulamentacao": [
+      "TP_REGULAMENTACAO"
+    ],
+    "tp_responsavel_regulamentacao": [
+      "TP_RESPONSAVEL_REGULAMENTACAO"
+    ],
+    "co_escola_sede_vinculada": [
+      "CO_ESCOLA_SEDE_VINCULADA"
+    ],
+    "co_ies_ofertante": [
+      "CO_IES_OFERTANTE"
+    ],
+    "in_local_func_predio_escolar": [
+      "IN_LOCAL_FUNC_PREDIO_ESCOLAR"
+    ],
+    "tp_ocupacao_predio_escolar": [
+      "TP_OCUPACAO_PREDIO_ESCOLAR"
+    ],
+    "in_local_func_salas_empresa": [
+      "IN_LOCAL_FUNC_SALAS_EMPRESA"
+    ],
+    "in_local_func_socioeducativo": [
+      "IN_LOCAL_FUNC_SOCIOEDUCATIVO"
+    ],
+    "in_local_func_unid_prisional": [
+      "IN_LOCAL_FUNC_UNID_PRISIONAL"
+    ],
+    "in_local_func_prisional_socio": [
+      "IN_LOCAL_FUNC_PRISIONAL_SOCIO"
+    ],
+    "in_local_func_templo_igreja": [
+      "IN_LOCAL_FUNC_TEMPLO_IGREJA"
+    ],
+    "in_local_func_casa_professor": [
+      "IN_LOCAL_FUNC_CASA_PROFESSOR"
+    ],
+    "in_local_func_galpao": [
+      "IN_LOCAL_FUNC_GALPAO"
+    ],
+    "tp_ocupacao_galpao": [
+      "TP_OCUPACAO_GALPAO"
+    ],
+    "in_local_func_salas_outra_esc": [
+      "IN_LOCAL_FUNC_SALAS_OUTRA_ESC"
+    ],
+    "in_local_func_outros": [
+      "IN_LOCAL_FUNC_OUTROS"
+    ],
+    "in_predio_compartilhado": [
+      "IN_PREDIO_COMPARTILHADO"
+    ],
+    "in_agua_filtrada": [
+      "IN_AGUA_FILTRADA"
+    ],
+    "in_agua_potavel": [
+      "IN_AGUA_POTAVEL"
+    ],
+    "in_agua_rede_publica": [
+      "IN_AGUA_REDE_PUBLICA"
+    ],
+    "in_agua_poco_artesiano": [
+      "IN_AGUA_POCO_ARTESIANO"
+    ],
+    "in_agua_cacimba": [
+      "IN_AGUA_CACIMBA"
+    ],
+    "in_agua_fonte_rio": [
+      "IN_AGUA_FONTE_RIO"
+    ],
+    "in_agua_inexistente": [
+      "IN_AGUA_INEXISTENTE"
+    ],
+    "in_energia_rede_publica": [
+      "IN_ENERGIA_REDE_PUBLICA"
+    ],
+    "in_energia_gerador": [
+      "IN_ENERGIA_GERADOR"
+    ],
+    "in_energia_gerador_fossil": [
+      "IN_ENERGIA_GERADOR_FOSSIL"
+    ],
+    "in_energia_outros": [
+      "IN_ENERGIA_OUTROS"
+    ],
+    "in_energia_renovavel": [
+      "IN_ENERGIA_RENOVAVEL"
+    ],
+    "in_energia_inexistente": [
+      "IN_ENERGIA_INEXISTENTE"
+    ],
+    "in_esgoto_rede_publica": [
+      "IN_ESGOTO_REDE_PUBLICA"
+    ],
+    "in_esgoto_fossa_septica": [
+      "IN_ESGOTO_FOSSA_SEPTICA"
+    ],
+    "in_esgoto_fossa_comum": [
+      "IN_ESGOTO_FOSSA_COMUM"
+    ],
+    "in_esgoto_fossa": [
+      "IN_ESGOTO_FOSSA"
+    ],
+    "in_esgoto_inexistente": [
+      "IN_ESGOTO_INEXISTENTE"
+    ],
+    "in_lixo_servico_coleta": [
+      "IN_LIXO_SERVICO_COLETA"
+    ],
+    "in_lixo_queima": [
+      "IN_LIXO_QUEIMA"
+    ],
+    "in_lixo_enterra": [
+      "IN_LIXO_ENTERRA"
+    ],
+    "in_lixo_destino_final_publico": [
+      "IN_LIXO_DESTINO_FINAL_PUBLICO"
+    ],
+    "in_lixo_descarta_outra_area": [
+      "IN_LIXO_DESCARTA_OUTRA_AREA"
+    ],
+    "in_lixo_joga_outra_area": [
+      "IN_LIXO_JOGA_OUTRA_AREA"
+    ],
+    "in_lixo_outros": [
+      "IN_LIXO_OUTROS"
+    ],
+    "in_lixo_recicla": [
+      "IN_LIXO_RECICLA"
+    ],
+    "in_tratamento_lixo_separacao": [
+      "IN_TRATAMENTO_LIXO_SEPARACAO"
+    ],
+    "in_tratamento_lixo_reutiliza": [
+      "IN_TRATAMENTO_LIXO_REUTILIZA"
+    ],
+    "in_tratamento_lixo_reciclagem": [
+      "IN_TRATAMENTO_LIXO_RECICLAGEM"
+    ],
+    "in_tratamento_lixo_inexistente": [
+      "IN_TRATAMENTO_LIXO_INEXISTENTE"
+    ],
+    "in_almoxarifado": [
+      "IN_ALMOXARIFADO"
+    ],
+    "in_area_verde": [
+      "IN_AREA_VERDE"
+    ],
+    "in_auditorio": [
+      "IN_AUDITORIO"
+    ],
+    "in_banheiro_fora_predio": [
+      "IN_BANHEIRO_FORA_PREDIO"
+    ],
+    "in_banheiro_dentro_predio": [
+      "IN_BANHEIRO_DENTRO_PREDIO"
+    ],
+    "in_banheiro": [
+      "IN_BANHEIRO"
+    ],
+    "in_banheiro_ei": [
+      "IN_BANHEIRO_EI"
+    ],
+    "in_banheiro_pne": [
+      "IN_BANHEIRO_PNE"
+    ],
+    "in_banheiro_funcionarios": [
+      "IN_BANHEIRO_FUNCIONARIOS"
+    ],
+    "in_banheiro_chuveiro": [
+      "IN_BANHEIRO_CHUVEIRO"
+    ],
+    "in_bercario": [
+      "IN_BERCARIO"
+    ],
+    "in_biblioteca": [
+      "IN_BIBLIOTECA"
+    ],
+    "in_biblioteca_sala_leitura": [
+      "IN_BIBLIOTECA_SALA_LEITURA"
+    ],
+    "in_cozinha": [
+      "IN_COZINHA"
+    ],
+    "in_despensa": [
+      "IN_DESPENSA"
+    ],
+    "in_dormitorio_aluno": [
+      "IN_DORMITORIO_ALUNO"
+    ],
+    "in_dormitorio_professor": [
+      "IN_DORMITORIO_PROFESSOR"
+    ],
+    "in_laboratorio_ciencias": [
+      "IN_LABORATORIO_CIENCIAS"
+    ],
+    "in_laboratorio_informatica": [
+      "IN_LABORATORIO_INFORMATICA"
+    ],
+    "in_laboratorio_educ_prof": [
+      "IN_LABORATORIO_EDUC_PROF"
+    ],
+    "in_patio_coberto": [
+      "IN_PATIO_COBERTO"
+    ],
+    "in_patio_descoberto": [
+      "IN_PATIO_DESCOBERTO"
+    ],
+    "in_parque_infantil": [
+      "IN_PARQUE_INFANTIL"
+    ],
+    "in_piscina": [
+      "IN_PISCINA"
+    ],
+    "in_quadra_esportes": [
+      "IN_QUADRA_ESPORTES"
+    ],
+    "in_quadra_esportes_coberta": [
+      "IN_QUADRA_ESPORTES_COBERTA"
+    ],
+    "in_quadra_esportes_descoberta": [
+      "IN_QUADRA_ESPORTES_DESCOBERTA"
+    ],
+    "in_refeitorio": [
+      "IN_REFEITORIO"
+    ],
+    "in_sala_atelie_artes": [
+      "IN_SALA_ATELIE_ARTES"
+    ],
+    "in_sala_musica_coral": [
+      "IN_SALA_MUSICA_CORAL"
+    ],
+    "in_sala_estudio_danca": [
+      "IN_SALA_ESTUDIO_DANCA"
+    ],
+    "in_sala_multiuso": [
+      "IN_SALA_MULTIUSO"
+    ],
+    "in_sala_oficinas_educ_prof": [
+      "IN_SALA_OFICINAS_EDUC_PROF"
+    ],
+    "in_sala_diretoria": [
+      "IN_SALA_DIRETORIA"
+    ],
+    "in_sala_leitura": [
+      "IN_SALA_LEITURA"
+    ],
+    "in_sala_professor": [
+      "IN_SALA_PROFESSOR"
+    ],
+    "in_sala_repouso_aluno": [
+      "IN_SALA_REPOUSO_ALUNO"
+    ],
+    "in_secretaria": [
+      "IN_SECRETARIA"
+    ],
+    "in_sala_atendimento_especial": [
+      "IN_SALA_ATENDIMENTO_ESPECIAL"
+    ],
+    "in_terreirao": [
+      "IN_TERREIRAO"
+    ],
+    "in_viveiro": [
+      "IN_VIVEIRO"
+    ],
+    "in_dependencias_pne": [
+      "IN_DEPENDENCIAS_PNE"
+    ],
+    "in_lavanderia": [
+      "IN_LAVANDERIA"
+    ],
+    "in_dependencias_outras": [
+      "IN_DEPENDENCIAS_OUTRAS"
+    ],
+    "in_acessibilidade_corrimao": [
+      "IN_ACESSIBILIDADE_CORRIMAO"
+    ],
+    "in_acessibilidade_elevador": [
+      "IN_ACESSIBILIDADE_ELEVADOR"
+    ],
+    "in_acessibilidade_pisos_tateis": [
+      "IN_ACESSIBILIDADE_PISOS_TATEIS"
+    ],
+    "in_acessibilidade_vao_livre": [
+      "IN_ACESSIBILIDADE_VAO_LIVRE"
+    ],
+    "in_acessibilidade_rampas": [
+      "IN_ACESSIBILIDADE_RAMPAS"
+    ],
+    "in_acessibilidade_sinal_sonoro": [
+      "IN_ACESSIBILIDADE_SINAL_SONORO"
+    ],
+    "in_acessibilidade_sinal_tatil": [
+      "IN_ACESSIBILIDADE_SINAL_TATIL"
+    ],
+    "in_acessibilidade_sinal_visual": [
+      "IN_ACESSIBILIDADE_SINAL_VISUAL"
+    ],
+    "in_acessibilidade_inexistente": [
+      "IN_ACESSIBILIDADE_INEXISTENTE"
+    ],
+    "qt_salas_existentes": [
+      "QT_SALAS_EXISTENTES"
+    ],
+    "qt_salas_utilizadas_dentro": [
+      "QT_SALAS_UTILIZADAS_DENTRO"
+    ],
+    "qt_salas_utilizadas_fora": [
+      "QT_SALAS_UTILIZADAS_FORA"
+    ],
+    "qt_salas_utilizadas": [
+      "QT_SALAS_UTILIZADAS"
+    ],
+    "qt_salas_utiliza_climatizadas": [
+      "QT_SALAS_UTILIZA_CLIMATIZADAS"
+    ],
+    "qt_salas_utilizadas_acessiveis": [
+      "QT_SALAS_UTILIZADAS_ACESSIVEIS"
+    ],
+    "in_equip_parabolica": [
+      "IN_EQUIP_PARABOLICA"
+    ],
+    "in_computador": [
+      "IN_COMPUTADOR"
+    ],
+    "in_equip_copiadora": [
+      "IN_EQUIP_COPIADORA"
+    ],
+    "in_equip_impressora": [
+      "IN_EQUIP_IMPRESSORA"
+    ],
+    "in_equip_impressora_mult": [
+      "IN_EQUIP_IMPRESSORA_MULT"
+    ],
+    "in_equip_scanner": [
+      "IN_EQUIP_SCANNER"
+    ],
+    "in_equip_nenhum": [
+      "IN_EQUIP_NENHUM"
+    ],
+    "in_equip_dvd": [
+      "IN_EQUIP_DVD"
+    ],
+    "qt_equip_dvd": [
+      "QT_EQUIP_DVD"
+    ],
+    "in_equip_som": [
+      "IN_EQUIP_SOM"
+    ],
+    "qt_equip_som": [
+      "QT_EQUIP_SOM"
+    ],
+    "in_equip_tv": [
+      "IN_EQUIP_TV"
+    ],
+    "qt_equip_tv": [
+      "QT_EQUIP_TV"
+    ],
+    "in_equip_lousa_digital": [
+      "IN_EQUIP_LOUSA_DIGITAL"
+    ],
+    "qt_equip_lousa_digital": [
+      "QT_EQUIP_LOUSA_DIGITAL"
+    ],
+    "in_equip_multimidia": [
+      "IN_EQUIP_MULTIMIDIA"
+    ],
+    "qt_equip_multimidia": [
+      "QT_EQUIP_MULTIMIDIA"
+    ],
+    "in_equip_videocassete": [
+      "IN_EQUIP_VIDEOCASSETE"
+    ],
+    "in_equip_retroprojetor": [
+      "IN_EQUIP_RETROPROJETOR"
+    ],
+    "in_equip_fax": [
+      "IN_EQUIP_FAX"
+    ],
+    "in_equip_foto": [
+      "IN_EQUIP_FOTO"
+    ],
+    "qt_equip_videocassete": [
+      "QT_EQUIP_VIDEOCASSETE"
+    ],
+    "qt_equip_parabolica": [
+      "QT_EQUIP_PARABOLICA"
+    ],
+    "qt_equip_copiadora": [
+      "QT_EQUIP_COPIADORA"
+    ],
+    "qt_equip_retroprojetor": [
+      "QT_EQUIP_RETROPROJETOR"
+    ],
+    "qt_equip_impressora": [
+      "QT_EQUIP_IMPRESSORA"
+    ],
+    "qt_equip_impressora_mult": [
+      "QT_EQUIP_IMPRESSORA_MULT"
+    ],
+    "qt_equip_fax": [
+      "QT_EQUIP_FAX"
+    ],
+    "qt_equip_foto": [
+      "QT_EQUIP_FOTO"
+    ],
+    "qt_comp_aluno": [
+      "QT_COMP_ALUNO"
+    ],
+    "in_desktop_aluno": [
+      "IN_DESKTOP_ALUNO"
+    ],
+    "qt_desktop_aluno": [
+      "QT_DESKTOP_ALUNO"
+    ],
+    "in_comp_portatil_aluno": [
+      "IN_COMP_PORTATIL_ALUNO"
+    ],
+    "qt_comp_portatil_aluno": [
+      "QT_COMP_PORTATIL_ALUNO"
+    ],
+    "in_tablet_aluno": [
+      "IN_TABLET_ALUNO"
+    ],
+    "qt_tablet_aluno": [
+      "QT_TABLET_ALUNO"
+    ],
+    "qt_computador": [
+      "QT_COMPUTADOR"
+    ],
+    "qt_comp_administrativo": [
+      "QT_COMP_ADMINISTRATIVO"
+    ],
+    "in_internet": [
+      "IN_INTERNET"
+    ],
+    "in_internet_alunos": [
+      "IN_INTERNET_ALUNOS"
+    ],
+    "in_internet_administrativo": [
+      "IN_INTERNET_ADMINISTRATIVO"
+    ],
+    "in_internet_aprendizagem": [
+      "IN_INTERNET_APRENDIZAGEM"
+    ],
+    "in_internet_comunidade": [
+      "IN_INTERNET_COMUNIDADE"
+    ],
+    "in_acesso_internet_computador": [
+      "IN_ACESSO_INTERNET_COMPUTADOR"
+    ],
+    "in_aces_internet_disp_pessoais": [
+      "IN_ACES_INTERNET_DISP_PESSOAIS"
+    ],
+    "tp_rede_local": [
+      "TP_REDE_LOCAL"
+    ],
+    "in_banda_larga": [
+      "IN_BANDA_LARGA"
+    ],
+    "qt_funcionarios": [
+      "QT_FUNCIONARIOS"
+    ],
+    "in_prof_administrativos": [
+      "IN_PROF_ADMINISTRATIVOS"
+    ],
+    "qt_prof_administrativos": [
+      "QT_PROF_ADMINISTRATIVOS"
+    ],
+    "in_prof_servicos_gerais": [
+      "IN_PROF_SERVICOS_GERAIS"
+    ],
+    "qt_prof_servicos_gerais": [
+      "QT_PROF_SERVICOS_GERAIS"
+    ],
+    "in_prof_bibliotecario": [
+      "IN_PROF_BIBLIOTECARIO"
+    ],
+    "qt_prof_bibliotecario": [
+      "QT_PROF_BIBLIOTECARIO"
+    ],
+    "in_prof_saude": [
+      "IN_PROF_SAUDE"
+    ],
+    "qt_prof_saude": [
+      "QT_PROF_SAUDE"
+    ],
+    "in_prof_coordenador": [
+      "IN_PROF_COORDENADOR"
+    ],
+    "qt_prof_coordenador": [
+      "QT_PROF_COORDENADOR"
+    ],
+    "in_prof_fonaudiologo": [
+      "IN_PROF_FONAUDIOLOGO"
+    ],
+    "qt_prof_fonaudiologo": [
+      "QT_PROF_FONAUDIOLOGO"
+    ],
+    "in_prof_nutricionista": [
+      "IN_PROF_NUTRICIONISTA"
+    ],
+    "qt_prof_nutricionista": [
+      "QT_PROF_NUTRICIONISTA"
+    ],
+    "in_prof_psicologo": [
+      "IN_PROF_PSICOLOGO"
+    ],
+    "qt_prof_psicologo": [
+      "QT_PROF_PSICOLOGO"
+    ],
+    "in_prof_alimentacao": [
+      "IN_PROF_ALIMENTACAO"
+    ],
+    "qt_prof_alimentacao": [
+      "QT_PROF_ALIMENTACAO"
+    ],
+    "in_prof_pedagogia": [
+      "IN_PROF_PEDAGOGIA"
+    ],
+    "qt_prof_pedagogia": [
+      "QT_PROF_PEDAGOGIA"
+    ],
+    "in_prof_secretario": [
+      "IN_PROF_SECRETARIO"
+    ],
+    "qt_prof_secretario": [
+      "QT_PROF_SECRETARIO"
+    ],
+    "in_prof_seguranca": [
+      "IN_PROF_SEGURANCA"
+    ],
+    "qt_prof_seguranca": [
+      "QT_PROF_SEGURANCA"
+    ],
+    "in_prof_monitores": [
+      "IN_PROF_MONITORES"
+    ],
+    "qt_prof_monitores": [
+      "QT_PROF_MONITORES"
+    ],
+    "in_prof_gestao": [
+      "IN_PROF_GESTAO"
+    ],
+    "qt_prof_gestao": [
+      "QT_PROF_GESTAO"
+    ],
+    "in_prof_assist_social": [
+      "IN_PROF_ASSIST_SOCIAL"
+    ],
+    "qt_prof_assist_social": [
+      "QT_PROF_ASSIST_SOCIAL"
+    ],
+    "in_alimentacao": [
+      "IN_ALIMENTACAO"
+    ],
+    "in_serie_ano": [
+      "IN_SERIE_ANO"
+    ],
+    "in_periodos_semestrais": [
+      "IN_PERIODOS_SEMESTRAIS"
+    ],
+    "in_fundamental_ciclos": [
+      "IN_FUNDAMENTAL_CICLOS"
+    ],
+    "in_grupos_nao_seriados": [
+      "IN_GRUPOS_NAO_SERIADOS"
+    ],
+    "in_modulos": [
+      "IN_MODULOS"
+    ],
+    "in_formacao_alternancia": [
+      "IN_FORMACAO_ALTERNANCIA"
+    ],
+    "in_material_ped_multimidia": [
+      "IN_MATERIAL_PED_MULTIMIDIA"
+    ],
+    "in_material_ped_infantil": [
+      "IN_MATERIAL_PED_INFANTIL"
+    ],
+    "in_material_ped_cientifico": [
+      "IN_MATERIAL_PED_CIENTIFICO"
+    ],
+    "in_material_ped_difusao": [
+      "IN_MATERIAL_PED_DIFUSAO"
+    ],
+    "in_material_ped_musical": [
+      "IN_MATERIAL_PED_MUSICAL"
+    ],
+    "in_material_ped_jogos": [
+      "IN_MATERIAL_PED_JOGOS"
+    ],
+    "in_material_ped_artisticas": [
+      "IN_MATERIAL_PED_ARTISTICAS"
+    ],
+    "in_material_ped_profissional": [
+      "IN_MATERIAL_PED_PROFISSIONAL"
+    ],
+    "in_material_ped_desportiva": [
+      "IN_MATERIAL_PED_DESPORTIVA"
+    ],
+    "in_material_ped_indigena": [
+      "IN_MATERIAL_PED_INDIGENA"
+    ],
+    "in_material_ped_etnico": [
+      "IN_MATERIAL_PED_ETNICO"
+    ],
+    "in_material_ped_campo": [
+      "IN_MATERIAL_PED_CAMPO"
+    ],
+    "in_material_ped_nenhum": [
+      "IN_MATERIAL_PED_NENHUM"
+    ],
+    "in_material_esp_quilombola": [
+      "IN_MATERIAL_ESP_QUILOMBOLA"
+    ],
+    "in_material_esp_indigena": [
+      "IN_MATERIAL_ESP_INDIGENA"
+    ],
+    "in_material_esp_nao_utiliza": [
+      "IN_MATERIAL_ESP_NAO_UTILIZA"
+    ],
+    "in_educacao_indigena": [
+      "IN_EDUCACAO_INDIGENA"
+    ],
+    "tp_indigena_lingua": [
+      "TP_INDIGENA_LINGUA"
+    ],
+    "co_lingua_indigena_1": [
+      "CO_LINGUA_INDIGENA_1"
+    ],
+    "co_lingua_indigena_2": [
+      "CO_LINGUA_INDIGENA_2"
+    ],
+    "co_lingua_indigena_3": [
+      "CO_LINGUA_INDIGENA_3"
+    ],
+    "in_brasil_alfabetizado": [
+      "IN_BRASIL_ALFABETIZADO"
+    ],
+    "in_final_semana": [
+      "IN_FINAL_SEMANA"
+    ],
+    "in_exame_selecao": [
+      "IN_EXAME_SELECAO"
+    ],
+    "in_reserva_ppi": [
+      "IN_RESERVA_PPI"
+    ],
+    "in_reserva_renda": [
+      "IN_RESERVA_RENDA"
+    ],
+    "in_reserva_publica": [
+      "IN_RESERVA_PUBLICA"
+    ],
+    "in_reserva_pcd": [
+      "IN_RESERVA_PCD"
+    ],
+    "in_reserva_outros": [
+      "IN_RESERVA_OUTROS"
+    ],
+    "in_reserva_nenhuma": [
+      "IN_RESERVA_NENHUMA"
+    ],
+    "in_redes_sociais": [
+      "IN_REDES_SOCIAIS"
+    ],
+    "in_espaco_atividade": [
+      "IN_ESPACO_ATIVIDADE"
+    ],
+    "in_espaco_equipamento": [
+      "IN_ESPACO_EQUIPAMENTO"
+    ],
+    "in_orgao_ass_pais": [
+      "IN_ORGAO_ASS_PAIS"
+    ],
+    "in_orgao_ass_pais_mestres": [
+      "IN_ORGAO_ASS_PAIS_MESTRES"
+    ],
+    "in_orgao_conselho_escolar": [
+      "IN_ORGAO_CONSELHO_ESCOLAR"
+    ],
+    "in_orgao_gremio_estudantil": [
+      "IN_ORGAO_GREMIO_ESTUDANTIL"
+    ],
+    "in_orgao_outros": [
+      "IN_ORGAO_OUTROS"
+    ],
+    "in_orgao_nenhum": [
+      "IN_ORGAO_NENHUM"
+    ],
+    "tp_proposta_pedagogica": [
+      "TP_PROPOSTA_PEDAGOGICA"
+    ],
+    "tp_aee": [
+      "TP_AEE"
+    ],
+    "tp_atividade_complementar": [
+      "TP_ATIVIDADE_COMPLEMENTAR"
+    ],
+    "in_escolarizacao": [
+      "IN_ESCOLARIZACAO"
+    ],
+    "in_mediacao_presencial": [
+      "IN_MEDIACAO_PRESENCIAL"
+    ],
+    "in_mediacao_semipresencial": [
+      "IN_MEDIACAO_SEMIPRESENCIAL"
+    ],
+    "in_mediacao_ead": [
+      "IN_MEDIACAO_EAD"
+    ],
+    "in_regular": [
+      "IN_REGULAR"
+    ],
+    "in_diurno": [
+      "IN_DIURNO"
+    ],
+    "in_noturno": [
+      "IN_NOTURNO"
+    ],
+    "in_ead": [
+      "IN_EAD"
+    ],
+    "in_bas": [
+      "IN_BAS"
+    ],
+    "in_inf": [
+      "IN_INF"
+    ],
+    "in_inf_cre": [
+      "IN_INF_CRE"
+    ],
+    "in_inf_pre": [
+      "IN_INF_PRE"
+    ],
+    "in_fund": [
+      "IN_FUND"
+    ],
+    "in_fund_ai": [
+      "IN_FUND_AI"
+    ],
+    "in_fund_af": [
+      "IN_FUND_AF"
+    ],
+    "in_med": [
+      "IN_MED"
+    ],
+    "in_prof": [
+      "IN_PROF"
+    ],
+    "in_prof_tec": [
+      "IN_PROF_TEC"
+    ],
+    "in_eja": [
+      "IN_EJA"
+    ],
+    "in_eja_fund": [
+      "IN_EJA_FUND"
+    ],
+    "in_eja_med": [
+      "IN_EJA_MED"
+    ],
+    "in_esp": [
+      "IN_ESP"
+    ],
+    "in_esp_cc": [
+      "IN_ESP_CC"
+    ],
+    "in_esp_ce": [
+      "IN_ESP_CE"
+    ],
+    "qt_mat_bas": [
+      "QT_MAT_BAS"
+    ],
+    "qt_mat_inf": [
+      "QT_MAT_INF"
+    ],
+    "qt_mat_inf_cre": [
+      "QT_MAT_INF_CRE"
+    ],
+    "qt_mat_inf_pre": [
+      "QT_MAT_INF_PRE"
+    ],
+    "qt_mat_fund": [
+      "QT_MAT_FUND"
+    ],
+    "qt_mat_fund_ai": [
+      "QT_MAT_FUND_AI"
+    ],
+    "qt_mat_fund_af": [
+      "QT_MAT_FUND_AF"
+    ],
+    "qt_mat_med": [
+      "QT_MAT_MED"
+    ],
+    "qt_mat_prof": [
+      "QT_MAT_PROF"
+    ],
+    "qt_mat_prof_tec": [
+      "QT_MAT_PROF_TEC"
+    ],
+    "qt_mat_eja": [
+      "QT_MAT_EJA"
+    ],
+    "qt_mat_eja_fund": [
+      "QT_MAT_EJA_FUND"
+    ],
+    "qt_mat_eja_med": [
+      "QT_MAT_EJA_MED"
+    ],
+    "qt_mat_esp": [
+      "QT_MAT_ESP"
+    ],
+    "qt_mat_esp_cc": [
+      "QT_MAT_ESP_CC"
+    ],
+    "qt_mat_esp_ce": [
+      "QT_MAT_ESP_CE"
+    ],
+    "qt_mat_bas_fem": [
+      "QT_MAT_BAS_FEM"
+    ],
+    "qt_mat_bas_masc": [
+      "QT_MAT_BAS_MASC"
+    ],
+    "qt_mat_bas_nd": [
+      "QT_MAT_BAS_ND"
+    ],
+    "qt_mat_bas_branca": [
+      "QT_MAT_BAS_BRANCA"
+    ],
+    "qt_mat_bas_preta": [
+      "QT_MAT_BAS_PRETA"
+    ],
+    "qt_mat_bas_parda": [
+      "QT_MAT_BAS_PARDA"
+    ],
+    "qt_mat_bas_amarela": [
+      "QT_MAT_BAS_AMARELA"
+    ],
+    "qt_mat_bas_indigena": [
+      "QT_MAT_BAS_INDIGENA"
+    ],
+    "qt_mat_bas_0_3": [
+      "QT_MAT_BAS_0_3"
+    ],
+    "qt_mat_bas_4_5": [
+      "QT_MAT_BAS_4_5"
+    ],
+    "qt_mat_bas_6_10": [
+      "QT_MAT_BAS_6_10"
+    ],
+    "qt_mat_bas_11_14": [
+      "QT_MAT_BAS_11_14"
+    ],
+    "qt_mat_bas_15_17": [
+      "QT_MAT_BAS_15_17"
+    ],
+    "qt_mat_bas_18_mais": [
+      "QT_MAT_BAS_18_MAIS"
+    ],
+    "qt_mat_bas_d": [
+      "QT_MAT_BAS_D"
+    ],
+    "qt_mat_bas_n": [
+      "QT_MAT_BAS_N"
+    ],
+    "qt_mat_bas_ead": [
+      "QT_MAT_BAS_EAD"
+    ],
+    "qt_mat_inf_int": [
+      "QT_MAT_INF_INT"
+    ],
+    "qt_mat_inf_cre_int": [
+      "QT_MAT_INF_CRE_INT"
+    ],
+    "qt_mat_inf_pre_int": [
+      "QT_MAT_INF_PRE_INT"
+    ],
+    "qt_mat_fund_int": [
+      "QT_MAT_FUND_INT"
+    ],
+    "qt_mat_fund_ai_int": [
+      "QT_MAT_FUND_AI_INT"
+    ],
+    "qt_mat_fund_af_int": [
+      "QT_MAT_FUND_AF_INT"
+    ],
+    "qt_mat_med_int": [
+      "QT_MAT_MED_INT"
+    ],
+    "qt_doc_bas": [
+      "QT_DOC_BAS"
+    ],
+    "qt_doc_inf": [
+      "QT_DOC_INF"
+    ],
+    "qt_doc_inf_cre": [
+      "QT_DOC_INF_CRE"
+    ],
+    "qt_doc_inf_pre": [
+      "QT_DOC_INF_PRE"
+    ],
+    "qt_doc_fund": [
+      "QT_DOC_FUND"
+    ],
+    "qt_doc_fund_ai": [
+      "QT_DOC_FUND_AI"
+    ],
+    "qt_doc_fund_af": [
+      "QT_DOC_FUND_AF"
+    ],
+    "qt_doc_med": [
+      "QT_DOC_MED"
+    ],
+    "qt_doc_prof": [
+      "QT_DOC_PROF"
+    ],
+    "qt_doc_prof_tec": [
+      "QT_DOC_PROF_TEC"
+    ],
+    "qt_doc_eja": [
+      "QT_DOC_EJA"
+    ],
+    "qt_doc_eja_fund": [
+      "QT_DOC_EJA_FUND"
+    ],
+    "qt_doc_eja_med": [
+      "QT_DOC_EJA_MED"
+    ],
+    "qt_doc_esp": [
+      "QT_DOC_ESP"
+    ],
+    "qt_doc_esp_cc": [
+      "QT_DOC_ESP_CC"
+    ],
+    "qt_doc_esp_ce": [
+      "QT_DOC_ESP_CE"
+    ],
+    "qt_tur_bas": [
+      "QT_TUR_BAS"
+    ],
+    "qt_tur_inf": [
+      "QT_TUR_INF"
+    ],
+    "qt_tur_inf_cre": [
+      "QT_TUR_INF_CRE"
+    ],
+    "qt_tur_inf_pre": [
+      "QT_TUR_INF_PRE"
+    ],
+    "qt_tur_fund": [
+      "QT_TUR_FUND"
+    ],
+    "qt_tur_fund_ai": [
+      "QT_TUR_FUND_AI"
+    ],
+    "qt_tur_fund_af": [
+      "QT_TUR_FUND_AF"
+    ],
+    "qt_tur_med": [
+      "QT_TUR_MED"
+    ],
+    "qt_tur_prof": [
+      "QT_TUR_PROF"
+    ],
+    "qt_tur_prof_tec": [
+      "QT_TUR_PROF_TEC"
+    ],
+    "qt_tur_eja": [
+      "QT_TUR_EJA"
+    ],
+    "qt_tur_eja_fund": [
+      "QT_TUR_EJA_FUND"
+    ],
+    "qt_tur_eja_med": [
+      "QT_TUR_EJA_MED"
+    ],
+    "qt_tur_esp": [
+      "QT_TUR_ESP"
+    ],
+    "qt_tur_esp_cc": [
+      "QT_TUR_ESP_CC"
+    ],
+    "qt_tur_esp_ce": [
+      "QT_TUR_ESP_CE"
+    ],
+    "no_regiao_geog_interm": [
+      "NO_REGIAO_GEOG_INTERM"
+    ],
+    "co_regiao_geog_interm": [
+      "CO_REGIAO_GEOG_INTERM"
+    ],
+    "no_regiao_geog_imed": [
+      "NO_REGIAO_GEOG_IMED"
+    ],
+    "co_regiao_geog_imed": [
+      "CO_REGIAO_GEOG_IMED"
+    ],
+    "in_forma_cont_mu_termo_colab": [
+      "IN_FORMA_CONT_MU_TERMO_COLAB"
+    ],
+    "in_forma_cont_mu_termo_fomento": [
+      "IN_FORMA_CONT_MU_TERMO_FOMENTO"
+    ],
+    "in_forma_cont_mu_acordo_coop": [
+      "IN_FORMA_CONT_MU_ACORDO_COOP"
+    ],
+    "in_forma_cont_mu_prest_serv": [
+      "IN_FORMA_CONT_MU_PREST_SERV"
+    ],
+    "in_forma_cont_mu_coop_tec_fin": [
+      "IN_FORMA_CONT_MU_COOP_TEC_FIN"
+    ],
+    "in_forma_cont_mu_consorcio_pub": [
+      "IN_FORMA_CONT_MU_CONSORCIO_PUB"
+    ],
+    "in_forma_cont_es_termo_colab": [
+      "IN_FORMA_CONT_ES_TERMO_COLAB"
+    ],
+    "in_forma_cont_es_termo_fomento": [
+      "IN_FORMA_CONT_ES_TERMO_FOMENTO"
+    ],
+    "in_forma_cont_es_acordo_coop": [
+      "IN_FORMA_CONT_ES_ACORDO_COOP"
+    ],
+    "in_forma_cont_es_prest_serv": [
+      "IN_FORMA_CONT_ES_PREST_SERV"
+    ],
+    "in_forma_cont_es_coop_tec_fin": [
+      "IN_FORMA_CONT_ES_COOP_TEC_FIN"
+    ],
+    "in_forma_cont_es_consorcio_pub": [
+      "IN_FORMA_CONT_ES_CONSORCIO_PUB"
+    ],
+    "in_sala_estudio_gravacao": [
+      "IN_SALA_ESTUDIO_GRAVACAO"
+    ],
+    "in_prof_trad_libras": [
+      "IN_PROF_TRAD_LIBRAS"
+    ],
+    "qt_prof_trad_libras": [
+      "QT_PROF_TRAD_LIBRAS"
+    ],
+    "in_material_ped_bil_surdos": [
+      "IN_MATERIAL_PED_BIL_SURDOS"
+    ],
+    "qt_mat_fund_ai_1": [
+      "QT_MAT_FUND_AI_1"
+    ],
+    "qt_mat_fund_ai_2": [
+      "QT_MAT_FUND_AI_2"
+    ],
+    "qt_mat_fund_ai_3": [
+      "QT_MAT_FUND_AI_3"
+    ],
+    "qt_mat_fund_ai_4": [
+      "QT_MAT_FUND_AI_4"
+    ],
+    "qt_mat_fund_ai_5": [
+      "QT_MAT_FUND_AI_5"
+    ],
+    "qt_mat_fund_af_6": [
+      "QT_MAT_FUND_AF_6"
+    ],
+    "qt_mat_fund_af_7": [
+      "QT_MAT_FUND_AF_7"
+    ],
+    "qt_mat_fund_af_8": [
+      "QT_MAT_FUND_AF_8"
+    ],
+    "qt_mat_fund_af_9": [
+      "QT_MAT_FUND_AF_9"
+    ],
+    "qt_mat_med_prop": [
+      "QT_MAT_MED_PROP"
+    ],
+    "qt_mat_med_prop_1": [
+      "QT_MAT_MED_PROP_1"
+    ],
+    "qt_mat_med_prop_2": [
+      "QT_MAT_MED_PROP_2"
+    ],
+    "qt_mat_med_prop_3": [
+      "QT_MAT_MED_PROP_3"
+    ],
+    "qt_mat_med_prop_4": [
+      "QT_MAT_MED_PROP_4"
+    ],
+    "qt_mat_med_prop_ns": [
+      "QT_MAT_MED_PROP_NS"
+    ],
+    "qt_mat_med_ct": [
+      "QT_MAT_MED_CT"
+    ],
+    "qt_mat_med_ct_1": [
+      "QT_MAT_MED_CT_1"
+    ],
+    "qt_mat_med_ct_2": [
+      "QT_MAT_MED_CT_2"
+    ],
+    "qt_mat_med_ct_3": [
+      "QT_MAT_MED_CT_3"
+    ],
+    "qt_mat_med_ct_4": [
+      "QT_MAT_MED_CT_4"
+    ],
+    "qt_mat_med_ct_ns": [
+      "QT_MAT_MED_CT_NS"
+    ],
+    "qt_mat_med_nm": [
+      "QT_MAT_MED_NM"
+    ],
+    "qt_mat_med_nm_1": [
+      "QT_MAT_MED_NM_1"
+    ],
+    "qt_mat_med_nm_2": [
+      "QT_MAT_MED_NM_2"
+    ],
+    "qt_mat_med_nm_3": [
+      "QT_MAT_MED_NM_3"
+    ],
+    "qt_mat_med_nm_4": [
+      "QT_MAT_MED_NM_4"
+    ],
+    "qt_mat_prof_tec_conc": [
+      "QT_MAT_PROF_TEC_CONC"
+    ],
+    "qt_mat_prof_tec_subs": [
+      "QT_MAT_PROF_TEC_SUBS"
+    ],
+    "qt_mat_prof_fic_conc": [
+      "QT_MAT_PROF_FIC_CONC"
+    ],
+    "qt_mat_eja_fund_ai": [
+      "QT_MAT_EJA_FUND_AI"
+    ],
+    "qt_mat_eja_fund_af": [
+      "QT_MAT_EJA_FUND_AF"
+    ],
+    "qt_mat_eja_fund_fic": [
+      "QT_MAT_EJA_FUND_FIC"
+    ],
+    "qt_mat_eja_med_nprof": [
+      "QT_MAT_EJA_MED_NPROF"
+    ],
+    "qt_mat_eja_med_fic": [
+      "QT_MAT_EJA_MED_FIC"
+    ],
+    "qt_mat_eja_med_tec": [
+      "QT_MAT_EJA_MED_TEC"
+    ],
+    "qt_mat_zr_urb": [
+      "QT_MAT_ZR_URB"
+    ],
+    "qt_mat_zr_rur": [
+      "QT_MAT_ZR_RUR"
+    ],
+    "qt_mat_zr_na": [
+      "QT_MAT_ZR_NA"
+    ],
+    "qt_transp_publico": [
+      "QT_TRANSP_PUBLICO"
+    ],
+    "qt_transp_resp_est": [
+      "QT_TRANSP_RESP_EST"
+    ],
+    "qt_transp_resp_mun": [
+      "QT_TRANSP_RESP_MUN"
+    ],
+    "qt_tur_bas_d": [
+      "QT_TUR_BAS_D"
+    ],
+    "qt_tur_bas_n": [
+      "QT_TUR_BAS_N"
+    ],
+    "qt_tur_bas_ead": [
+      "QT_TUR_BAS_EAD"
+    ],
+    "qt_tur_inf_int": [
+      "QT_TUR_INF_INT"
+    ],
+    "qt_tur_inf_cre_int": [
+      "QT_TUR_INF_CRE_INT"
+    ],
+    "qt_tur_inf_pre_int": [
+      "QT_TUR_INF_PRE_INT"
+    ],
+    "qt_tur_fund_int": [
+      "QT_TUR_FUND_INT"
+    ],
+    "qt_tur_fund_ai_int": [
+      "QT_TUR_FUND_AI_INT"
+    ],
+    "qt_tur_fund_af_int": [
+      "QT_TUR_FUND_AF_INT"
+    ],
+    "qt_tur_med_int": [
+      "QT_TUR_MED_INT"
+    ],
+    "no_distrito": [
+      "NO_DISTRITO"
+    ],
+    "in_agua_carro_pipa": [
+      "IN_AGUA_CARRO_PIPA"
+    ],
+    "in_area_plantio": [
+      "IN_AREA_PLANTIO"
+    ],
+    "in_acessibilidade_sinalizacao": [
+      "IN_ACESSIBILIDADE_SINALIZACAO"
+    ],
+    "in_prof_agricola": [
+      "IN_PROF_AGRICOLA"
+    ],
+    "qt_prof_agricola": [
+      "QT_PROF_AGRICOLA"
+    ],
+    "in_prof_revisor_braille": [
+      "IN_PROF_REVISOR_BRAILLE"
+    ],
+    "qt_prof_revisor_braille": [
+      "QT_PROF_REVISOR_BRAILLE"
+    ],
+    "in_material_ped_agricola": [
+      "IN_MATERIAL_PED_AGRICOLA"
+    ],
+    "in_material_ped_quilombola": [
+      "IN_MATERIAL_PED_QUILOMBOLA"
+    ],
+    "in_material_ped_edu_esp": [
+      "IN_MATERIAL_PED_EDU_ESP"
+    ],
+    "in_educ_ambiental": [
+      "IN_EDUC_AMBIENTAL"
+    ],
+    "in_educ_amb_conteudo": [
+      "IN_EDUC_AMB_CONTEUDO"
+    ],
+    "in_educ_amb_curricular": [
+      "IN_EDUC_AMB_CURRICULAR"
+    ],
+    "in_educ_amb_eixo": [
+      "IN_EDUC_AMB_EIXO"
+    ],
+    "in_educ_amb_eventos": [
+      "IN_EDUC_AMB_EVENTOS"
+    ],
+    "in_educ_amb_projetos": [
+      "IN_EDUC_AMB_PROJETOS"
+    ],
+    "in_educ_amb_nenhuma": [
+      "IN_EDUC_AMB_NENHUMA"
+    ],
+    "no_subdistrito": [
+      "NO_SUBDISTRITO"
+    ],
+    "co_subdistrito": [
+      "CO_SUBDISTRITO"
+    ],
+    "co_rede": [
+      "CO_REDE"
+    ],
+    "qt_salas_leitura": [
+      "QT_SALAS_LEITURA"
+    ],
+    "tp_itinerario_formativo": [
+      "TP_ITINERARIO_FORMATIVO"
+    ],
+    "in_itinerario_aprofundamento": [
+      "IN_ITINERARIO_APROFUNDAMENTO"
+    ],
+    "in_itinerario_tecn_prof": [
+      "IN_ITINERARIO_TECN_PROF"
+    ],
+    "in_especial_exclusiva": [
+      "IN_ESPECIAL_EXCLUSIVA"
+    ],
+    "in_profissionalizante": [
+      "IN_PROFISSIONALIZANTE"
+    ],
+    "in_comum_creche": [
+      "IN_COMUM_CRECHE"
+    ],
+    "in_comum_pre": [
+      "IN_COMUM_PRE"
+    ],
+    "in_comum_fund_ai": [
+      "IN_COMUM_FUND_AI"
+    ],
+    "in_comum_fund_af": [
+      "IN_COMUM_FUND_AF"
+    ],
+    "in_comum_medio_medio": [
+      "IN_COMUM_MEDIO_MEDIO"
+    ],
+    "in_comum_medio_integrado": [
+      "IN_COMUM_MEDIO_INTEGRADO"
+    ],
+    "in_comum_medio_fic": [
+      "IN_COMUM_MEDIO_FIC"
+    ],
+    "in_comum_medio_normal": [
+      "IN_COMUM_MEDIO_NORMAL"
+    ],
+    "in_esp_exclusiva_creche": [
+      "IN_ESP_EXCLUSIVA_CRECHE"
+    ],
+    "in_esp_exclusiva_pre": [
+      "IN_ESP_EXCLUSIVA_PRE"
+    ],
+    "in_esp_exclusiva_fund_ai": [
+      "IN_ESP_EXCLUSIVA_FUND_AI"
+    ],
+    "in_esp_exclusiva_fund_af": [
+      "IN_ESP_EXCLUSIVA_FUND_AF"
+    ],
+    "in_esp_exclusiva_medio_medio": [
+      "IN_ESP_EXCLUSIVA_MEDIO_MEDIO"
+    ],
+    "in_esp_exclusiva_medio_integr": [
+      "IN_ESP_EXCLUSIVA_MEDIO_INTEGR"
+    ],
+    "in_esp_exclusiva_medio_fic": [
+      "IN_ESP_EXCLUSIVA_MEDIO_FIC"
+    ],
+    "in_esp_exclusiva_medio_normal": [
+      "IN_ESP_EXCLUSIVA_MEDIO_NORMAL"
+    ],
+    "in_comum_eja_fund": [
+      "IN_COMUM_EJA_FUND"
+    ],
+    "in_comum_eja_medio": [
+      "IN_COMUM_EJA_MEDIO"
+    ],
+    "in_comum_eja_prof": [
+      "IN_COMUM_EJA_PROF"
+    ],
+    "in_esp_exclusiva_eja_fund": [
+      "IN_ESP_EXCLUSIVA_EJA_FUND"
+    ],
+    "in_esp_exclusiva_eja_medio": [
+      "IN_ESP_EXCLUSIVA_EJA_MEDIO"
+    ],
+    "in_esp_exclusiva_eja_prof": [
+      "IN_ESP_EXCLUSIVA_EJA_PROF"
+    ],
+    "in_comum_prof": [
+      "IN_COMUM_PROF"
+    ],
+    "in_esp_exclusiva_prof": [
+      "IN_ESP_EXCLUSIVA_PROF"
+    ]
+  },
+  "filtroLinhas": "regexp_full_match(co_entidade, '[0-9]+')",
+  "saida": [
+    "nu_ano_censo",
+    "no_regiao",
+    "co_regiao",
+    "no_uf",
+    "sg_uf",
+    "co_uf",
+    "no_municipio",
+    "co_municipio",
+    "no_mesorregiao",
+    "co_mesorregiao",
+    "no_microrregiao",
+    "co_microrregiao",
+    "co_distrito",
+    "no_entidade",
+    "co_entidade",
+    "tp_dependencia",
+    "tp_categoria_escola_privada",
+    "tp_localizacao",
+    "tp_localizacao_diferenciada",
+    "ds_endereco",
+    "nu_endereco",
+    "ds_complemento",
+    "no_bairro",
+    "co_cep",
+    "nu_ddd",
+    "nu_telefone",
+    "tp_situacao_funcionamento",
+    "co_orgao_regional",
+    "dt_ano_letivo_inicio",
+    "dt_ano_letivo_termino",
+    "in_vinculo_secretaria_educacao",
+    "in_vinculo_seguranca_publica",
+    "in_vinculo_secretaria_saude",
+    "in_vinculo_outro_orgao",
+    "in_poder_publico_parceria",
+    "tp_poder_publico_parceria",
+    "in_conveniada_pp",
+    "tp_convenio_poder_publico",
+    "in_forma_cont_termo_colabora",
+    "in_forma_cont_termo_fomento",
+    "in_forma_cont_acordo_coop",
+    "in_forma_cont_prestacao_serv",
+    "in_forma_cont_coop_tec_fin",
+    "in_forma_cont_consorcio_pub",
+    "in_tipo_atend_escolarizacao",
+    "in_tipo_atend_ac",
+    "in_tipo_atend_aee",
+    "in_mant_escola_privada_emp",
+    "in_mant_escola_privada_ong",
+    "in_mant_escola_privada_oscip",
+    "in_mant_escola_priv_ong_oscip",
+    "in_mant_escola_privada_sind",
+    "in_mant_escola_privada_sist_s",
+    "in_mant_escola_privada_s_fins",
+    "nu_cnpj_escola_privada",
+    "nu_cnpj_mantenedora",
+    "tp_regulamentacao",
+    "tp_responsavel_regulamentacao",
+    "co_escola_sede_vinculada",
+    "co_ies_ofertante",
+    "in_local_func_predio_escolar",
+    "tp_ocupacao_predio_escolar",
+    "in_local_func_salas_empresa",
+    "in_local_func_socioeducativo",
+    "in_local_func_unid_prisional",
+    "in_local_func_prisional_socio",
+    "in_local_func_templo_igreja",
+    "in_local_func_casa_professor",
+    "in_local_func_galpao",
+    "tp_ocupacao_galpao",
+    "in_local_func_salas_outra_esc",
+    "in_local_func_outros",
+    "in_predio_compartilhado",
+    "in_agua_filtrada",
+    "in_agua_potavel",
+    "in_agua_rede_publica",
+    "in_agua_poco_artesiano",
+    "in_agua_cacimba",
+    "in_agua_fonte_rio",
+    "in_agua_inexistente",
+    "in_energia_rede_publica",
+    "in_energia_gerador",
+    "in_energia_gerador_fossil",
+    "in_energia_outros",
+    "in_energia_renovavel",
+    "in_energia_inexistente",
+    "in_esgoto_rede_publica",
+    "in_esgoto_fossa_septica",
+    "in_esgoto_fossa_comum",
+    "in_esgoto_fossa",
+    "in_esgoto_inexistente",
+    "in_lixo_servico_coleta",
+    "in_lixo_queima",
+    "in_lixo_enterra",
+    "in_lixo_destino_final_publico",
+    "in_lixo_descarta_outra_area",
+    "in_lixo_joga_outra_area",
+    "in_lixo_outros",
+    "in_lixo_recicla",
+    "in_tratamento_lixo_separacao",
+    "in_tratamento_lixo_reutiliza",
+    "in_tratamento_lixo_reciclagem",
+    "in_tratamento_lixo_inexistente",
+    "in_almoxarifado",
+    "in_area_verde",
+    "in_auditorio",
+    "in_banheiro_fora_predio",
+    "in_banheiro_dentro_predio",
+    "in_banheiro",
+    "in_banheiro_ei",
+    "in_banheiro_pne",
+    "in_banheiro_funcionarios",
+    "in_banheiro_chuveiro",
+    "in_bercario",
+    "in_biblioteca",
+    "in_biblioteca_sala_leitura",
+    "in_cozinha",
+    "in_despensa",
+    "in_dormitorio_aluno",
+    "in_dormitorio_professor",
+    "in_laboratorio_ciencias",
+    "in_laboratorio_informatica",
+    "in_laboratorio_educ_prof",
+    "in_patio_coberto",
+    "in_patio_descoberto",
+    "in_parque_infantil",
+    "in_piscina",
+    "in_quadra_esportes",
+    "in_quadra_esportes_coberta",
+    "in_quadra_esportes_descoberta",
+    "in_refeitorio",
+    "in_sala_atelie_artes",
+    "in_sala_musica_coral",
+    "in_sala_estudio_danca",
+    "in_sala_multiuso",
+    "in_sala_oficinas_educ_prof",
+    "in_sala_diretoria",
+    "in_sala_leitura",
+    "in_sala_professor",
+    "in_sala_repouso_aluno",
+    "in_secretaria",
+    "in_sala_atendimento_especial",
+    "in_terreirao",
+    "in_viveiro",
+    "in_dependencias_pne",
+    "in_lavanderia",
+    "in_dependencias_outras",
+    "in_acessibilidade_corrimao",
+    "in_acessibilidade_elevador",
+    "in_acessibilidade_pisos_tateis",
+    "in_acessibilidade_vao_livre",
+    "in_acessibilidade_rampas",
+    "in_acessibilidade_sinal_sonoro",
+    "in_acessibilidade_sinal_tatil",
+    "in_acessibilidade_sinal_visual",
+    "in_acessibilidade_inexistente",
+    "qt_salas_existentes",
+    "qt_salas_utilizadas_dentro",
+    "qt_salas_utilizadas_fora",
+    "qt_salas_utilizadas",
+    "qt_salas_utiliza_climatizadas",
+    "qt_salas_utilizadas_acessiveis",
+    "in_equip_parabolica",
+    "in_computador",
+    "in_equip_copiadora",
+    "in_equip_impressora",
+    "in_equip_impressora_mult",
+    "in_equip_scanner",
+    "in_equip_nenhum",
+    "in_equip_dvd",
+    "qt_equip_dvd",
+    "in_equip_som",
+    "qt_equip_som",
+    "in_equip_tv",
+    "qt_equip_tv",
+    "in_equip_lousa_digital",
+    "qt_equip_lousa_digital",
+    "in_equip_multimidia",
+    "qt_equip_multimidia",
+    "in_equip_videocassete",
+    "in_equip_retroprojetor",
+    "in_equip_fax",
+    "in_equip_foto",
+    "qt_equip_videocassete",
+    "qt_equip_parabolica",
+    "qt_equip_copiadora",
+    "qt_equip_retroprojetor",
+    "qt_equip_impressora",
+    "qt_equip_impressora_mult",
+    "qt_equip_fax",
+    "qt_equip_foto",
+    "qt_comp_aluno",
+    "in_desktop_aluno",
+    "qt_desktop_aluno",
+    "in_comp_portatil_aluno",
+    "qt_comp_portatil_aluno",
+    "in_tablet_aluno",
+    "qt_tablet_aluno",
+    "qt_computador",
+    "qt_comp_administrativo",
+    "in_internet",
+    "in_internet_alunos",
+    "in_internet_administrativo",
+    "in_internet_aprendizagem",
+    "in_internet_comunidade",
+    "in_acesso_internet_computador",
+    "in_aces_internet_disp_pessoais",
+    "tp_rede_local",
+    "in_banda_larga",
+    "qt_funcionarios",
+    "in_prof_administrativos",
+    "qt_prof_administrativos",
+    "in_prof_servicos_gerais",
+    "qt_prof_servicos_gerais",
+    "in_prof_bibliotecario",
+    "qt_prof_bibliotecario",
+    "in_prof_saude",
+    "qt_prof_saude",
+    "in_prof_coordenador",
+    "qt_prof_coordenador",
+    "in_prof_fonaudiologo",
+    "qt_prof_fonaudiologo",
+    "in_prof_nutricionista",
+    "qt_prof_nutricionista",
+    "in_prof_psicologo",
+    "qt_prof_psicologo",
+    "in_prof_alimentacao",
+    "qt_prof_alimentacao",
+    "in_prof_pedagogia",
+    "qt_prof_pedagogia",
+    "in_prof_secretario",
+    "qt_prof_secretario",
+    "in_prof_seguranca",
+    "qt_prof_seguranca",
+    "in_prof_monitores",
+    "qt_prof_monitores",
+    "in_prof_gestao",
+    "qt_prof_gestao",
+    "in_prof_assist_social",
+    "qt_prof_assist_social",
+    "in_alimentacao",
+    "in_serie_ano",
+    "in_periodos_semestrais",
+    "in_fundamental_ciclos",
+    "in_grupos_nao_seriados",
+    "in_modulos",
+    "in_formacao_alternancia",
+    "in_material_ped_multimidia",
+    "in_material_ped_infantil",
+    "in_material_ped_cientifico",
+    "in_material_ped_difusao",
+    "in_material_ped_musical",
+    "in_material_ped_jogos",
+    "in_material_ped_artisticas",
+    "in_material_ped_profissional",
+    "in_material_ped_desportiva",
+    "in_material_ped_indigena",
+    "in_material_ped_etnico",
+    "in_material_ped_campo",
+    "in_material_ped_nenhum",
+    "in_material_esp_quilombola",
+    "in_material_esp_indigena",
+    "in_material_esp_nao_utiliza",
+    "in_educacao_indigena",
+    "tp_indigena_lingua",
+    "co_lingua_indigena_1",
+    "co_lingua_indigena_2",
+    "co_lingua_indigena_3",
+    "in_brasil_alfabetizado",
+    "in_final_semana",
+    "in_exame_selecao",
+    "in_reserva_ppi",
+    "in_reserva_renda",
+    "in_reserva_publica",
+    "in_reserva_pcd",
+    "in_reserva_outros",
+    "in_reserva_nenhuma",
+    "in_redes_sociais",
+    "in_espaco_atividade",
+    "in_espaco_equipamento",
+    "in_orgao_ass_pais",
+    "in_orgao_ass_pais_mestres",
+    "in_orgao_conselho_escolar",
+    "in_orgao_gremio_estudantil",
+    "in_orgao_outros",
+    "in_orgao_nenhum",
+    "tp_proposta_pedagogica",
+    "tp_aee",
+    "tp_atividade_complementar",
+    "in_escolarizacao",
+    "in_mediacao_presencial",
+    "in_mediacao_semipresencial",
+    "in_mediacao_ead",
+    "in_regular",
+    "in_diurno",
+    "in_noturno",
+    "in_ead",
+    "in_bas",
+    "in_inf",
+    "in_inf_cre",
+    "in_inf_pre",
+    "in_fund",
+    "in_fund_ai",
+    "in_fund_af",
+    "in_med",
+    "in_prof",
+    "in_prof_tec",
+    "in_eja",
+    "in_eja_fund",
+    "in_eja_med",
+    "in_esp",
+    "in_esp_cc",
+    "in_esp_ce",
+    "qt_mat_bas",
+    "qt_mat_inf",
+    "qt_mat_inf_cre",
+    "qt_mat_inf_pre",
+    "qt_mat_fund",
+    "qt_mat_fund_ai",
+    "qt_mat_fund_af",
+    "qt_mat_med",
+    "qt_mat_prof",
+    "qt_mat_prof_tec",
+    "qt_mat_eja",
+    "qt_mat_eja_fund",
+    "qt_mat_eja_med",
+    "qt_mat_esp",
+    "qt_mat_esp_cc",
+    "qt_mat_esp_ce",
+    "qt_mat_bas_fem",
+    "qt_mat_bas_masc",
+    "qt_mat_bas_nd",
+    "qt_mat_bas_branca",
+    "qt_mat_bas_preta",
+    "qt_mat_bas_parda",
+    "qt_mat_bas_amarela",
+    "qt_mat_bas_indigena",
+    "qt_mat_bas_0_3",
+    "qt_mat_bas_4_5",
+    "qt_mat_bas_6_10",
+    "qt_mat_bas_11_14",
+    "qt_mat_bas_15_17",
+    "qt_mat_bas_18_mais",
+    "qt_mat_bas_d",
+    "qt_mat_bas_n",
+    "qt_mat_bas_ead",
+    "qt_mat_inf_int",
+    "qt_mat_inf_cre_int",
+    "qt_mat_inf_pre_int",
+    "qt_mat_fund_int",
+    "qt_mat_fund_ai_int",
+    "qt_mat_fund_af_int",
+    "qt_mat_med_int",
+    "qt_doc_bas",
+    "qt_doc_inf",
+    "qt_doc_inf_cre",
+    "qt_doc_inf_pre",
+    "qt_doc_fund",
+    "qt_doc_fund_ai",
+    "qt_doc_fund_af",
+    "qt_doc_med",
+    "qt_doc_prof",
+    "qt_doc_prof_tec",
+    "qt_doc_eja",
+    "qt_doc_eja_fund",
+    "qt_doc_eja_med",
+    "qt_doc_esp",
+    "qt_doc_esp_cc",
+    "qt_doc_esp_ce",
+    "qt_tur_bas",
+    "qt_tur_inf",
+    "qt_tur_inf_cre",
+    "qt_tur_inf_pre",
+    "qt_tur_fund",
+    "qt_tur_fund_ai",
+    "qt_tur_fund_af",
+    "qt_tur_med",
+    "qt_tur_prof",
+    "qt_tur_prof_tec",
+    "qt_tur_eja",
+    "qt_tur_eja_fund",
+    "qt_tur_eja_med",
+    "qt_tur_esp",
+    "qt_tur_esp_cc",
+    "qt_tur_esp_ce",
+    "no_regiao_geog_interm",
+    "co_regiao_geog_interm",
+    "no_regiao_geog_imed",
+    "co_regiao_geog_imed",
+    "in_forma_cont_mu_termo_colab",
+    "in_forma_cont_mu_termo_fomento",
+    "in_forma_cont_mu_acordo_coop",
+    "in_forma_cont_mu_prest_serv",
+    "in_forma_cont_mu_coop_tec_fin",
+    "in_forma_cont_mu_consorcio_pub",
+    "in_forma_cont_es_termo_colab",
+    "in_forma_cont_es_termo_fomento",
+    "in_forma_cont_es_acordo_coop",
+    "in_forma_cont_es_prest_serv",
+    "in_forma_cont_es_coop_tec_fin",
+    "in_forma_cont_es_consorcio_pub",
+    "in_sala_estudio_gravacao",
+    "in_prof_trad_libras",
+    "qt_prof_trad_libras",
+    "in_material_ped_bil_surdos",
+    "qt_mat_fund_ai_1",
+    "qt_mat_fund_ai_2",
+    "qt_mat_fund_ai_3",
+    "qt_mat_fund_ai_4",
+    "qt_mat_fund_ai_5",
+    "qt_mat_fund_af_6",
+    "qt_mat_fund_af_7",
+    "qt_mat_fund_af_8",
+    "qt_mat_fund_af_9",
+    "qt_mat_med_prop",
+    "qt_mat_med_prop_1",
+    "qt_mat_med_prop_2",
+    "qt_mat_med_prop_3",
+    "qt_mat_med_prop_4",
+    "qt_mat_med_prop_ns",
+    "qt_mat_med_ct",
+    "qt_mat_med_ct_1",
+    "qt_mat_med_ct_2",
+    "qt_mat_med_ct_3",
+    "qt_mat_med_ct_4",
+    "qt_mat_med_ct_ns",
+    "qt_mat_med_nm",
+    "qt_mat_med_nm_1",
+    "qt_mat_med_nm_2",
+    "qt_mat_med_nm_3",
+    "qt_mat_med_nm_4",
+    "qt_mat_prof_tec_conc",
+    "qt_mat_prof_tec_subs",
+    "qt_mat_prof_fic_conc",
+    "qt_mat_eja_fund_ai",
+    "qt_mat_eja_fund_af",
+    "qt_mat_eja_fund_fic",
+    "qt_mat_eja_med_nprof",
+    "qt_mat_eja_med_fic",
+    "qt_mat_eja_med_tec",
+    "qt_mat_zr_urb",
+    "qt_mat_zr_rur",
+    "qt_mat_zr_na",
+    "qt_transp_publico",
+    "qt_transp_resp_est",
+    "qt_transp_resp_mun",
+    "qt_tur_bas_d",
+    "qt_tur_bas_n",
+    "qt_tur_bas_ead",
+    "qt_tur_inf_int",
+    "qt_tur_inf_cre_int",
+    "qt_tur_inf_pre_int",
+    "qt_tur_fund_int",
+    "qt_tur_fund_ai_int",
+    "qt_tur_fund_af_int",
+    "qt_tur_med_int",
+    "no_distrito",
+    "in_agua_carro_pipa",
+    "in_area_plantio",
+    "in_acessibilidade_sinalizacao",
+    "in_prof_agricola",
+    "qt_prof_agricola",
+    "in_prof_revisor_braille",
+    "qt_prof_revisor_braille",
+    "in_material_ped_agricola",
+    "in_material_ped_quilombola",
+    "in_material_ped_edu_esp",
+    "in_educ_ambiental",
+    "in_educ_amb_conteudo",
+    "in_educ_amb_curricular",
+    "in_educ_amb_eixo",
+    "in_educ_amb_eventos",
+    "in_educ_amb_projetos",
+    "in_educ_amb_nenhuma",
+    "no_subdistrito",
+    "co_subdistrito",
+    "co_rede",
+    "qt_salas_leitura",
+    "tp_itinerario_formativo",
+    "in_itinerario_aprofundamento",
+    "in_itinerario_tecn_prof",
+    "in_especial_exclusiva",
+    "in_profissionalizante",
+    "in_comum_creche",
+    "in_comum_pre",
+    "in_comum_fund_ai",
+    "in_comum_fund_af",
+    "in_comum_medio_medio",
+    "in_comum_medio_integrado",
+    "in_comum_medio_fic",
+    "in_comum_medio_normal",
+    "in_esp_exclusiva_creche",
+    "in_esp_exclusiva_pre",
+    "in_esp_exclusiva_fund_ai",
+    "in_esp_exclusiva_fund_af",
+    "in_esp_exclusiva_medio_medio",
+    "in_esp_exclusiva_medio_integr",
+    "in_esp_exclusiva_medio_fic",
+    "in_esp_exclusiva_medio_normal",
+    "in_comum_eja_fund",
+    "in_comum_eja_medio",
+    "in_comum_eja_prof",
+    "in_esp_exclusiva_eja_fund",
+    "in_esp_exclusiva_eja_medio",
+    "in_esp_exclusiva_eja_prof",
+    "in_comum_prof",
+    "in_esp_exclusiva_prof"
+  ],
+  "chave": [
+    "nu_ano_censo",
+    "co_entidade"
+  ],
+  "municipioCodigo": {
+    "coluna": "co_municipio",
+    "tipo": "IBGE7"
+  },
+  "validacoes": {
+    "linhasMinPorAba": 200000,
+    "chaveUnica": true,
+    "obrigatorias": [
+      "nu_ano_censo",
+      "co_entidade",
+      "co_municipio"
+    ]
+  }
+}

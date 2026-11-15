@@ -1,0 +1,256 @@
+{
+  "$schema": "../../docs/conjunto-v3.schema.json",
+  "conjunto": "datasus-pni.vacinacao",
+  "nome": "PNI - vacinacao (microdados mensais)",
+  "versaoDefinicao": 1,
+  "tipo": "ORGANIZADO",
+  "edicaoPor": "ARQUIVO",
+  "fontes": {
+    "funcao": "datasus-pni",
+    "arquivos": [
+      "pni-vacinacao-*"
+    ],
+    "membros": [
+      "*.csv"
+    ],
+    "encoding": "windows-1252",
+    "delimiter": ";"
+  },
+  "cabecalho": {
+    "linha": 1
+  },
+  "colunas": {
+    "co_documento": [
+      "co_documento"
+    ],
+    "co_paciente": [
+      "co_paciente"
+    ],
+    "tp_sexo_paciente": [
+      "tp_sexo_paciente"
+    ],
+    "co_raca_cor_paciente": [
+      "co_raca_cor_paciente"
+    ],
+    "no_raca_cor_paciente": [
+      "no_raca_cor_paciente"
+    ],
+    "co_municipio_paciente": [
+      "co_municipio_paciente"
+    ],
+    "co_pais_paciente": [
+      "co_pais_paciente"
+    ],
+    "no_municipio_paciente": [
+      "no_municipio_paciente"
+    ],
+    "no_pais_paciente": [
+      "no_pais_paciente"
+    ],
+    "sg_uf_paciente": [
+      "sg_uf_paciente"
+    ],
+    "nu_cep_paciente": [
+      "nu_cep_paciente"
+    ],
+    "ds_nacionalidade_paciente": [
+      "ds_nacionalidade_paciente"
+    ],
+    "no_etnia_indigena_paciente": [
+      "no_etnia_indigena_paciente"
+    ],
+    "co_etnia_indigena_paciente": [
+      "co_etnia_indigena_paciente"
+    ],
+    "co_cnes_estabelecimento": [
+      "co_cnes_estabelecimento"
+    ],
+    "no_razao_social_estabelecimento": [
+      "no_razao_social_estabelecimento"
+    ],
+    "no_fantasia_estalecimento": [
+      "no_fantasia_estalecimento"
+    ],
+    "co_municipio_estabelecimento": [
+      "co_municipio_estabelecimento"
+    ],
+    "no_municipio_estabelecimento": [
+      "no_municipio_estabelecimento"
+    ],
+    "sg_uf_estabelecimento": [
+      "sg_uf_estabelecimento"
+    ],
+    "co_troca_documento": [
+      "co_troca_documento"
+    ],
+    "co_vacina": [
+      "co_vacina"
+    ],
+    "sg_imunobiologico": [
+      "sg_imunobiologico"
+    ],
+    "dt_vacina": [
+      "dt_vacina"
+    ],
+    "co_dose_vacina": [
+      "co_dose_vacina"
+    ],
+    "ds_tipo_dose": [
+      "ds_tipo_dose"
+    ],
+    "co_local_aplicacao": [
+      "co_local_aplicacao"
+    ],
+    "ds_local_aplicacao": [
+      "ds_local_aplicacao"
+    ],
+    "co_via_administracao": [
+      "co_via_administracao"
+    ],
+    "ds_via_administracao": [
+      "ds_via_administracao"
+    ],
+    "co_lote_vacina": [
+      "co_lote_vacina"
+    ],
+    "ds_vacina_fabricante": [
+      "ds_vacina_fabricante"
+    ],
+    "dt_entrada_rnds": [
+      "dt_entrada_rnds"
+    ],
+    "co_sistema_origem": [
+      "co_sistema_origem"
+    ],
+    "ds_sistema_origem": [
+      "ds_sistema_origem"
+    ],
+    "st_documento": [
+      "st_documento"
+    ],
+    "co_estrategia_vacinacao": [
+      "co_estrategia_vacinacao"
+    ],
+    "no_estrategia": [
+      "no_estrategia"
+    ],
+    "co_origem_registro": [
+      "co_origem_registro"
+    ],
+    "ds_origem_registro": [
+      "ds_origem_registro"
+    ],
+    "co_vacina_grupo_atendimento": [
+      "co_vacina_grupo_atendimento"
+    ],
+    "no_grupo_atendimento": [
+      "no_grupo_atendimento"
+    ],
+    "co_categoria": [
+      "co_categoria"
+    ],
+    "ds_categoria": [
+      "ds_categoria"
+    ],
+    "co_vacina_fabricante": [
+      "co_vacina_fabricante"
+    ],
+    "ds_nome": [
+      "ds_nome"
+    ],
+    "ds_condicao_maternal": [
+      "ds_condicao_maternal"
+    ],
+    "co_tipo_estabelecimento": [
+      "co_tipo_estabelecimento"
+    ],
+    "ds_tipo_estabelecimento": [
+      "ds_tipo_estabelecimento"
+    ],
+    "co_natureza_estabelecimento": [
+      "co_natureza_estabelecimento"
+    ],
+    "ds_natureza_estabelecimento": [
+      "ds_natureza_estabelecimento"
+    ],
+    "nu_idade_paciente": [
+      "nu_idade_paciente"
+    ],
+    "co_condicao_maternal": [
+      "co_condicao_maternal"
+    ],
+    "no_uf_paciente": [
+      "no_uf_paciente"
+    ],
+    "no_uf_estabelecimento": [
+      "no_uf_estabelecimento"
+    ],
+    "dt_deletado_rnds": [
+      "dt_deletado_rnds"
+    ]
+  },
+  "filtroLinhas": "true",
+  "saida": [
+    "co_documento",
+    "co_paciente",
+    "tp_sexo_paciente",
+    "co_raca_cor_paciente",
+    "no_raca_cor_paciente",
+    "co_municipio_paciente",
+    "co_pais_paciente",
+    "no_municipio_paciente",
+    "no_pais_paciente",
+    "sg_uf_paciente",
+    "nu_cep_paciente",
+    "ds_nacionalidade_paciente",
+    "no_etnia_indigena_paciente",
+    "co_etnia_indigena_paciente",
+    "co_cnes_estabelecimento",
+    "no_razao_social_estabelecimento",
+    "no_fantasia_estalecimento",
+    "co_municipio_estabelecimento",
+    "no_municipio_estabelecimento",
+    "sg_uf_estabelecimento",
+    "co_troca_documento",
+    "co_vacina",
+    "sg_imunobiologico",
+    "dt_vacina",
+    "co_dose_vacina",
+    "ds_tipo_dose",
+    "co_local_aplicacao",
+    "ds_local_aplicacao",
+    "co_via_administracao",
+    "ds_via_administracao",
+    "co_lote_vacina",
+    "ds_vacina_fabricante",
+    "dt_entrada_rnds",
+    "co_sistema_origem",
+    "ds_sistema_origem",
+    "st_documento",
+    "co_estrategia_vacinacao",
+    "no_estrategia",
+    "co_origem_registro",
+    "ds_origem_registro",
+    "co_vacina_grupo_atendimento",
+    "no_grupo_atendimento",
+    "co_categoria",
+    "ds_categoria",
+    "co_vacina_fabricante",
+    "ds_nome",
+    "ds_condicao_maternal",
+    "co_tipo_estabelecimento",
+    "ds_tipo_estabelecimento",
+    "co_natureza_estabelecimento",
+    "ds_natureza_estabelecimento",
+    "nu_idade_paciente",
+    "co_condicao_maternal",
+    "no_uf_paciente",
+    "no_uf_estabelecimento",
+    "dt_deletado_rnds"
+  ],
+  "chave": [],
+  "validacoes": {
+    "linhasMinPorAba": 1,
+    "chaveUnica": false
+  }
+}

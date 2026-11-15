@@ -1,0 +1,280 @@
+{
+  "$schema": "../../docs/conjunto-v3.schema.json",
+  "conjunto": "datasus-sinasc.nascidos-vivos",
+  "nome": "SINASC - nascidos vivos (microdados anuais)",
+  "versaoDefinicao": 1,
+  "tipo": "ORGANIZADO",
+  "edicaoPor": "ARQUIVO",
+  "fontes": {
+    "funcao": "datasus-sinasc",
+    "arquivos": [
+      "sinasc-nascidos-vivos-*"
+    ],
+    "membros": [
+      "*.csv"
+    ],
+    "encoding": "utf-8",
+    "delimiter": ";"
+  },
+  "cabecalho": {
+    "linha": 1
+  },
+  "colunas": {
+    "origem": [
+      "origem"
+    ],
+    "codestab": [
+      "codestab"
+    ],
+    "codmunnasc": [
+      "codmunnasc"
+    ],
+    "locnasc": [
+      "locnasc"
+    ],
+    "idademae": [
+      "idademae"
+    ],
+    "estcivmae": [
+      "estcivmae"
+    ],
+    "escmae": [
+      "escmae"
+    ],
+    "codocupmae": [
+      "codocupmae"
+    ],
+    "qtdfilvivo": [
+      "qtdfilvivo"
+    ],
+    "qtdfilmort": [
+      "qtdfilmort"
+    ],
+    "codmunres": [
+      "codmunres"
+    ],
+    "gestacao": [
+      "gestacao"
+    ],
+    "gravidez": [
+      "gravidez"
+    ],
+    "parto": [
+      "parto"
+    ],
+    "consultas": [
+      "consultas"
+    ],
+    "dtnasc": [
+      "dtnasc"
+    ],
+    "horanasc": [
+      "horanasc"
+    ],
+    "sexo": [
+      "sexo"
+    ],
+    "apgar1": [
+      "apgar1"
+    ],
+    "apgar5": [
+      "apgar5"
+    ],
+    "racacor": [
+      "racacor"
+    ],
+    "peso": [
+      "peso"
+    ],
+    "idanomal": [
+      "idanomal"
+    ],
+    "dtcadastro": [
+      "dtcadastro"
+    ],
+    "codanomal": [
+      "codanomal"
+    ],
+    "numerolote": [
+      "numerolote"
+    ],
+    "versaosist": [
+      "versaosist"
+    ],
+    "dtrecebim": [
+      "dtrecebim"
+    ],
+    "difdata": [
+      "difdata"
+    ],
+    "dtrecoriga": [
+      "dtrecoriga"
+    ],
+    "naturalmae": [
+      "naturalmae"
+    ],
+    "codmunnatu": [
+      "codmunnatu"
+    ],
+    "codufnatu": [
+      "codufnatu"
+    ],
+    "escmae2010": [
+      "escmae2010"
+    ],
+    "seriescmae": [
+      "seriescmae"
+    ],
+    "dtnascmae": [
+      "dtnascmae"
+    ],
+    "racacormae": [
+      "racacormae"
+    ],
+    "qtdgestant": [
+      "qtdgestant"
+    ],
+    "qtdpartnor": [
+      "qtdpartnor"
+    ],
+    "qtdpartces": [
+      "qtdpartces"
+    ],
+    "idadepai": [
+      "idadepai"
+    ],
+    "dtultmenst": [
+      "dtultmenst"
+    ],
+    "semagestac": [
+      "semagestac"
+    ],
+    "tpmetestim": [
+      "tpmetestim"
+    ],
+    "consprenat": [
+      "consprenat"
+    ],
+    "mesprenat": [
+      "mesprenat"
+    ],
+    "tpapresent": [
+      "tpapresent"
+    ],
+    "sttrabpart": [
+      "sttrabpart"
+    ],
+    "stcesparto": [
+      "stcesparto"
+    ],
+    "tpnascassi": [
+      "tpnascassi"
+    ],
+    "tpfuncresp": [
+      "tpfuncresp"
+    ],
+    "tpdocresp": [
+      "tpdocresp"
+    ],
+    "dtdeclarac": [
+      "dtdeclarac"
+    ],
+    "escmaeagr1": [
+      "escmaeagr1"
+    ],
+    "stdnepidem": [
+      "stdnepidem"
+    ],
+    "stdnnova": [
+      "stdnnova"
+    ],
+    "codpaisres": [
+      "codpaisres"
+    ],
+    "tprobson": [
+      "tprobson"
+    ],
+    "paridade": [
+      "paridade"
+    ],
+    "kotelchuck": [
+      "kotelchuck"
+    ],
+    "contador": [
+      "contador"
+    ],
+    "oport_dn": [
+      "oport_dn"
+    ]
+  },
+  "filtroLinhas": "true",
+  "saida": [
+    "origem",
+    "codestab",
+    "codmunnasc",
+    "locnasc",
+    "idademae",
+    "estcivmae",
+    "escmae",
+    "codocupmae",
+    "qtdfilvivo",
+    "qtdfilmort",
+    "codmunres",
+    "gestacao",
+    "gravidez",
+    "parto",
+    "consultas",
+    "dtnasc",
+    "horanasc",
+    "sexo",
+    "apgar1",
+    "apgar5",
+    "racacor",
+    "peso",
+    "idanomal",
+    "dtcadastro",
+    "codanomal",
+    "numerolote",
+    "versaosist",
+    "dtrecebim",
+    "difdata",
+    "dtrecoriga",
+    "naturalmae",
+    "codmunnatu",
+    "codufnatu",
+    "escmae2010",
+    "seriescmae",
+    "dtnascmae",
+    "racacormae",
+    "qtdgestant",
+    "qtdpartnor",
+    "qtdpartces",
+    "idadepai",
+    "dtultmenst",
+    "semagestac",
+    "tpmetestim",
+    "consprenat",
+    "mesprenat",
+    "tpapresent",
+    "sttrabpart",
+    "stcesparto",
+    "tpnascassi",
+    "tpfuncresp",
+    "tpdocresp",
+    "dtdeclarac",
+    "escmaeagr1",
+    "stdnepidem",
+    "stdnnova",
+    "codpaisres",
+    "tprobson",
+    "paridade",
+    "kotelchuck",
+    "contador",
+    "oport_dn"
+  ],
+  "chave": [],
+  "validacoes": {
+    "linhasMinPorAba": 1,
+    "chaveUnica": false
+  }
+}

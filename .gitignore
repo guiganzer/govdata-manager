@@ -1,0 +1,17 @@
+# Dados e credenciais operacionais locais; nunca versionar.
+/dados/
+/dist/
+/.runtime/
+/.dotnet/
+/.local/
+**/bin/
+**/obj/
+__pycache__/
+*.py[cod]
+*.nupkg
+**/.venv/
+**/api-secrets.json
+*.password
+*.pgpass
+/AGENTS.md
+/docs/analise-bronze-prata-ouro.md

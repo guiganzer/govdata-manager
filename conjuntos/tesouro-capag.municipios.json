@@ -1,0 +1,124 @@
+{
+  "$schema": "../../docs/conjunto-v3.schema.json",
+  "conjunto": "tesouro-capag.municipios",
+  "nome": "CAPAG dos municípios (todas as edições, por ano-base)",
+  "versaoDefinicao": 3,
+  "tipo": "ORGANIZADO",
+  "edicaoPor": "ARQUIVO",
+  "fontes": {
+    "funcao": "tesouro-capag-municipios",
+    "arquivos": [
+      "capag-municipios-*"
+    ],
+    "abas": [
+      "capag*",
+      "Capag - *",
+      "CAPAG-*",
+      "CAPAG Ano Base *"
+    ]
+  },
+  "cabecalho": {
+    "contemUmDe": [
+      "Cod.IBGE",
+      "Código Município Completo"
+    ]
+  },
+  "colunas": {
+    "cod_ibge": [
+      "Cod.IBGE",
+      "Código Município Completo"
+    ],
+    "municipio": [
+      "Instituição",
+      "Município",
+      "Nome_Município"
+    ],
+    "uf": [
+      "UF"
+    ],
+    "indicador_1": [
+      "Indicador 1",
+      "Indicador_1"
+    ],
+    "nota_1": [
+      "Nota 1",
+      "Nota_1"
+    ],
+    "indicador_2": [
+      "Indicador 2",
+      "Indicador_2"
+    ],
+    "nota_2": [
+      "Nota 2",
+      "Nota_2"
+    ],
+    "indicador_3": [
+      "Indicador 3",
+      "Indicador_3"
+    ],
+    "nota_3": [
+      "Nota 3",
+      "Nota_3"
+    ],
+    "capag": [
+      "CAPAG",
+      "CAPAG_Oficial",
+      "Classificação da CAPAG",
+      "Classificação_CAPAG",
+      "CAPAG_2022"
+    ],
+    "capag_antes_ranking": [
+      "CAPAG antes do ranking"
+    ],
+    "ranking_icf": [
+      "Ranking da CCONF"
+    ],
+    "ano_base_col": [
+      "Ano_Base"
+    ]
+  },
+  "derivadas": {
+    "capag": "nullif(capag, '#N/A')",
+    "edicao": "regexp_extract(_arquivo, 'capag-municipios-(.*)', 1)",
+    "ano_base": "coalesce(nullif(regexp_extract(_aba, 'Ano Base (\\d{4})', 1), ''), nullif(ano_base_col, ''), cast(try_cast(regexp_extract(_arquivo, 'capag-municipios-(20[0-9]{2})', 1) as integer) - 1 as varchar))"
+  },
+  "filtroLinhas": "regexp_full_match(cod_ibge, '[0-9]{7}')",
+  "saida": [
+    "edicao",
+    "ano_base",
+    "cod_ibge",
+    "municipio",
+    "uf",
+    "indicador_1",
+    "nota_1",
+    "indicador_2",
+    "nota_2",
+    "indicador_3",
+    "nota_3",
+    "capag",
+    "capag_antes_ranking",
+    "ranking_icf"
+  ],
+  "chave": [
+    "edicao",
+    "ano_base",
+    "cod_ibge"
+  ],
+  "municipioCodigo": {
+    "coluna": "cod_ibge",
+    "tipo": "IBGE7"
+  },
+  "validacoes": {
+    "linhasMinPorAba": 5000,
+    "chaveUnica": true,
+    "obrigatorias": [
+      "ano_base",
+      "cod_ibge",
+      "uf",
+      "capag"
+    ],
+    "nulosMaxPct": {
+      "capag": 0.5
+    }
+  }
+}

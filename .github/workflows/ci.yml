@@ -1,0 +1,38 @@
+name: Build and API checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    env:
+      DOTNET_INSTALL_DIR: ${{ github.workspace }}/.dotnet
+      DOTNET_NOLOGO: true
+      DOTNET_CLI_TELEMETRY_OPTOUT: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.401
+      - name: Build executables
+        shell: pwsh
+        run: |
+          $projects = @('GovData.Downloads.Worker.Cli', 'GovData.Downloads.Organizer.Cli', 'GovData.Downloads.CatalogTool', 'GovData.Downloads.ArquivoLoader', 'GovData.Downloads.Api', 'GovData.Downloads.Api.Tests')
+          foreach ($project in $projects) {
+            dotnet build "$project/$project.csproj" -c Release
+            if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          }
+          dotnet build eng/parquet-evidence/ParquetEvidence.csproj -c Release
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Synthetic API checks
+        shell: pwsh
+        run: |
+          dotnet run --project GovData.Downloads.Api.Tests -c Release --no-build
+          exit $LASTEXITCODE

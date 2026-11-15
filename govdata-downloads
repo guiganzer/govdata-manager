@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+project_root="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+export GOVDATA_HOME="$project_root/dados"
+exec "$project_root/.runtime/downloads/venv/bin/python" \
+  "$project_root/eng/download-worker/dashboard.py" \
+  "$project_root/dist/linux-x64/download-worker/GovData.Downloads.Worker.Cli"

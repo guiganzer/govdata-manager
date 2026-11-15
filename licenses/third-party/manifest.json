@@ -1,0 +1,50 @@
+[
+  {
+    "arquivo": "licenses/third-party/Apache.Arrow/23.0.0/LICENSE.txt",
+    "sha256": "f49cc7be44c8d4b6efffed6ac00026f2ff2146310f040350b50be30ed3f9c570"
+  },
+  {
+    "arquivo": "licenses/third-party/Apache.Arrow.Scalars/23.0.0/LICENSE.txt",
+    "sha256": "f49cc7be44c8d4b6efffed6ac00026f2ff2146310f040350b50be30ed3f9c570"
+  },
+  {
+    "arquivo": "licenses/third-party/DuckDB.NET.Bindings.Full/1.5.6.1/LICENSE-DuckDB.txt",
+    "sha256": "3ad73e53243c374756dfc2eb5e780abd462ce99e89c84f9e46ada745db934107"
+  },
+  {
+    "arquivo": "licenses/third-party/DuckDB.NET.Bindings.Full/1.5.6.1/LICENSE.md",
+    "sha256": "91ba5e7529bb908f1e09539fde3e37ed379bffc42d84473683d29499e6c8dc75"
+  },
+  {
+    "arquivo": "licenses/third-party/DuckDB.NET.Data.Full/1.5.6.1/LICENSE-DuckDB.txt",
+    "sha256": "3ad73e53243c374756dfc2eb5e780abd462ce99e89c84f9e46ada745db934107"
+  },
+  {
+    "arquivo": "licenses/third-party/DuckDB.NET.Data.Full/1.5.6.1/LICENSE.md",
+    "sha256": "91ba5e7529bb908f1e09539fde3e37ed379bffc42d84473683d29499e6c8dc75"
+  },
+  {
+    "arquivo": "licenses/third-party/FluentFTP/55.0.0/LICENSE.TXT",
+    "sha256": "bb961fbe36659e8a1bb5769fc8041b504e4ecea2de445b6d2e3875077d5a7fbc"
+  },
+  {
+    "arquivo": "licenses/third-party/Json.More.Net/3.0.1/OSMFEULA.txt",
+    "sha256": "5c805ac94dfdb4a3be55547f04a2f4b9f1bb87d7e9ee6d6fe54b0e72093900c3"
+  },
+  {
+    "arquivo": "licenses/third-party/JsonPointer.Net/7.0.3/OSMFEULA.txt",
+    "sha256": "5c805ac94dfdb4a3be55547f04a2f4b9f1bb87d7e9ee6d6fe54b0e72093900c3"
+  },
+  {
+    "arquivo": "licenses/third-party/JsonSchema.Net/9.4.1/OSMFEULA.txt",
+    "sha256": "5c805ac94dfdb4a3be55547f04a2f4b9f1bb87d7e9ee6d6fe54b0e72093900c3"
+  },
+  {
+    "arquivo": "licenses/third-party/Microsoft.Extensions.DependencyInjection.Abstractions/10.0.0/THIRD-PARTY-NOTICES.TXT",
+    "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21"
+  },
+  {
+    "arquivo": "licenses/third-party/Microsoft.Extensions.Logging.Abstractions/10.0.0/THIRD-PARTY-NOTICES.TXT",
+    "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21"
+  }
+]

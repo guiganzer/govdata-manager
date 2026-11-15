@@ -1,0 +1,166 @@
+{
+  "conjunto": "senatran-frota.municipio-tipo",
+  "nome": "Frota de veículos por município e tipo",
+  "versaoDefinicao": 1,
+  "tipo": "ORGANIZADO",
+  "edicaoPor": "ARQUIVO",
+  "fontes": {
+    "funcao": "senatran-frota",
+    "arquivos": [
+      "senatran-frota-municipio-tipo-*"
+    ]
+  },
+  "cabecalho": {
+    "linha": 4
+  },
+  "colunas": {
+    "uf": [
+      "UF"
+    ],
+    "municipio": [
+      "MUNICIPIO"
+    ],
+    "total": [
+      "TOTAL"
+    ],
+    "automovel": [
+      "AUTOMOVEL"
+    ],
+    "bonde": [
+      "BONDE"
+    ],
+    "caminhao": [
+      "CAMINHAO"
+    ],
+    "caminhao_trator": [
+      "CAMINHAO TRATOR"
+    ],
+    "caminhonete": [
+      "CAMINHONETE"
+    ],
+    "camioneta": [
+      "CAMIONETA"
+    ],
+    "chassi_plataf": [
+      "CHASSI PLATAF"
+    ],
+    "ciclomotor": [
+      "CICLOMOTOR"
+    ],
+    "micro_onibus": [
+      "MICRO-ONIBUS"
+    ],
+    "motocicleta": [
+      "MOTOCICLETA"
+    ],
+    "motoneta": [
+      "MOTONETA"
+    ],
+    "onibus": [
+      "ONIBUS"
+    ],
+    "quadriciclo": [
+      "QUADRICICLO"
+    ],
+    "reboque": [
+      "REBOQUE"
+    ],
+    "semi_reboque": [
+      "SEMI-REBOQUE"
+    ],
+    "side_car": [
+      "SIDE-CAR"
+    ],
+    "outros": [
+      "OUTROS"
+    ],
+    "trator_estei": [
+      "TRATOR ESTEI"
+    ],
+    "trator_rodas": [
+      "TRATOR RODAS"
+    ],
+    "triciclo": [
+      "TRICICLO"
+    ],
+    "utilitario": [
+      "UTILITARIO"
+    ]
+  },
+  "derivadas": {
+    "competencia": "regexp_extract(_arquivo, '([0-9]{4}-[0-9]{2})', 1)"
+  },
+  "filtroLinhas": "uf IS NOT NULL AND municipio IS NOT NULL AND municipio <> 'MUNICIPIO'",
+  "saida": [
+    "competencia",
+    "uf",
+    "municipio",
+    "total",
+    "automovel",
+    "bonde",
+    "caminhao",
+    "caminhao_trator",
+    "caminhonete",
+    "camioneta",
+    "chassi_plataf",
+    "ciclomotor",
+    "micro_onibus",
+    "motocicleta",
+    "motoneta",
+    "onibus",
+    "quadriciclo",
+    "reboque",
+    "semi_reboque",
+    "side_car",
+    "outros",
+    "trator_estei",
+    "trator_rodas",
+    "triciclo",
+    "utilitario"
+  ],
+  "chave": [
+    "competencia",
+    "uf",
+    "municipio"
+  ],
+  "municipioCodigo": {
+    "coluna": "municipio",
+    "tipo": "NOME_UF"
+  },
+  "validacoes": {
+    "linhasMinPorAba": 5500,
+    "chaveUnica": true,
+    "obrigatorias": [
+      "competencia",
+      "uf",
+      "municipio",
+      "total"
+    ],
+    "colunasPresentes": [
+      "uf",
+      "municipio",
+      "total",
+      "automovel",
+      "bonde",
+      "caminhao",
+      "caminhao_trator",
+      "caminhonete",
+      "camioneta",
+      "chassi_plataf",
+      "ciclomotor",
+      "micro_onibus",
+      "motocicleta",
+      "motoneta",
+      "onibus",
+      "quadriciclo",
+      "reboque",
+      "semi_reboque",
+      "side_car",
+      "outros",
+      "trator_estei",
+      "trator_rodas",
+      "triciclo",
+      "utilitario"
+    ]
+  }
+}

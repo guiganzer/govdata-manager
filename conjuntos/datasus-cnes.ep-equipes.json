@@ -1,0 +1,461 @@
+{
+  "$schema": "../../docs/conjunto-v3.schema.json",
+  "conjunto": "datasus-cnes.ep-equipes",
+  "nome": "CNES EP - equipes (DBC por UF e competencia)",
+  "versaoDefinicao": 1,
+  "tipo": "ORGANIZADO",
+  "edicaoPor": "ARQUIVO",
+  "fontes": {
+    "funcao": "datasus-cnes",
+    "arquivos": [
+      "cnes-ep-*"
+    ],
+    "encoding": "windows-1252",
+    "delimiter": ";"
+  },
+  "cabecalho": {
+    "linha": 1
+  },
+  "colunas": {
+    "cnes": [
+      "cnes"
+    ],
+    "codufmun": [
+      "codufmun"
+    ],
+    "cod_cep": [
+      "cod_cep"
+    ],
+    "cpf_cnpj": [
+      "cpf_cnpj"
+    ],
+    "pf_pj": [
+      "pf_pj"
+    ],
+    "niv_dep": [
+      "niv_dep"
+    ],
+    "cnpj_man": [
+      "cnpj_man"
+    ],
+    "cod_ir": [
+      "cod_ir"
+    ],
+    "regsaude": [
+      "regsaude"
+    ],
+    "micr_reg": [
+      "micr_reg"
+    ],
+    "distrsan": [
+      "distrsan"
+    ],
+    "distradm": [
+      "distradm"
+    ],
+    "vinc_sus": [
+      "vinc_sus"
+    ],
+    "tpgestao": [
+      "tpgestao"
+    ],
+    "esfera_a": [
+      "esfera_a"
+    ],
+    "retencao": [
+      "retencao"
+    ],
+    "atividad": [
+      "atividad"
+    ],
+    "natureza": [
+      "natureza"
+    ],
+    "clientel": [
+      "clientel"
+    ],
+    "tp_unid": [
+      "tp_unid"
+    ],
+    "turno_at": [
+      "turno_at"
+    ],
+    "niv_hier": [
+      "niv_hier"
+    ],
+    "terceiro": [
+      "terceiro"
+    ],
+    "tp_prest": [
+      "tp_prest"
+    ],
+    "gesprg1e": [
+      "gesprg1e"
+    ],
+    "gesprg1m": [
+      "gesprg1m"
+    ],
+    "gesprg2e": [
+      "gesprg2e"
+    ],
+    "gesprg2m": [
+      "gesprg2m"
+    ],
+    "gesprg4e": [
+      "gesprg4e"
+    ],
+    "gesprg4m": [
+      "gesprg4m"
+    ],
+    "nivate_a": [
+      "nivate_a"
+    ],
+    "gesprg3e": [
+      "gesprg3e"
+    ],
+    "gesprg3m": [
+      "gesprg3m"
+    ],
+    "gesprg5e": [
+      "gesprg5e"
+    ],
+    "gesprg5m": [
+      "gesprg5m"
+    ],
+    "gesprg6e": [
+      "gesprg6e"
+    ],
+    "gesprg6m": [
+      "gesprg6m"
+    ],
+    "nivate_h": [
+      "nivate_h"
+    ],
+    "ap01cv01": [
+      "ap01cv01"
+    ],
+    "ap01cv02": [
+      "ap01cv02"
+    ],
+    "ap01cv05": [
+      "ap01cv05"
+    ],
+    "ap01cv06": [
+      "ap01cv06"
+    ],
+    "ap01cv03": [
+      "ap01cv03"
+    ],
+    "ap01cv04": [
+      "ap01cv04"
+    ],
+    "ap01cv07": [
+      "ap01cv07"
+    ],
+    "ap02cv01": [
+      "ap02cv01"
+    ],
+    "ap02cv02": [
+      "ap02cv02"
+    ],
+    "ap02cv05": [
+      "ap02cv05"
+    ],
+    "ap02cv06": [
+      "ap02cv06"
+    ],
+    "ap02cv03": [
+      "ap02cv03"
+    ],
+    "ap02cv04": [
+      "ap02cv04"
+    ],
+    "ap02cv07": [
+      "ap02cv07"
+    ],
+    "ap03cv01": [
+      "ap03cv01"
+    ],
+    "ap03cv02": [
+      "ap03cv02"
+    ],
+    "ap03cv05": [
+      "ap03cv05"
+    ],
+    "ap03cv06": [
+      "ap03cv06"
+    ],
+    "ap03cv03": [
+      "ap03cv03"
+    ],
+    "ap03cv04": [
+      "ap03cv04"
+    ],
+    "ap03cv07": [
+      "ap03cv07"
+    ],
+    "ap04cv01": [
+      "ap04cv01"
+    ],
+    "ap04cv02": [
+      "ap04cv02"
+    ],
+    "ap04cv05": [
+      "ap04cv05"
+    ],
+    "ap04cv06": [
+      "ap04cv06"
+    ],
+    "ap04cv03": [
+      "ap04cv03"
+    ],
+    "ap04cv04": [
+      "ap04cv04"
+    ],
+    "ap04cv07": [
+      "ap04cv07"
+    ],
+    "ap05cv01": [
+      "ap05cv01"
+    ],
+    "ap05cv02": [
+      "ap05cv02"
+    ],
+    "ap05cv05": [
+      "ap05cv05"
+    ],
+    "ap05cv06": [
+      "ap05cv06"
+    ],
+    "ap05cv03": [
+      "ap05cv03"
+    ],
+    "ap05cv04": [
+      "ap05cv04"
+    ],
+    "ap05cv07": [
+      "ap05cv07"
+    ],
+    "ap06cv01": [
+      "ap06cv01"
+    ],
+    "ap06cv02": [
+      "ap06cv02"
+    ],
+    "ap06cv05": [
+      "ap06cv05"
+    ],
+    "ap06cv06": [
+      "ap06cv06"
+    ],
+    "ap06cv03": [
+      "ap06cv03"
+    ],
+    "ap06cv04": [
+      "ap06cv04"
+    ],
+    "ap06cv07": [
+      "ap06cv07"
+    ],
+    "ap07cv01": [
+      "ap07cv01"
+    ],
+    "ap07cv02": [
+      "ap07cv02"
+    ],
+    "ap07cv05": [
+      "ap07cv05"
+    ],
+    "ap07cv06": [
+      "ap07cv06"
+    ],
+    "ap07cv03": [
+      "ap07cv03"
+    ],
+    "ap07cv04": [
+      "ap07cv04"
+    ],
+    "ap07cv07": [
+      "ap07cv07"
+    ],
+    "atend_pr": [
+      "atend_pr"
+    ],
+    "idequipe": [
+      "idequipe"
+    ],
+    "tipo_eqp": [
+      "tipo_eqp"
+    ],
+    "nome_eqp": [
+      "nome_eqp"
+    ],
+    "id_area": [
+      "id_area"
+    ],
+    "nomearea": [
+      "nomearea"
+    ],
+    "id_segm": [
+      "id_segm"
+    ],
+    "descsegm": [
+      "descsegm"
+    ],
+    "tiposegm": [
+      "tiposegm"
+    ],
+    "dt_ativa": [
+      "dt_ativa"
+    ],
+    "dt_desat": [
+      "dt_desat"
+    ],
+    "quilombo": [
+      "quilombo"
+    ],
+    "assentad": [
+      "assentad"
+    ],
+    "popgeral": [
+      "popgeral"
+    ],
+    "escola": [
+      "escola"
+    ],
+    "indigena": [
+      "indigena"
+    ],
+    "pronasci": [
+      "pronasci"
+    ],
+    "motdesat": [
+      "motdesat"
+    ],
+    "tp_desat": [
+      "tp_desat"
+    ],
+    "competen": [
+      "competen"
+    ],
+    "nat_jur": [
+      "nat_jur"
+    ]
+  },
+  "filtroLinhas": "true",
+  "saida": [
+    "cnes",
+    "codufmun",
+    "cod_cep",
+    "cpf_cnpj",
+    "pf_pj",
+    "niv_dep",
+    "cnpj_man",
+    "cod_ir",
+    "regsaude",
+    "micr_reg",
+    "distrsan",
+    "distradm",
+    "vinc_sus",
+    "tpgestao",
+    "esfera_a",
+    "retencao",
+    "atividad",
+    "natureza",
+    "clientel",
+    "tp_unid",
+    "turno_at",
+    "niv_hier",
+    "terceiro",
+    "tp_prest",
+    "gesprg1e",
+    "gesprg1m",
+    "gesprg2e",
+    "gesprg2m",
+    "gesprg4e",
+    "gesprg4m",
+    "nivate_a",
+    "gesprg3e",
+    "gesprg3m",
+    "gesprg5e",
+    "gesprg5m",
+    "gesprg6e",
+    "gesprg6m",
+    "nivate_h",
+    "ap01cv01",
+    "ap01cv02",
+    "ap01cv05",
+    "ap01cv06",
+    "ap01cv03",
+    "ap01cv04",
+    "ap01cv07",
+    "ap02cv01",
+    "ap02cv02",
+    "ap02cv05",
+    "ap02cv06",
+    "ap02cv03",
+    "ap02cv04",
+    "ap02cv07",
+    "ap03cv01",
+    "ap03cv02",
+    "ap03cv05",
+    "ap03cv06",
+    "ap03cv03",
+    "ap03cv04",
+    "ap03cv07",
+    "ap04cv01",
+    "ap04cv02",
+    "ap04cv05",
+    "ap04cv06",
+    "ap04cv03",
+    "ap04cv04",
+    "ap04cv07",
+    "ap05cv01",
+    "ap05cv02",
+    "ap05cv05",
+    "ap05cv06",
+    "ap05cv03",
+    "ap05cv04",
+    "ap05cv07",
+    "ap06cv01",
+    "ap06cv02",
+    "ap06cv05",
+    "ap06cv06",
+    "ap06cv03",
+    "ap06cv04",
+    "ap06cv07",
+    "ap07cv01",
+    "ap07cv02",
+    "ap07cv05",
+    "ap07cv06",
+    "ap07cv03",
+    "ap07cv04",
+    "ap07cv07",
+    "atend_pr",
+    "idequipe",
+    "tipo_eqp",
+    "nome_eqp",
+    "id_area",
+    "nomearea",
+    "id_segm",
+    "descsegm",
+    "tiposegm",
+    "dt_ativa",
+    "dt_desat",
+    "quilombo",
+    "assentad",
+    "popgeral",
+    "escola",
+    "indigena",
+    "pronasci",
+    "motdesat",
+    "tp_desat",
+    "competen",
+    "nat_jur"
+  ],
+  "chave": [],
+  "validacoes": {
+    "linhasMinPorAba": 1,
+    "chaveUnica": false
+  }
+}

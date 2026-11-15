@@ -1,0 +1,603 @@
+{
+  "$schema": "../../docs/conjunto-v3.schema.json",
+  "conjunto": "inep-ideb.anos-iniciais",
+  "nome": "Ideb por município, anos iniciais do ensino fundamental (INEP)",
+  "versaoDefinicao": 1,
+  "tipo": "ORGANIZADO",
+  "edicaoPor": "ARQUIVO",
+  "fontes": {
+    "funcao": "inep-ideb",
+    "arquivos": [
+      "inep-ideb-anos-iniciais-municipios-*"
+    ],
+    "membros": [
+      "*.xlsx"
+    ],
+    "abas": [
+      "IDEB_AI_MUNICÍPIOS"
+    ]
+  },
+  "cabecalho": {
+    "contemUmDe": [
+      "SG_UF"
+    ]
+  },
+  "colunas": {
+    "sg_uf": [
+      "SG_UF"
+    ],
+    "co_municipio": [
+      "CO_MUNICIPIO"
+    ],
+    "no_municipio": [
+      "NO_MUNICIPIO"
+    ],
+    "rede": [
+      "REDE"
+    ],
+    "vl_aprovacao_2005_si_4": [
+      "VL_APROVACAO_2005_SI_4"
+    ],
+    "vl_aprovacao_2005_si": [
+      "VL_APROVACAO_2005_SI"
+    ],
+    "vl_aprovacao_2005_1": [
+      "VL_APROVACAO_2005_1"
+    ],
+    "vl_aprovacao_2005_2": [
+      "VL_APROVACAO_2005_2"
+    ],
+    "vl_aprovacao_2005_3": [
+      "VL_APROVACAO_2005_3"
+    ],
+    "vl_aprovacao_2005_4": [
+      "VL_APROVACAO_2005_4"
+    ],
+    "vl_indicador_rend_2005": [
+      "VL_INDICADOR_REND_2005"
+    ],
+    "vl_aprovacao_2007_si_4": [
+      "VL_APROVACAO_2007_SI_4"
+    ],
+    "vl_aprovacao_2007_si": [
+      "VL_APROVACAO_2007_SI"
+    ],
+    "vl_aprovacao_2007_1": [
+      "VL_APROVACAO_2007_1"
+    ],
+    "vl_aprovacao_2007_2": [
+      "VL_APROVACAO_2007_2"
+    ],
+    "vl_aprovacao_2007_3": [
+      "VL_APROVACAO_2007_3"
+    ],
+    "vl_aprovacao_2007_4": [
+      "VL_APROVACAO_2007_4"
+    ],
+    "vl_indicador_rend_2007": [
+      "VL_INDICADOR_REND_2007"
+    ],
+    "vl_aprovacao_2009_si_4": [
+      "VL_APROVACAO_2009_SI_4"
+    ],
+    "vl_aprovacao_2009_si": [
+      "VL_APROVACAO_2009_SI"
+    ],
+    "vl_aprovacao_2009_1": [
+      "VL_APROVACAO_2009_1"
+    ],
+    "vl_aprovacao_2009_2": [
+      "VL_APROVACAO_2009_2"
+    ],
+    "vl_aprovacao_2009_3": [
+      "VL_APROVACAO_2009_3"
+    ],
+    "vl_aprovacao_2009_4": [
+      "VL_APROVACAO_2009_4"
+    ],
+    "vl_indicador_rend_2009": [
+      "VL_INDICADOR_REND_2009"
+    ],
+    "vl_aprovacao_2011_si_4": [
+      "VL_APROVACAO_2011_SI_4"
+    ],
+    "vl_aprovacao_2011_si": [
+      "VL_APROVACAO_2011_SI"
+    ],
+    "vl_aprovacao_2011_1": [
+      "VL_APROVACAO_2011_1"
+    ],
+    "vl_aprovacao_2011_2": [
+      "VL_APROVACAO_2011_2"
+    ],
+    "vl_aprovacao_2011_3": [
+      "VL_APROVACAO_2011_3"
+    ],
+    "vl_aprovacao_2011_4": [
+      "VL_APROVACAO_2011_4"
+    ],
+    "vl_indicador_rend_2011": [
+      "VL_INDICADOR_REND_2011"
+    ],
+    "vl_aprovacao_2013_si_4": [
+      "VL_APROVACAO_2013_SI_4"
+    ],
+    "vl_aprovacao_2013_si": [
+      "VL_APROVACAO_2013_SI"
+    ],
+    "vl_aprovacao_2013_1": [
+      "VL_APROVACAO_2013_1"
+    ],
+    "vl_aprovacao_2013_2": [
+      "VL_APROVACAO_2013_2"
+    ],
+    "vl_aprovacao_2013_3": [
+      "VL_APROVACAO_2013_3"
+    ],
+    "vl_aprovacao_2013_4": [
+      "VL_APROVACAO_2013_4"
+    ],
+    "vl_indicador_rend_2013": [
+      "VL_INDICADOR_REND_2013"
+    ],
+    "vl_aprovacao_2015_si_4": [
+      "VL_APROVACAO_2015_SI_4"
+    ],
+    "vl_aprovacao_2015_si": [
+      "VL_APROVACAO_2015_SI"
+    ],
+    "vl_aprovacao_2015_1": [
+      "VL_APROVACAO_2015_1"
+    ],
+    "vl_aprovacao_2015_2": [
+      "VL_APROVACAO_2015_2"
+    ],
+    "vl_aprovacao_2015_3": [
+      "VL_APROVACAO_2015_3"
+    ],
+    "vl_aprovacao_2015_4": [
+      "VL_APROVACAO_2015_4"
+    ],
+    "vl_indicador_rend_2015": [
+      "VL_INDICADOR_REND_2015"
+    ],
+    "vl_aprovacao_2017_si_4": [
+      "VL_APROVACAO_2017_SI_4"
+    ],
+    "vl_aprovacao_2017_si": [
+      "VL_APROVACAO_2017_SI"
+    ],
+    "vl_aprovacao_2017_1": [
+      "VL_APROVACAO_2017_1"
+    ],
+    "vl_aprovacao_2017_2": [
+      "VL_APROVACAO_2017_2"
+    ],
+    "vl_aprovacao_2017_3": [
+      "VL_APROVACAO_2017_3"
+    ],
+    "vl_aprovacao_2017_4": [
+      "VL_APROVACAO_2017_4"
+    ],
+    "vl_indicador_rend_2017": [
+      "VL_INDICADOR_REND_2017"
+    ],
+    "vl_aprovacao_2019_si_4": [
+      "VL_APROVACAO_2019_SI_4"
+    ],
+    "vl_aprovacao_2019_si": [
+      "VL_APROVACAO_2019_SI"
+    ],
+    "vl_aprovacao_2019_1": [
+      "VL_APROVACAO_2019_1"
+    ],
+    "vl_aprovacao_2019_2": [
+      "VL_APROVACAO_2019_2"
+    ],
+    "vl_aprovacao_2019_3": [
+      "VL_APROVACAO_2019_3"
+    ],
+    "vl_aprovacao_2019_4": [
+      "VL_APROVACAO_2019_4"
+    ],
+    "vl_indicador_rend_2019": [
+      "VL_INDICADOR_REND_2019"
+    ],
+    "vl_aprovacao_2021_si_4": [
+      "VL_APROVACAO_2021_SI_4"
+    ],
+    "vl_aprovacao_2021_si": [
+      "VL_APROVACAO_2021_SI"
+    ],
+    "vl_aprovacao_2021_1": [
+      "VL_APROVACAO_2021_1"
+    ],
+    "vl_aprovacao_2021_2": [
+      "VL_APROVACAO_2021_2"
+    ],
+    "vl_aprovacao_2021_3": [
+      "VL_APROVACAO_2021_3"
+    ],
+    "vl_aprovacao_2021_4": [
+      "VL_APROVACAO_2021_4"
+    ],
+    "vl_indicador_rend_2021": [
+      "VL_INDICADOR_REND_2021"
+    ],
+    "vl_aprovacao_2023_si_4": [
+      "VL_APROVACAO_2023_SI_4"
+    ],
+    "vl_aprovacao_2023_si": [
+      "VL_APROVACAO_2023_SI"
+    ],
+    "vl_aprovacao_2023_1": [
+      "VL_APROVACAO_2023_1"
+    ],
+    "vl_aprovacao_2023_2": [
+      "VL_APROVACAO_2023_2"
+    ],
+    "vl_aprovacao_2023_3": [
+      "VL_APROVACAO_2023_3"
+    ],
+    "vl_aprovacao_2023_4": [
+      "VL_APROVACAO_2023_4"
+    ],
+    "vl_indicador_rend_2023": [
+      "VL_INDICADOR_REND_2023"
+    ],
+    "vl_aprovacao_2025_si_4": [
+      "VL_APROVACAO_2025_SI_4"
+    ],
+    "vl_aprovacao_2025_si": [
+      "VL_APROVACAO_2025_SI"
+    ],
+    "vl_aprovacao_2025_1": [
+      "VL_APROVACAO_2025_1"
+    ],
+    "vl_aprovacao_2025_2": [
+      "VL_APROVACAO_2025_2"
+    ],
+    "vl_aprovacao_2025_3": [
+      "VL_APROVACAO_2025_3"
+    ],
+    "vl_aprovacao_2025_4": [
+      "VL_APROVACAO_2025_4"
+    ],
+    "vl_indicador_rend_2025": [
+      "VL_INDICADOR_REND_2025"
+    ],
+    "vl_nota_matematica_2005": [
+      "VL_NOTA_MATEMATICA_2005"
+    ],
+    "vl_nota_portugues_2005": [
+      "VL_NOTA_PORTUGUES_2005"
+    ],
+    "vl_nota_media_2005": [
+      "VL_NOTA_MEDIA_2005"
+    ],
+    "vl_nota_matematica_2007": [
+      "VL_NOTA_MATEMATICA_2007"
+    ],
+    "vl_nota_portugues_2007": [
+      "VL_NOTA_PORTUGUES_2007"
+    ],
+    "vl_nota_media_2007": [
+      "VL_NOTA_MEDIA_2007"
+    ],
+    "vl_nota_matematica_2009": [
+      "VL_NOTA_MATEMATICA_2009"
+    ],
+    "vl_nota_portugues_2009": [
+      "VL_NOTA_PORTUGUES_2009"
+    ],
+    "vl_nota_media_2009": [
+      "VL_NOTA_MEDIA_2009"
+    ],
+    "vl_nota_matematica_2011": [
+      "VL_NOTA_MATEMATICA_2011"
+    ],
+    "vl_nota_portugues_2011": [
+      "VL_NOTA_PORTUGUES_2011"
+    ],
+    "vl_nota_media_2011": [
+      "VL_NOTA_MEDIA_2011"
+    ],
+    "vl_nota_matematica_2013": [
+      "VL_NOTA_MATEMATICA_2013"
+    ],
+    "vl_nota_portugues_2013": [
+      "VL_NOTA_PORTUGUES_2013"
+    ],
+    "vl_nota_media_2013": [
+      "VL_NOTA_MEDIA_2013"
+    ],
+    "vl_nota_matematica_2015": [
+      "VL_NOTA_MATEMATICA_2015"
+    ],
+    "vl_nota_portugues_2015": [
+      "VL_NOTA_PORTUGUES_2015"
+    ],
+    "vl_nota_media_2015": [
+      "VL_NOTA_MEDIA_2015"
+    ],
+    "vl_nota_matematica_2017": [
+      "VL_NOTA_MATEMATICA_2017"
+    ],
+    "vl_nota_portugues_2017": [
+      "VL_NOTA_PORTUGUES_2017"
+    ],
+    "vl_nota_media_2017": [
+      "VL_NOTA_MEDIA_2017"
+    ],
+    "vl_nota_matematica_2019": [
+      "VL_NOTA_MATEMATICA_2019"
+    ],
+    "vl_nota_portugues_2019": [
+      "VL_NOTA_PORTUGUES_2019"
+    ],
+    "vl_nota_media_2019": [
+      "VL_NOTA_MEDIA_2019"
+    ],
+    "vl_nota_matematica_2021": [
+      "VL_NOTA_MATEMATICA_2021"
+    ],
+    "vl_nota_portugues_2021": [
+      "VL_NOTA_PORTUGUES_2021"
+    ],
+    "vl_nota_media_2021": [
+      "VL_NOTA_MEDIA_2021"
+    ],
+    "vl_nota_matematica_2023": [
+      "VL_NOTA_MATEMATICA_2023"
+    ],
+    "vl_nota_portugues_2023": [
+      "VL_NOTA_PORTUGUES_2023"
+    ],
+    "vl_nota_media_2023": [
+      "VL_NOTA_MEDIA_2023"
+    ],
+    "vl_nota_matematica_2025": [
+      "VL_NOTA_MATEMATICA_2025"
+    ],
+    "vl_nota_portugues_2025": [
+      "VL_NOTA_PORTUGUES_2025"
+    ],
+    "vl_nota_media_2025": [
+      "VL_NOTA_MEDIA_2025"
+    ],
+    "vl_observado_2005": [
+      "VL_OBSERVADO_2005"
+    ],
+    "vl_observado_2007": [
+      "VL_OBSERVADO_2007"
+    ],
+    "vl_observado_2009": [
+      "VL_OBSERVADO_2009"
+    ],
+    "vl_observado_2011": [
+      "VL_OBSERVADO_2011"
+    ],
+    "vl_observado_2013": [
+      "VL_OBSERVADO_2013"
+    ],
+    "vl_observado_2015": [
+      "VL_OBSERVADO_2015"
+    ],
+    "vl_observado_2017": [
+      "VL_OBSERVADO_2017"
+    ],
+    "vl_observado_2019": [
+      "VL_OBSERVADO_2019"
+    ],
+    "vl_observado_2021": [
+      "VL_OBSERVADO_2021"
+    ],
+    "vl_observado_2023": [
+      "VL_OBSERVADO_2023"
+    ],
+    "vl_observado_2025": [
+      "VL_OBSERVADO_2025"
+    ],
+    "vl_projecao_2007": [
+      "VL_PROJECAO_2007"
+    ],
+    "vl_projecao_2009": [
+      "VL_PROJECAO_2009"
+    ],
+    "vl_projecao_2011": [
+      "VL_PROJECAO_2011"
+    ],
+    "vl_projecao_2013": [
+      "VL_PROJECAO_2013"
+    ],
+    "vl_projecao_2015": [
+      "VL_PROJECAO_2015"
+    ],
+    "vl_projecao_2017": [
+      "VL_PROJECAO_2017"
+    ],
+    "vl_projecao_2019": [
+      "VL_PROJECAO_2019"
+    ],
+    "vl_projecao_2021": [
+      "VL_PROJECAO_2021"
+    ]
+  },
+  "derivadas": {
+    "edicao": "right(_arquivo, 4)"
+  },
+  "filtroLinhas": "regexp_full_match(trim(co_municipio), '[0-9]{7}') and nullif(trim(rede), '') is not null",
+  "saida": [
+    "edicao",
+    "sg_uf",
+    "co_municipio",
+    "no_municipio",
+    "rede",
+    "vl_aprovacao_2005_si_4",
+    "vl_aprovacao_2005_si",
+    "vl_aprovacao_2005_1",
+    "vl_aprovacao_2005_2",
+    "vl_aprovacao_2005_3",
+    "vl_aprovacao_2005_4",
+    "vl_indicador_rend_2005",
+    "vl_aprovacao_2007_si_4",
+    "vl_aprovacao_2007_si",
+    "vl_aprovacao_2007_1",
+    "vl_aprovacao_2007_2",
+    "vl_aprovacao_2007_3",
+    "vl_aprovacao_2007_4",
+    "vl_indicador_rend_2007",
+    "vl_aprovacao_2009_si_4",
+    "vl_aprovacao_2009_si",
+    "vl_aprovacao_2009_1",
+    "vl_aprovacao_2009_2",
+    "vl_aprovacao_2009_3",
+    "vl_aprovacao_2009_4",
+    "vl_indicador_rend_2009",
+    "vl_aprovacao_2011_si_4",
+    "vl_aprovacao_2011_si",
+    "vl_aprovacao_2011_1",
+    "vl_aprovacao_2011_2",
+    "vl_aprovacao_2011_3",
+    "vl_aprovacao_2011_4",
+    "vl_indicador_rend_2011",
+    "vl_aprovacao_2013_si_4",
+    "vl_aprovacao_2013_si",
+    "vl_aprovacao_2013_1",
+    "vl_aprovacao_2013_2",
+    "vl_aprovacao_2013_3",
+    "vl_aprovacao_2013_4",
+    "vl_indicador_rend_2013",
+    "vl_aprovacao_2015_si_4",
+    "vl_aprovacao_2015_si",
+    "vl_aprovacao_2015_1",
+    "vl_aprovacao_2015_2",
+    "vl_aprovacao_2015_3",
+    "vl_aprovacao_2015_4",
+    "vl_indicador_rend_2015",
+    "vl_aprovacao_2017_si_4",
+    "vl_aprovacao_2017_si",
+    "vl_aprovacao_2017_1",
+    "vl_aprovacao_2017_2",
+    "vl_aprovacao_2017_3",
+    "vl_aprovacao_2017_4",
+    "vl_indicador_rend_2017",
+    "vl_aprovacao_2019_si_4",
+    "vl_aprovacao_2019_si",
+    "vl_aprovacao_2019_1",
+    "vl_aprovacao_2019_2",
+    "vl_aprovacao_2019_3",
+    "vl_aprovacao_2019_4",
+    "vl_indicador_rend_2019",
+    "vl_aprovacao_2021_si_4",
+    "vl_aprovacao_2021_si",
+    "vl_aprovacao_2021_1",
+    "vl_aprovacao_2021_2",
+    "vl_aprovacao_2021_3",
+    "vl_aprovacao_2021_4",
+    "vl_indicador_rend_2021",
+    "vl_aprovacao_2023_si_4",
+    "vl_aprovacao_2023_si",
+    "vl_aprovacao_2023_1",
+    "vl_aprovacao_2023_2",
+    "vl_aprovacao_2023_3",
+    "vl_aprovacao_2023_4",
+    "vl_indicador_rend_2023",
+    "vl_aprovacao_2025_si_4",
+    "vl_aprovacao_2025_si",
+    "vl_aprovacao_2025_1",
+    "vl_aprovacao_2025_2",
+    "vl_aprovacao_2025_3",
+    "vl_aprovacao_2025_4",
+    "vl_indicador_rend_2025",
+    "vl_nota_matematica_2005",
+    "vl_nota_portugues_2005",
+    "vl_nota_media_2005",
+    "vl_nota_matematica_2007",
+    "vl_nota_portugues_2007",
+    "vl_nota_media_2007",
+    "vl_nota_matematica_2009",
+    "vl_nota_portugues_2009",
+    "vl_nota_media_2009",
+    "vl_nota_matematica_2011",
+    "vl_nota_portugues_2011",
+    "vl_nota_media_2011",
+    "vl_nota_matematica_2013",
+    "vl_nota_portugues_2013",
+    "vl_nota_media_2013",
+    "vl_nota_matematica_2015",
+    "vl_nota_portugues_2015",
+    "vl_nota_media_2015",
+    "vl_nota_matematica_2017",
+    "vl_nota_portugues_2017",
+    "vl_nota_media_2017",
+    "vl_nota_matematica_2019",
+    "vl_nota_portugues_2019",
+    "vl_nota_media_2019",
+    "vl_nota_matematica_2021",
+    "vl_nota_portugues_2021",
+    "vl_nota_media_2021",
+    "vl_nota_matematica_2023",
+    "vl_nota_portugues_2023",
+    "vl_nota_media_2023",
+    "vl_nota_matematica_2025",
+    "vl_nota_portugues_2025",
+    "vl_nota_media_2025",
+    "vl_observado_2005",
+    "vl_observado_2007",
+    "vl_observado_2009",
+    "vl_observado_2011",
+    "vl_observado_2013",
+    "vl_observado_2015",
+    "vl_observado_2017",
+    "vl_observado_2019",
+    "vl_observado_2021",
+    "vl_observado_2023",
+    "vl_observado_2025",
+    "vl_projecao_2007",
+    "vl_projecao_2009",
+    "vl_projecao_2011",
+    "vl_projecao_2013",
+    "vl_projecao_2015",
+    "vl_projecao_2017",
+    "vl_projecao_2019",
+    "vl_projecao_2021"
+  ],
+  "chave": [
+    "edicao",
+    "co_municipio",
+    "rede"
+  ],
+  "municipioCodigo": {
+    "coluna": "co_municipio",
+    "tipo": "IBGE7"
+  },
+  "validacoes": {
+    "linhasMinPorAba": 10000,
+    "chaveUnica": true,
+    "colunasPresentes": [
+      "sg_uf",
+      "co_municipio",
+      "no_municipio",
+      "rede",
+      "vl_observado_2005",
+      "vl_observado_2007",
+      "vl_observado_2009",
+      "vl_observado_2011",
+      "vl_observado_2013",
+      "vl_observado_2015",
+      "vl_observado_2017",
+      "vl_observado_2019",
+      "vl_observado_2021",
+      "vl_observado_2023",
+      "vl_observado_2025"
+    ],
+    "obrigatorias": [
+      "edicao",
+      "sg_uf",
+      "co_municipio",
+      "no_municipio",
+      "rede"
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "$schema": "../../docs/conjunto-v3.schema.json",
+  "conjunto": "ibge-populacao.municipios",
+  "nome": "População estimada dos municípios (IBGE), 2006 a 2021",
+  "versaoDefinicao": 1,
+  "tipo": "ORGANIZADO",
+  "edicaoPor": "ARQUIVO",
+  "fontes": {
+    "funcao": "ibge-estimativas-populacao",
+    "arquivos": [
+      "ibge-populacao-municipios-*"
+    ],
+    "abas": [
+      "P5564TCU",
+      "TCU",
+      "POP08DOU",
+      "MUNICÍPIOS",
+      "tab_internet_*",
+      "Municípios"
+    ]
+  },
+  "cabecalho": {
+    "contemUmDe": [
+      "SIGLA",
+      "UF"
+    ]
+  },
+  "colunas": {
+    "uf": [
+      "c1"
+    ],
+    "cod_uf": [
+      "c2"
+    ],
+    "cod_mun": [
+      "c3"
+    ],
+    "municipio": [
+      "c4"
+    ],
+    "pop_texto": [
+      "c5"
+    ]
+  },
+  "derivadas": {
+    "ano": "right(_arquivo, 4)",
+    "cod_uf2": "right(concat('00', trim(cod_uf)), 2)",
+    "cod_parcial": "case when right(_arquivo, 4) = '2006' then concat(cod_uf2, right(concat('0000', trim(cod_mun)), 4)) else concat(cod_uf2, right(concat('00000', trim(cod_mun)), 5)) end",
+    "d1": "try_cast(substr(cod_parcial, 1, 1) as integer)",
+    "d2": "try_cast(substr(cod_parcial, 2, 1) as integer)",
+    "d3": "try_cast(substr(cod_parcial, 3, 1) as integer)",
+    "d4": "try_cast(substr(cod_parcial, 4, 1) as integer)",
+    "d5": "try_cast(substr(cod_parcial, 5, 1) as integer)",
+    "d6": "try_cast(substr(cod_parcial, 6, 1) as integer)",
+    "dv_soma": "d1 + case when d2 >= 5 then 2 * d2 - 9 else 2 * d2 end + d3 + case when d4 >= 5 then 2 * d4 - 9 else 2 * d4 end + d5 + case when d6 >= 5 then 2 * d6 - 9 else 2 * d6 end",
+    "cod_ibge": "case when right(_arquivo, 4) = '2006' then concat(cod_parcial, cast((10 - dv_soma % 10) % 10 as varchar)) else cod_parcial end",
+    "cod_dv": "case when right(_arquivo, 4) = '2006' then 'CALCULADO' else 'ORIGEM' end",
+    "populacao": "nullif(regexp_replace(regexp_replace(trim(pop_texto), '\\s*\\(.*\\)\\s*$', ''), '[.]', ''), '')",
+    "nota_rodape": "nullif(regexp_extract(trim(pop_texto), '\\((.*)\\)', 1), '')"
+  },
+  "filtroLinhas": "regexp_full_match(trim(cod_uf), '[0-9]{1,2}') and regexp_full_match(trim(cod_mun), '[0-9]{1,5}') and regexp_full_match(populacao, '[0-9]+')",
+  "saida": [
+    "ano",
+    "cod_ibge",
+    "cod_dv",
+    "uf",
+    "municipio",
+    "populacao",
+    "nota_rodape"
+  ],
+  "chave": [
+    "ano",
+    "cod_ibge"
+  ],
+  "municipioCodigo": {
+    "coluna": "cod_ibge",
+    "tipo": "IBGE7"
+  },
+  "validacoes": {
+    "linhasMinPorAba": 5564,
+    "chaveUnica": true,
+    "obrigatorias": [
+      "ano",
+      "cod_ibge",
+      "uf",
+      "municipio",
+      "populacao"
+    ]
+  }
+}

@@ -1,0 +1,485 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "GovData Manager — API de lotes Parquet",
+    "version": "2.1.0",
+    "description": "Leitura de lotes READY. Mantém o envelope v2; operação de downloads pertence à TUI/CLI. Sem expurgo ou confirmação automática no PostgreSQL."
+  },
+  "servers": [
+    {
+      "url": "http://127.0.0.1:5080"
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer"
+      }
+    },
+    "schemas": {
+      "Erro": {
+        "type": "object",
+        "properties": {
+          "erro": {
+            "type": "object",
+            "properties": {
+              "codigo": {
+                "type": "string"
+              },
+              "mensagem": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "Confirmacao": {
+        "type": "object",
+        "required": [
+          "publicationId",
+          "endpointId",
+          "loteId",
+          "partitions"
+        ],
+        "properties": {
+          "publicationId": {
+            "type": "string"
+          },
+          "endpointId": {
+            "type": "integer"
+          },
+          "loteId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "partitions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "arquivoId",
+                "originalSha256",
+                "rows",
+                "firstLine",
+                "lastLine",
+                "pageCount",
+                "coverageSha256",
+                "workUnitId",
+                "scopeHash",
+                "currentExecutionId",
+                "originExecutionIds"
+              ],
+              "properties": {
+                "arquivoId": {
+                  "type": "string"
+                },
+                "originalSha256": {
+                  "type": "string"
+                },
+                "rows": {
+                  "type": "integer",
+                  "format": "int64"
+                },
+                "firstLine": {
+                  "type": "integer",
+                  "format": "int64"
+                },
+                "lastLine": {
+                  "type": "integer",
+                  "format": "int64"
+                },
+                "pageCount": {
+                  "type": "integer",
+                  "format": "int64"
+                },
+                "coverageSha256": {
+                  "type": "string"
+                },
+                "workUnitId": {
+                  "type": "integer",
+                  "format": "int64"
+                },
+                "scopeHash": {
+                  "type": "string"
+                },
+                "currentExecutionId": {
+                  "type": "integer",
+                  "format": "int64"
+                },
+                "originExecutionIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "integer",
+                    "format": "int64"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Automacao": {
+        "type": "object",
+        "required": [
+          "enabled"
+        ],
+        "properties": {
+          "enabled": {
+            "type": "boolean"
+          }
+        }
+      },
+      "Pagina": {
+        "type": "object",
+        "required": [
+          "conjunto",
+          "particao",
+          "versao",
+          "inicio",
+          "limit",
+          "quantidade",
+          "total",
+          "proximoCursor",
+          "registros"
+        ],
+        "properties": {
+          "conjunto": {
+            "type": "string"
+          },
+          "particao": {
+            "type": "string"
+          },
+          "versao": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "inicio": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "limit": {
+            "type": "integer"
+          },
+          "quantidade": {
+            "type": "integer"
+          },
+          "total": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "proximoCursor": {
+            "type": "string",
+            "nullable": true
+          },
+          "registros": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string",
+                "nullable": true
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "paths": {
+    "/api/v1/saude": {
+      "get": {
+        "summary": "Estado do serviço",
+        "responses": {
+          "200": {
+            "description": "Disponível"
+          },
+          "403": {
+            "description": "Origem ou Host não permitido"
+          }
+        }
+      }
+    },
+    "/api/v1/fontes": {
+      "get": {
+        "summary": "Fontes do catálogo e estado de publicação",
+        "parameters": [
+          {
+            "name": "offset",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 0,
+              "default": 0
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 500,
+              "default": 100
+            }
+          },
+          {
+            "name": "status",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Fontes e estados"
+          },
+          "403": {
+            "description": "Origem ou Host não permitido"
+          }
+        }
+      }
+    },
+    "/api/v1/documentos": {
+      "get": {
+        "summary": "Documentos não tabulares do catálogo",
+        "responses": {
+          "200": {
+            "description": "Documentos"
+          },
+          "403": {
+            "description": "Origem ou Host não permitido"
+          }
+        }
+      }
+    },
+    "/api/v1/conjuntos": {
+      "get": {
+        "summary": "Descoberta de conjuntos",
+        "parameters": [
+          {
+            "name": "offset",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "default": 0
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "default": 100,
+              "maximum": 500
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Conjuntos"
+          },
+          "403": {
+            "description": "Origem ou Host não permitido"
+          }
+        },
+        "description": "Contagens de partições disponíveis nos lotes configurados, não de todo o catálogo."
+      }
+    },
+    "/api/v1/publicacoes": {
+      "get": {
+        "summary": "Publicações e confirmações",
+        "responses": {
+          "200": {
+            "description": "Publicações"
+          },
+          "403": {
+            "description": "Origem ou Host não permitido"
+          }
+        }
+      }
+    },
+    "/api/v1/conjuntos/{conjuntoId}/particoes": {
+      "get": {
+        "summary": "Partições e disponibilidade",
+        "parameters": [
+          {
+            "name": "conjuntoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "publicacao",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Partições"
+          },
+          "403": {
+            "description": "Origem ou Host não permitido"
+          },
+          "404": {
+            "description": "Publicação ou partição não configurada"
+          }
+        }
+      }
+    },
+    "/api/v1/conjuntos/{conjuntoId}/registros": {
+      "get": {
+        "summary": "Página determinística da publicação",
+        "parameters": [
+          {
+            "name": "conjuntoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "publicacao",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "particao",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 50000,
+              "default": 1000
+            }
+          },
+          {
+            "name": "cursor",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 512
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Registros",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Pagina"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Parâmetro ou cursor inválido"
+          },
+          "503": {
+            "description": "Leitores ocupados, timeout ou publicação indisponível"
+          },
+          "403": {
+            "description": "Origem ou Host não permitido"
+          },
+          "404": {
+            "description": "Publicação ou partição não configurada"
+          }
+        }
+      }
+    },
+    "/api/v1/conjuntos/{conjuntoId}/parquet": {
+      "get": {
+        "summary": "Parquet organizado de uma partição imutável",
+        "parameters": [
+          {
+            "name": "conjuntoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "publicacao",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "particao",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Arquivo Parquet",
+            "content": {
+              "application/vnd.apache.parquet": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          },
+          "206": {
+            "description": "Conteúdo parcial solicitado por HTTP Range"
+          },
+          "503": {
+            "description": "Leitores ocupados"
+          },
+          "403": {
+            "description": "Origem ou Host não permitido"
+          },
+          "404": {
+            "description": "Publicação ou partição não configurada"
+          }
+        }
+      }
+    },
+    "/api/v1/admin/atividade": {
+      "get": {
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "summary": "Contadores de requisições, volume transferido e endpoints acessados desde o início da API",
+        "responses": {
+          "200": {
+            "description": "Atividade recente da API"
+          },
+          "403": {
+            "description": "Origem ou Host não permitido"
+          }
+        }
+      }
+    }
+  }
+}

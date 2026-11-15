@@ -1,0 +1,8 @@
+{
+  "sdk": {
+    "version": "10.0.401",
+    "rollForward": "disable",
+    "paths": [".dotnet"],
+    "errorMessage": "SDK .NET local ausente. No Linux execute bash eng/setup-dotnet-linux.sh; no Windows execute eng/setup-local.ps1."
+  }
+}

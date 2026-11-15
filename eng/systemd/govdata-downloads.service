@@ -1,0 +1,21 @@
+[Unit]
+Description=GovData Downloads autônomo (catálogo v2, sem API)
+After=default.target
+ConditionPathExists=@GOVDATA_HOME@/catalogo.json
+
+[Service]
+Type=simple
+Environment=GOVDATA_HOME=@GOVDATA_HOME@
+WorkingDirectory=@MANAGER_ROOT@
+ExecStart=@MANAGER_ROOT@/dist/linux-x64/download-worker/GovData.Downloads.Worker.Cli run --home @GOVDATA_HOME@
+Restart=on-failure
+RestartSec=10s
+TimeoutStopSec=60s
+KillMode=mixed
+MemoryMax=1536M
+CPUQuota=150%
+TasksMax=64
+UMask=0077
+
+[Install]
+WantedBy=default.target

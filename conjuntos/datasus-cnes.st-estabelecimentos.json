@@ -1,0 +1,861 @@
+{
+  "$schema": "../../docs/conjunto-v3.schema.json",
+  "conjunto": "datasus-cnes.st-estabelecimentos",
+  "nome": "CNES ST - estabelecimentos (DBC por UF e competencia)",
+  "versaoDefinicao": 1,
+  "tipo": "ORGANIZADO",
+  "edicaoPor": "ARQUIVO",
+  "fontes": {
+    "funcao": "datasus-cnes",
+    "arquivos": [
+      "cnes-st-*"
+    ],
+    "encoding": "windows-1252",
+    "delimiter": ";"
+  },
+  "cabecalho": {
+    "linha": 1
+  },
+  "colunas": {
+    "cnes": [
+      "cnes"
+    ],
+    "codufmun": [
+      "codufmun"
+    ],
+    "cod_cep": [
+      "cod_cep"
+    ],
+    "cpf_cnpj": [
+      "cpf_cnpj"
+    ],
+    "pf_pj": [
+      "pf_pj"
+    ],
+    "niv_dep": [
+      "niv_dep"
+    ],
+    "cnpj_man": [
+      "cnpj_man"
+    ],
+    "cod_ir": [
+      "cod_ir"
+    ],
+    "regsaude": [
+      "regsaude"
+    ],
+    "micr_reg": [
+      "micr_reg"
+    ],
+    "distrsan": [
+      "distrsan"
+    ],
+    "distradm": [
+      "distradm"
+    ],
+    "vinc_sus": [
+      "vinc_sus"
+    ],
+    "tpgestao": [
+      "tpgestao"
+    ],
+    "esfera_a": [
+      "esfera_a"
+    ],
+    "retencao": [
+      "retencao"
+    ],
+    "atividad": [
+      "atividad"
+    ],
+    "natureza": [
+      "natureza"
+    ],
+    "clientel": [
+      "clientel"
+    ],
+    "tp_unid": [
+      "tp_unid"
+    ],
+    "turno_at": [
+      "turno_at"
+    ],
+    "niv_hier": [
+      "niv_hier"
+    ],
+    "tp_prest": [
+      "tp_prest"
+    ],
+    "co_banco": [
+      "co_banco"
+    ],
+    "co_agenc": [
+      "co_agenc"
+    ],
+    "c_corren": [
+      "c_corren"
+    ],
+    "contratm": [
+      "contratm"
+    ],
+    "dt_publm": [
+      "dt_publm"
+    ],
+    "contrate": [
+      "contrate"
+    ],
+    "dt_puble": [
+      "dt_puble"
+    ],
+    "alvara": [
+      "alvara"
+    ],
+    "dt_exped": [
+      "dt_exped"
+    ],
+    "orgexped": [
+      "orgexped"
+    ],
+    "av_acred": [
+      "av_acred"
+    ],
+    "clasaval": [
+      "clasaval"
+    ],
+    "dt_acred": [
+      "dt_acred"
+    ],
+    "av_pnass": [
+      "av_pnass"
+    ],
+    "dt_pnass": [
+      "dt_pnass"
+    ],
+    "gesprg1e": [
+      "gesprg1e"
+    ],
+    "gesprg1m": [
+      "gesprg1m"
+    ],
+    "gesprg2e": [
+      "gesprg2e"
+    ],
+    "gesprg2m": [
+      "gesprg2m"
+    ],
+    "gesprg4e": [
+      "gesprg4e"
+    ],
+    "gesprg4m": [
+      "gesprg4m"
+    ],
+    "nivate_a": [
+      "nivate_a"
+    ],
+    "gesprg3e": [
+      "gesprg3e"
+    ],
+    "gesprg3m": [
+      "gesprg3m"
+    ],
+    "gesprg5e": [
+      "gesprg5e"
+    ],
+    "gesprg5m": [
+      "gesprg5m"
+    ],
+    "gesprg6e": [
+      "gesprg6e"
+    ],
+    "gesprg6m": [
+      "gesprg6m"
+    ],
+    "nivate_h": [
+      "nivate_h"
+    ],
+    "qtleitp1": [
+      "qtleitp1"
+    ],
+    "qtleitp2": [
+      "qtleitp2"
+    ],
+    "qtleitp3": [
+      "qtleitp3"
+    ],
+    "leithosp": [
+      "leithosp"
+    ],
+    "qtinst01": [
+      "qtinst01"
+    ],
+    "qtinst02": [
+      "qtinst02"
+    ],
+    "qtinst03": [
+      "qtinst03"
+    ],
+    "qtinst04": [
+      "qtinst04"
+    ],
+    "qtinst05": [
+      "qtinst05"
+    ],
+    "qtinst06": [
+      "qtinst06"
+    ],
+    "qtinst07": [
+      "qtinst07"
+    ],
+    "qtinst08": [
+      "qtinst08"
+    ],
+    "qtinst09": [
+      "qtinst09"
+    ],
+    "qtinst10": [
+      "qtinst10"
+    ],
+    "qtinst11": [
+      "qtinst11"
+    ],
+    "qtinst12": [
+      "qtinst12"
+    ],
+    "qtinst13": [
+      "qtinst13"
+    ],
+    "qtinst14": [
+      "qtinst14"
+    ],
+    "urgemerg": [
+      "urgemerg"
+    ],
+    "qtinst15": [
+      "qtinst15"
+    ],
+    "qtinst16": [
+      "qtinst16"
+    ],
+    "qtinst17": [
+      "qtinst17"
+    ],
+    "qtinst18": [
+      "qtinst18"
+    ],
+    "qtinst19": [
+      "qtinst19"
+    ],
+    "qtinst20": [
+      "qtinst20"
+    ],
+    "qtinst21": [
+      "qtinst21"
+    ],
+    "qtinst22": [
+      "qtinst22"
+    ],
+    "qtinst23": [
+      "qtinst23"
+    ],
+    "qtinst24": [
+      "qtinst24"
+    ],
+    "qtinst25": [
+      "qtinst25"
+    ],
+    "qtinst26": [
+      "qtinst26"
+    ],
+    "qtinst27": [
+      "qtinst27"
+    ],
+    "qtinst28": [
+      "qtinst28"
+    ],
+    "qtinst29": [
+      "qtinst29"
+    ],
+    "qtinst30": [
+      "qtinst30"
+    ],
+    "atendamb": [
+      "atendamb"
+    ],
+    "qtinst31": [
+      "qtinst31"
+    ],
+    "qtinst32": [
+      "qtinst32"
+    ],
+    "qtinst33": [
+      "qtinst33"
+    ],
+    "centrcir": [
+      "centrcir"
+    ],
+    "qtinst34": [
+      "qtinst34"
+    ],
+    "qtinst35": [
+      "qtinst35"
+    ],
+    "qtinst36": [
+      "qtinst36"
+    ],
+    "qtinst37": [
+      "qtinst37"
+    ],
+    "centrobs": [
+      "centrobs"
+    ],
+    "qtleit05": [
+      "qtleit05"
+    ],
+    "qtleit06": [
+      "qtleit06"
+    ],
+    "qtleit07": [
+      "qtleit07"
+    ],
+    "qtleit08": [
+      "qtleit08"
+    ],
+    "qtleit09": [
+      "qtleit09"
+    ],
+    "qtleit19": [
+      "qtleit19"
+    ],
+    "qtleit20": [
+      "qtleit20"
+    ],
+    "qtleit21": [
+      "qtleit21"
+    ],
+    "qtleit22": [
+      "qtleit22"
+    ],
+    "qtleit23": [
+      "qtleit23"
+    ],
+    "qtleit32": [
+      "qtleit32"
+    ],
+    "qtleit34": [
+      "qtleit34"
+    ],
+    "qtleit38": [
+      "qtleit38"
+    ],
+    "qtleit39": [
+      "qtleit39"
+    ],
+    "qtleit40": [
+      "qtleit40"
+    ],
+    "centrneo": [
+      "centrneo"
+    ],
+    "atendhos": [
+      "atendhos"
+    ],
+    "serap01p": [
+      "serap01p"
+    ],
+    "serap01t": [
+      "serap01t"
+    ],
+    "serap02p": [
+      "serap02p"
+    ],
+    "serap02t": [
+      "serap02t"
+    ],
+    "serap03p": [
+      "serap03p"
+    ],
+    "serap03t": [
+      "serap03t"
+    ],
+    "serap04p": [
+      "serap04p"
+    ],
+    "serap04t": [
+      "serap04t"
+    ],
+    "serap05p": [
+      "serap05p"
+    ],
+    "serap05t": [
+      "serap05t"
+    ],
+    "serap06p": [
+      "serap06p"
+    ],
+    "serap06t": [
+      "serap06t"
+    ],
+    "serap07p": [
+      "serap07p"
+    ],
+    "serap07t": [
+      "serap07t"
+    ],
+    "serap08p": [
+      "serap08p"
+    ],
+    "serap08t": [
+      "serap08t"
+    ],
+    "serap09p": [
+      "serap09p"
+    ],
+    "serap09t": [
+      "serap09t"
+    ],
+    "serap10p": [
+      "serap10p"
+    ],
+    "serap10t": [
+      "serap10t"
+    ],
+    "serap11p": [
+      "serap11p"
+    ],
+    "serap11t": [
+      "serap11t"
+    ],
+    "serapoio": [
+      "serapoio"
+    ],
+    "res_biol": [
+      "res_biol"
+    ],
+    "res_quim": [
+      "res_quim"
+    ],
+    "res_radi": [
+      "res_radi"
+    ],
+    "res_comu": [
+      "res_comu"
+    ],
+    "coletres": [
+      "coletres"
+    ],
+    "comiss01": [
+      "comiss01"
+    ],
+    "comiss02": [
+      "comiss02"
+    ],
+    "comiss03": [
+      "comiss03"
+    ],
+    "comiss04": [
+      "comiss04"
+    ],
+    "comiss05": [
+      "comiss05"
+    ],
+    "comiss06": [
+      "comiss06"
+    ],
+    "comiss07": [
+      "comiss07"
+    ],
+    "comiss08": [
+      "comiss08"
+    ],
+    "comiss09": [
+      "comiss09"
+    ],
+    "comiss10": [
+      "comiss10"
+    ],
+    "comiss11": [
+      "comiss11"
+    ],
+    "comiss12": [
+      "comiss12"
+    ],
+    "comissao": [
+      "comissao"
+    ],
+    "ap01cv01": [
+      "ap01cv01"
+    ],
+    "ap01cv02": [
+      "ap01cv02"
+    ],
+    "ap01cv03": [
+      "ap01cv03"
+    ],
+    "ap01cv04": [
+      "ap01cv04"
+    ],
+    "ap01cv05": [
+      "ap01cv05"
+    ],
+    "ap01cv06": [
+      "ap01cv06"
+    ],
+    "ap01cv07": [
+      "ap01cv07"
+    ],
+    "ap02cv01": [
+      "ap02cv01"
+    ],
+    "ap02cv02": [
+      "ap02cv02"
+    ],
+    "ap02cv03": [
+      "ap02cv03"
+    ],
+    "ap02cv04": [
+      "ap02cv04"
+    ],
+    "ap02cv05": [
+      "ap02cv05"
+    ],
+    "ap02cv06": [
+      "ap02cv06"
+    ],
+    "ap02cv07": [
+      "ap02cv07"
+    ],
+    "ap03cv01": [
+      "ap03cv01"
+    ],
+    "ap03cv02": [
+      "ap03cv02"
+    ],
+    "ap03cv03": [
+      "ap03cv03"
+    ],
+    "ap03cv04": [
+      "ap03cv04"
+    ],
+    "ap03cv05": [
+      "ap03cv05"
+    ],
+    "ap03cv06": [
+      "ap03cv06"
+    ],
+    "ap03cv07": [
+      "ap03cv07"
+    ],
+    "ap04cv01": [
+      "ap04cv01"
+    ],
+    "ap04cv02": [
+      "ap04cv02"
+    ],
+    "ap04cv03": [
+      "ap04cv03"
+    ],
+    "ap04cv04": [
+      "ap04cv04"
+    ],
+    "ap04cv05": [
+      "ap04cv05"
+    ],
+    "ap04cv06": [
+      "ap04cv06"
+    ],
+    "ap04cv07": [
+      "ap04cv07"
+    ],
+    "ap05cv01": [
+      "ap05cv01"
+    ],
+    "ap05cv02": [
+      "ap05cv02"
+    ],
+    "ap05cv03": [
+      "ap05cv03"
+    ],
+    "ap05cv04": [
+      "ap05cv04"
+    ],
+    "ap05cv05": [
+      "ap05cv05"
+    ],
+    "ap05cv06": [
+      "ap05cv06"
+    ],
+    "ap05cv07": [
+      "ap05cv07"
+    ],
+    "ap06cv01": [
+      "ap06cv01"
+    ],
+    "ap06cv02": [
+      "ap06cv02"
+    ],
+    "ap06cv03": [
+      "ap06cv03"
+    ],
+    "ap06cv04": [
+      "ap06cv04"
+    ],
+    "ap06cv05": [
+      "ap06cv05"
+    ],
+    "ap06cv06": [
+      "ap06cv06"
+    ],
+    "ap06cv07": [
+      "ap06cv07"
+    ],
+    "ap07cv01": [
+      "ap07cv01"
+    ],
+    "ap07cv02": [
+      "ap07cv02"
+    ],
+    "ap07cv03": [
+      "ap07cv03"
+    ],
+    "ap07cv04": [
+      "ap07cv04"
+    ],
+    "ap07cv05": [
+      "ap07cv05"
+    ],
+    "ap07cv06": [
+      "ap07cv06"
+    ],
+    "ap07cv07": [
+      "ap07cv07"
+    ],
+    "atend_pr": [
+      "atend_pr"
+    ],
+    "dt_atual": [
+      "dt_atual"
+    ],
+    "competen": [
+      "competen"
+    ],
+    "nat_jur": [
+      "nat_jur"
+    ]
+  },
+  "filtroLinhas": "true",
+  "saida": [
+    "cnes",
+    "codufmun",
+    "cod_cep",
+    "cpf_cnpj",
+    "pf_pj",
+    "niv_dep",
+    "cnpj_man",
+    "cod_ir",
+    "regsaude",
+    "micr_reg",
+    "distrsan",
+    "distradm",
+    "vinc_sus",
+    "tpgestao",
+    "esfera_a",
+    "retencao",
+    "atividad",
+    "natureza",
+    "clientel",
+    "tp_unid",
+    "turno_at",
+    "niv_hier",
+    "tp_prest",
+    "co_banco",
+    "co_agenc",
+    "c_corren",
+    "contratm",
+    "dt_publm",
+    "contrate",
+    "dt_puble",
+    "alvara",
+    "dt_exped",
+    "orgexped",
+    "av_acred",
+    "clasaval",
+    "dt_acred",
+    "av_pnass",
+    "dt_pnass",
+    "gesprg1e",
+    "gesprg1m",
+    "gesprg2e",
+    "gesprg2m",
+    "gesprg4e",
+    "gesprg4m",
+    "nivate_a",
+    "gesprg3e",
+    "gesprg3m",
+    "gesprg5e",
+    "gesprg5m",
+    "gesprg6e",
+    "gesprg6m",
+    "nivate_h",
+    "qtleitp1",
+    "qtleitp2",
+    "qtleitp3",
+    "leithosp",
+    "qtinst01",
+    "qtinst02",
+    "qtinst03",
+    "qtinst04",
+    "qtinst05",
+    "qtinst06",
+    "qtinst07",
+    "qtinst08",
+    "qtinst09",
+    "qtinst10",
+    "qtinst11",
+    "qtinst12",
+    "qtinst13",
+    "qtinst14",
+    "urgemerg",
+    "qtinst15",
+    "qtinst16",
+    "qtinst17",
+    "qtinst18",
+    "qtinst19",
+    "qtinst20",
+    "qtinst21",
+    "qtinst22",
+    "qtinst23",
+    "qtinst24",
+    "qtinst25",
+    "qtinst26",
+    "qtinst27",
+    "qtinst28",
+    "qtinst29",
+    "qtinst30",
+    "atendamb",
+    "qtinst31",
+    "qtinst32",
+    "qtinst33",
+    "centrcir",
+    "qtinst34",
+    "qtinst35",
+    "qtinst36",
+    "qtinst37",
+    "centrobs",
+    "qtleit05",
+    "qtleit06",
+    "qtleit07",
+    "qtleit08",
+    "qtleit09",
+    "qtleit19",
+    "qtleit20",
+    "qtleit21",
+    "qtleit22",
+    "qtleit23",
+    "qtleit32",
+    "qtleit34",
+    "qtleit38",
+    "qtleit39",
+    "qtleit40",
+    "centrneo",
+    "atendhos",
+    "serap01p",
+    "serap01t",
+    "serap02p",
+    "serap02t",
+    "serap03p",
+    "serap03t",
+    "serap04p",
+    "serap04t",
+    "serap05p",
+    "serap05t",
+    "serap06p",
+    "serap06t",
+    "serap07p",
+    "serap07t",
+    "serap08p",
+    "serap08t",
+    "serap09p",
+    "serap09t",
+    "serap10p",
+    "serap10t",
+    "serap11p",
+    "serap11t",
+    "serapoio",
+    "res_biol",
+    "res_quim",
+    "res_radi",
+    "res_comu",
+    "coletres",
+    "comiss01",
+    "comiss02",
+    "comiss03",
+    "comiss04",
+    "comiss05",
+    "comiss06",
+    "comiss07",
+    "comiss08",
+    "comiss09",
+    "comiss10",
+    "comiss11",
+    "comiss12",
+    "comissao",
+    "ap01cv01",
+    "ap01cv02",
+    "ap01cv03",
+    "ap01cv04",
+    "ap01cv05",
+    "ap01cv06",
+    "ap01cv07",
+    "ap02cv01",
+    "ap02cv02",
+    "ap02cv03",
+    "ap02cv04",
+    "ap02cv05",
+    "ap02cv06",
+    "ap02cv07",
+    "ap03cv01",
+    "ap03cv02",
+    "ap03cv03",
+    "ap03cv04",
+    "ap03cv05",
+    "ap03cv06",
+    "ap03cv07",
+    "ap04cv01",
+    "ap04cv02",
+    "ap04cv03",
+    "ap04cv04",
+    "ap04cv05",
+    "ap04cv06",
+    "ap04cv07",
+    "ap05cv01",
+    "ap05cv02",
+    "ap05cv03",
+    "ap05cv04",
+    "ap05cv05",
+    "ap05cv06",
+    "ap05cv07",
+    "ap06cv01",
+    "ap06cv02",
+    "ap06cv03",
+    "ap06cv04",
+    "ap06cv05",
+    "ap06cv06",
+    "ap06cv07",
+    "ap07cv01",
+    "ap07cv02",
+    "ap07cv03",
+    "ap07cv04",
+    "ap07cv05",
+    "ap07cv06",
+    "ap07cv07",
+    "atend_pr",
+    "dt_atual",
+    "competen",
+    "nat_jur"
+  ],
+  "chave": [],
+  "validacoes": {
+    "linhasMinPorAba": 1,
+    "chaveUnica": false
+  }
+}

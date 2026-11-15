@@ -1,0 +1,13 @@
+{
+  "port": 5080,
+  "catalogPath": "catalogo.json",
+  "definitionsPath": "server/conjuntos",
+  "runDirectories": ["organization-output/orgao/funcao"],
+  "secretsPath": "api-secrets.json",
+  "lanAddress": null,
+  "lanAllowedClient": null,
+  "maxReaders": 2,
+  "maxPageBytes": 8388608,
+  "duckDbMemoryMb": 256,
+  "queryTimeoutSeconds": 60
+}

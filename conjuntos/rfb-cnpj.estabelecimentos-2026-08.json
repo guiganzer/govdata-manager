@@ -1,0 +1,175 @@
+{
+  "$schema": "../../docs/conjunto-v3.schema.json",
+  "conjunto": "rfb-cnpj.estabelecimentos-2026-08",
+  "nome": "CNPJ - estabelecimentos 2026-08",
+  "versaoDefinicao": 1,
+  "tipo": "ORGANIZADO",
+  "edicaoPor": "LISTA",
+  "fontes": {
+    "funcao": "rfb-cnpj",
+    "arquivos": [
+      "rfb-cnpj-2026-08-estabelecimentos0",
+      "rfb-cnpj-2026-08-estabelecimentos1",
+      "rfb-cnpj-2026-08-estabelecimentos2",
+      "rfb-cnpj-2026-08-estabelecimentos3",
+      "rfb-cnpj-2026-08-estabelecimentos4",
+      "rfb-cnpj-2026-08-estabelecimentos5",
+      "rfb-cnpj-2026-08-estabelecimentos6",
+      "rfb-cnpj-2026-08-estabelecimentos7",
+      "rfb-cnpj-2026-08-estabelecimentos8",
+      "rfb-cnpj-2026-08-estabelecimentos9"
+    ],
+    "membros": [
+      "*.ESTABELE"
+    ],
+    "formatoMembro": "csv",
+    "encoding": "windows-1252",
+    "delimiter": ";"
+  },
+  "cabecalho": {
+    "semCabecalho": true
+  },
+  "colunas": {
+    "cnpj_basico": [
+      "c1"
+    ],
+    "cnpj_ordem": [
+      "c2"
+    ],
+    "cnpj_dv": [
+      "c3"
+    ],
+    "identificador_matriz_filial": [
+      "c4"
+    ],
+    "nome_fantasia": [
+      "c5"
+    ],
+    "situacao_cadastral": [
+      "c6"
+    ],
+    "data_situacao_cadastral": [
+      "c7"
+    ],
+    "motivo_situacao_cadastral": [
+      "c8"
+    ],
+    "nome_cidade_exterior": [
+      "c9"
+    ],
+    "pais": [
+      "c10"
+    ],
+    "data_inicio_atividade": [
+      "c11"
+    ],
+    "cnae_fiscal_principal": [
+      "c12"
+    ],
+    "cnae_fiscal_secundaria": [
+      "c13"
+    ],
+    "tipo_logradouro": [
+      "c14"
+    ],
+    "logradouro": [
+      "c15"
+    ],
+    "numero": [
+      "c16"
+    ],
+    "complemento": [
+      "c17"
+    ],
+    "bairro": [
+      "c18"
+    ],
+    "cep": [
+      "c19"
+    ],
+    "uf": [
+      "c20"
+    ],
+    "municipio": [
+      "c21"
+    ],
+    "ddd_1": [
+      "c22"
+    ],
+    "telefone_1": [
+      "c23"
+    ],
+    "ddd_2": [
+      "c24"
+    ],
+    "telefone_2": [
+      "c25"
+    ],
+    "ddd_fax": [
+      "c26"
+    ],
+    "fax": [
+      "c27"
+    ],
+    "correio_eletronico": [
+      "c28"
+    ],
+    "situacao_especial": [
+      "c29"
+    ],
+    "data_situacao_especial": [
+      "c30"
+    ]
+  },
+  "filtroLinhas": "true",
+  "saida": [
+    "cnpj_basico",
+    "cnpj_ordem",
+    "cnpj_dv",
+    "identificador_matriz_filial",
+    "nome_fantasia",
+    "situacao_cadastral",
+    "data_situacao_cadastral",
+    "motivo_situacao_cadastral",
+    "nome_cidade_exterior",
+    "pais",
+    "data_inicio_atividade",
+    "cnae_fiscal_principal",
+    "cnae_fiscal_secundaria",
+    "tipo_logradouro",
+    "logradouro",
+    "numero",
+    "complemento",
+    "bairro",
+    "cep",
+    "uf",
+    "municipio",
+    "ddd_1",
+    "telefone_1",
+    "ddd_2",
+    "telefone_2",
+    "ddd_fax",
+    "fax",
+    "correio_eletronico",
+    "situacao_especial",
+    "data_situacao_especial"
+  ],
+  "chave": [
+    "cnpj_basico",
+    "cnpj_ordem",
+    "cnpj_dv"
+  ],
+  "municipioCodigo": {
+    "coluna": "municipio",
+    "tipo": "RFB"
+  },
+  "validacoes": {
+    "linhasMinPorAba": 1,
+    "chaveUnica": false,
+    "obrigatorias": [
+      "cnpj_basico",
+      "cnpj_ordem",
+      "cnpj_dv"
+    ]
+  }
+}

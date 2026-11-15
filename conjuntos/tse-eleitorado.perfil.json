@@ -1,0 +1,187 @@
+{
+  "conjunto": "tse-eleitorado.perfil",
+  "nome": "Perfil do eleitorado por município, zona e dimensões",
+  "versaoDefinicao": 2,
+  "tipo": "ORGANIZADO",
+  "edicaoPor": "ARQUIVO",
+  "fontes": {
+    "funcao": "tse-eleitorado",
+    "arquivos": [
+      "tse-perfil-eleitorado-*"
+    ],
+    "membros": [
+      "*BRASIL.csv",
+      "perfil_eleitorado_ATUAL.csv"
+    ],
+    "encoding": "iso-8859-1",
+    "delimiter": ";"
+  },
+  "cabecalho": {
+    "linha": 1
+  },
+  "colunas": {
+    "dt_geracao": [
+      "DT_GERACAO"
+    ],
+    "hh_geracao": [
+      "HH_GERACAO"
+    ],
+    "aa_eleicao": [
+      "AA_ELEICAO",
+      "ANO_ELEICAO"
+    ],
+    "sg_uf": [
+      "SG_UF"
+    ],
+    "cd_municipio": [
+      "CD_MUNICIPIO"
+    ],
+    "nm_municipio": [
+      "NM_MUNICIPIO"
+    ],
+    "nr_zona": [
+      "NR_ZONA"
+    ],
+    "cd_genero": [
+      "CD_GENERO"
+    ],
+    "ds_genero": [
+      "DS_GENERO"
+    ],
+    "cd_estado_civil": [
+      "CD_ESTADO_CIVIL"
+    ],
+    "ds_estado_civil": [
+      "DS_ESTADO_CIVIL"
+    ],
+    "cd_faixa_etaria": [
+      "CD_FAIXA_ETARIA"
+    ],
+    "ds_faixa_etaria": [
+      "DS_FAIXA_ETARIA"
+    ],
+    "cd_grau_escolaridade": [
+      "CD_GRAU_ESCOLARIDADE",
+      "CD_GRAU_INSTRUCAO"
+    ],
+    "ds_grau_escolaridade": [
+      "DS_GRAU_ESCOLARIDADE",
+      "DS_GRAU_INSTRUCAO"
+    ],
+    "cd_raca_cor": [
+      "CD_RACA_COR",
+      "CD_COR_RACA"
+    ],
+    "ds_raca_cor": [
+      "DS_RACA_COR",
+      "DS_COR_RACA"
+    ],
+    "cd_identidade_genero": [
+      "CD_IDENTIDADE_GENERO"
+    ],
+    "ds_identidade_genero": [
+      "DS_IDENTIDADE_GENERO"
+    ],
+    "cd_quilombola": [
+      "CD_QUILOMBOLA"
+    ],
+    "ds_quilombola": [
+      "DS_QUILOMBOLA"
+    ],
+    "cd_interprete_libras": [
+      "CD_INTERPRETE_LIBRAS"
+    ],
+    "ds_interprete_libras": [
+      "DS_INTERPRETE_LIBRAS"
+    ],
+    "tp_obrigatoriedade_voto": [
+      "TP_OBRIGATORIEDADE_VOTO"
+    ],
+    "qt_eleitores": [
+      "QT_ELEITORES"
+    ],
+    "qt_eleitores_biometria": [
+      "QT_ELEITORES_BIOMETRIA"
+    ],
+    "qt_eleitores_deficiencia": [
+      "QT_ELEITORES_DEFICIENCIA"
+    ],
+    "qt_eleitores_nome_social": [
+      "QT_ELEITORES_NOME_SOCIAL"
+    ]
+  },
+  "filtroLinhas": "cd_municipio IS NOT NULL AND qt_eleitores IS NOT NULL",
+  "saida": [
+    "dt_geracao",
+    "hh_geracao",
+    "aa_eleicao",
+    "sg_uf",
+    "cd_municipio",
+    "nm_municipio",
+    "nr_zona",
+    "cd_genero",
+    "ds_genero",
+    "cd_estado_civil",
+    "ds_estado_civil",
+    "cd_faixa_etaria",
+    "ds_faixa_etaria",
+    "cd_grau_escolaridade",
+    "ds_grau_escolaridade",
+    "cd_raca_cor",
+    "ds_raca_cor",
+    "cd_identidade_genero",
+    "ds_identidade_genero",
+    "cd_quilombola",
+    "ds_quilombola",
+    "cd_interprete_libras",
+    "ds_interprete_libras",
+    "tp_obrigatoriedade_voto",
+    "qt_eleitores",
+    "qt_eleitores_biometria",
+    "qt_eleitores_deficiencia",
+    "qt_eleitores_nome_social"
+  ],
+  "chave": [],
+  "municipioCodigo": {
+    "coluna": "cd_municipio",
+    "tipo": "TSE"
+  },
+  "validacoes": {
+    "linhasMinPorAba": 1000000,
+    "chaveUnica": false,
+    "obrigatorias": [
+      "cd_municipio",
+      "sg_uf",
+      "qt_eleitores"
+    ],
+    "colunasPresentes": [
+      "dt_geracao",
+      "hh_geracao",
+      "aa_eleicao",
+      "sg_uf",
+      "cd_municipio",
+      "nm_municipio",
+      "nr_zona",
+      "cd_genero",
+      "ds_genero",
+      "cd_estado_civil",
+      "ds_estado_civil",
+      "cd_faixa_etaria",
+      "ds_faixa_etaria",
+      "cd_grau_escolaridade",
+      "ds_grau_escolaridade",
+      "cd_raca_cor",
+      "ds_raca_cor",
+      "cd_identidade_genero",
+      "ds_identidade_genero",
+      "cd_quilombola",
+      "ds_quilombola",
+      "cd_interprete_libras",
+      "ds_interprete_libras",
+      "qt_eleitores",
+      "qt_eleitores_biometria",
+      "qt_eleitores_deficiencia",
+      "qt_eleitores_nome_social"
+    ]
+  }
+}

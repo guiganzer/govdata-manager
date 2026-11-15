@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:govdata:catalogo:v2",
+  "title": "Contrato de catálogo Gov Data v2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["versao", "orgaos"],
+  "properties": {
+    "versao": { "const": 2 },
+    "orgaos": { "type": "array", "items": { "$ref": "#/$defs/orgao" } }
+  },
+  "$defs": {
+    "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._-]{0,79}$" },
+    "nome": { "type": "string", "minLength": 1, "maxLength": 160 },
+    "orgao": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "nome", "funcoes"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "nome": { "$ref": "#/$defs/nome" },
+        "funcoes": { "type": "array", "items": { "$ref": "#/$defs/funcao" } }
+      }
+    },
+    "funcao": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "nome", "arquivos"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "nome": { "$ref": "#/$defs/nome" },
+        "arquivos": { "type": "array", "items": { "$ref": "#/$defs/arquivo" } }
+      }
+    },
+    "arquivo": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "nome", "url", "nomeArquivo", "substituivel"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "nome": { "$ref": "#/$defs/nome" },
+        "url": { "type": "string", "format": "uri", "pattern": "^(https|ftp)://" },
+        "nomeArquivo": {
+          "type": "string", "minLength": 1, "maxLength": 255,
+          "pattern": "^[^\\\\/:*?\"<>|\\u0000-\\u001F]+$"
+        },
+        "competencia": { "type": "string", "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])$" },
+        "substituivel": { "type": "boolean" },
+        "frequenciaVerificacao": { "enum": ["diaria", "mensal", "anual"] },
+        "paginaOrigem": { "type": "string", "format": "uri", "pattern": "^https?://" },
+        "descricao": { "type": "string", "maxLength": 1000 },
+        "tamanhoEsperadoBytes": { "type": "integer", "minimum": 0 },
+        "sha256": { "type": "string", "pattern": "^[0-9a-fA-F]{64}$" }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "substituivel": { "const": true } }, "required": ["substituivel"] },
+          "then": { "not": { "anyOf": [
+            { "required": ["tamanhoEsperadoBytes"] },
+            { "required": ["sha256"] }
+          ] } },
+          "else": { "not": { "required": ["frequenciaVerificacao"] } }
+        }
+      ]
+    }
+  }
+}

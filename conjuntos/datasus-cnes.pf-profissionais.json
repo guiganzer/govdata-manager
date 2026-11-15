@@ -1,0 +1,189 @@
+{
+  "$schema": "../../docs/conjunto-v3.schema.json",
+  "conjunto": "datasus-cnes.pf-profissionais",
+  "nome": "CNES PF - profissionais (DBC por UF e competencia)",
+  "versaoDefinicao": 1,
+  "tipo": "ORGANIZADO",
+  "edicaoPor": "ARQUIVO",
+  "fontes": {
+    "funcao": "datasus-cnes",
+    "arquivos": [
+      "cnes-pf-*"
+    ],
+    "encoding": "windows-1252",
+    "delimiter": ";"
+  },
+  "cabecalho": {
+    "linha": 1
+  },
+  "colunas": {
+    "cnes": [
+      "cnes"
+    ],
+    "codufmun": [
+      "codufmun"
+    ],
+    "regsaude": [
+      "regsaude"
+    ],
+    "micr_reg": [
+      "micr_reg"
+    ],
+    "distrsan": [
+      "distrsan"
+    ],
+    "distradm": [
+      "distradm"
+    ],
+    "tpgestao": [
+      "tpgestao"
+    ],
+    "pf_pj": [
+      "pf_pj"
+    ],
+    "cpf_cnpj": [
+      "cpf_cnpj"
+    ],
+    "niv_dep": [
+      "niv_dep"
+    ],
+    "cnpj_man": [
+      "cnpj_man"
+    ],
+    "esfera_a": [
+      "esfera_a"
+    ],
+    "atividad": [
+      "atividad"
+    ],
+    "retencao": [
+      "retencao"
+    ],
+    "natureza": [
+      "natureza"
+    ],
+    "clientel": [
+      "clientel"
+    ],
+    "tp_unid": [
+      "tp_unid"
+    ],
+    "turno_at": [
+      "turno_at"
+    ],
+    "niv_hier": [
+      "niv_hier"
+    ],
+    "terceiro": [
+      "terceiro"
+    ],
+    "cpf_prof": [
+      "cpf_prof"
+    ],
+    "cpfunico": [
+      "cpfunico"
+    ],
+    "cbo": [
+      "cbo"
+    ],
+    "cbounico": [
+      "cbounico"
+    ],
+    "nomeprof": [
+      "nomeprof"
+    ],
+    "cns_prof": [
+      "cns_prof"
+    ],
+    "conselho": [
+      "conselho"
+    ],
+    "registro": [
+      "registro"
+    ],
+    "vinculac": [
+      "vinculac"
+    ],
+    "vincul_c": [
+      "vincul_c"
+    ],
+    "vincul_a": [
+      "vincul_a"
+    ],
+    "vincul_n": [
+      "vincul_n"
+    ],
+    "prof_sus": [
+      "prof_sus"
+    ],
+    "profnsus": [
+      "profnsus"
+    ],
+    "horaoutr": [
+      "horaoutr"
+    ],
+    "horahosp": [
+      "horahosp"
+    ],
+    "hora_amb": [
+      "hora_amb"
+    ],
+    "competen": [
+      "competen"
+    ],
+    "ufmunres": [
+      "ufmunres"
+    ],
+    "nat_jur": [
+      "nat_jur"
+    ]
+  },
+  "filtroLinhas": "true",
+  "saida": [
+    "cnes",
+    "codufmun",
+    "regsaude",
+    "micr_reg",
+    "distrsan",
+    "distradm",
+    "tpgestao",
+    "pf_pj",
+    "cpf_cnpj",
+    "niv_dep",
+    "cnpj_man",
+    "esfera_a",
+    "atividad",
+    "retencao",
+    "natureza",
+    "clientel",
+    "tp_unid",
+    "turno_at",
+    "niv_hier",
+    "terceiro",
+    "cpf_prof",
+    "cpfunico",
+    "cbo",
+    "cbounico",
+    "nomeprof",
+    "cns_prof",
+    "conselho",
+    "registro",
+    "vinculac",
+    "vincul_c",
+    "vincul_a",
+    "vincul_n",
+    "prof_sus",
+    "profnsus",
+    "horaoutr",
+    "horahosp",
+    "hora_amb",
+    "competen",
+    "ufmunres",
+    "nat_jur"
+  ],
+  "chave": [],
+  "validacoes": {
+    "linhasMinPorAba": 1,
+    "chaveUnica": false
+  }
+}

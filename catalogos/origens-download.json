@@ -1,0 +1,22 @@
+{
+  "allowedOrigins": [
+    { "scheme": "https", "host": "s3.sa-east-1.amazonaws.com", "pathPrefix": "/ckan.saude.gov.br/" },
+    { "scheme": "ftp", "host": "ftp.datasus.gov.br", "pathPrefix": "/dissemin/" },
+    { "scheme": "https", "host": "download.inep.gov.br", "pathPrefix": "/dados_abertos/" },
+    { "scheme": "https", "host": "download.inep.gov.br", "pathPrefix": "/informacoes_estatisticas/" },
+    { "scheme": "https", "host": "www.tesourotransparente.gov.br", "pathPrefix": "/ckan/" },
+    { "scheme": "https", "host": "cdn.tse.jus.br", "pathPrefix": "/estatistica/" },
+    { "scheme": "ftp", "host": "ftp.mtps.gov.br", "pathPrefix": "/pdet/" },
+    { "scheme": "https", "host": "www.gov.br", "pathPrefix": "/previdencia/" },
+    { "scheme": "https", "host": "www.gov.br", "pathPrefix": "/transportes/" },
+    { "scheme": "https", "host": "www.gov.br", "pathPrefix": "/cidades/" },
+    { "scheme": "https", "host": "arquivos.receitafederal.gov.br", "pathPrefix": "/public.php/" },
+    { "scheme": "https", "host": "www.firjan.com.br", "pathPrefix": "/data/files/" },
+    { "scheme": "https", "host": "ftp.ibge.gov.br", "pathPrefix": "/Estimativas_de_Populacao/" },
+    { "scheme": "https", "host": "ftp.ibge.gov.br", "pathPrefix": "/Contagem_da_Populacao/" },
+    { "scheme": "https", "host": "ftp.ibge.gov.br", "pathPrefix": "/Censos/" },
+    { "scheme": "https", "host": "download.inep.gov.br", "pathPrefix": "/ideb/" },
+    { "scheme": "https", "host": "portal.tcu.gov.br", "pathPrefix": "/uploads/" },
+    { "scheme": "https", "host": "portal.tcu.gov.br", "pathPrefix": "/data/files/" }
+  ]
+}

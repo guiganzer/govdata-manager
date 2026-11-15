@@ -1,0 +1,782 @@
+{
+  "$schema": "../../docs/conjunto-v3.schema.json",
+  "conjunto": "inep-censo-escolar.docentes",
+  "nome": "Docentes por escola do Censo Escolar (2025)",
+  "versaoDefinicao": 1,
+  "tipo": "ORGANIZADO",
+  "edicaoPor": "ARQUIVO",
+  "fontes": {
+    "funcao": "inep-censo-escolar",
+    "arquivos": [
+      "inep-microdados-censo-escolar-2025"
+    ],
+    "membros": [
+      "*Tabela_Docente_*.csv"
+    ],
+    "encoding": "windows-1252",
+    "delimiter": ";"
+  },
+  "cabecalho": {
+    "contemUmDe": [
+      "NU_ANO_CENSO"
+    ]
+  },
+  "colunas": {
+    "nu_ano_censo": [
+      "NU_ANO_CENSO"
+    ],
+    "no_regiao": [
+      "NO_REGIAO"
+    ],
+    "co_regiao": [
+      "CO_REGIAO"
+    ],
+    "no_uf": [
+      "NO_UF"
+    ],
+    "sg_uf": [
+      "SG_UF"
+    ],
+    "co_uf": [
+      "CO_UF"
+    ],
+    "no_municipio": [
+      "NO_MUNICIPIO"
+    ],
+    "co_municipio": [
+      "CO_MUNICIPIO"
+    ],
+    "no_regiao_geog_interm": [
+      "NO_REGIAO_GEOG_INTERM"
+    ],
+    "co_regiao_geog_interm": [
+      "CO_REGIAO_GEOG_INTERM"
+    ],
+    "no_regiao_geog_imed": [
+      "NO_REGIAO_GEOG_IMED"
+    ],
+    "co_regiao_geog_imed": [
+      "CO_REGIAO_GEOG_IMED"
+    ],
+    "no_distrito": [
+      "NO_DISTRITO"
+    ],
+    "co_distrito": [
+      "CO_DISTRITO"
+    ],
+    "no_subdistrito": [
+      "NO_SUBDISTRITO"
+    ],
+    "co_subdistrito": [
+      "CO_SUBDISTRITO"
+    ],
+    "no_entidade": [
+      "NO_ENTIDADE"
+    ],
+    "co_entidade": [
+      "CO_ENTIDADE"
+    ],
+    "co_rede": [
+      "CO_REDE"
+    ],
+    "tp_dependencia": [
+      "TP_DEPENDENCIA"
+    ],
+    "tp_categoria_escola_privada": [
+      "TP_CATEGORIA_ESCOLA_PRIVADA"
+    ],
+    "tp_localizacao": [
+      "TP_LOCALIZACAO"
+    ],
+    "tp_localizacao_diferenciada": [
+      "TP_LOCALIZACAO_DIFERENCIADA"
+    ],
+    "in_poder_publico_parceria": [
+      "IN_PODER_PUBLICO_PARCERIA"
+    ],
+    "tp_poder_publico_parceria": [
+      "TP_PODER_PUBLICO_PARCERIA"
+    ],
+    "qt_doc_bas": [
+      "QT_DOC_BAS"
+    ],
+    "qt_doc_inf": [
+      "QT_DOC_INF"
+    ],
+    "qt_doc_inf_cre": [
+      "QT_DOC_INF_CRE"
+    ],
+    "qt_doc_inf_pre": [
+      "QT_DOC_INF_PRE"
+    ],
+    "qt_doc_fund": [
+      "QT_DOC_FUND"
+    ],
+    "qt_doc_fund_ai": [
+      "QT_DOC_FUND_AI"
+    ],
+    "qt_doc_fund_ai_1": [
+      "QT_DOC_FUND_AI_1"
+    ],
+    "qt_doc_fund_ai_2": [
+      "QT_DOC_FUND_AI_2"
+    ],
+    "qt_doc_fund_ai_3": [
+      "QT_DOC_FUND_AI_3"
+    ],
+    "qt_doc_fund_ai_4": [
+      "QT_DOC_FUND_AI_4"
+    ],
+    "qt_doc_fund_ai_5": [
+      "QT_DOC_FUND_AI_5"
+    ],
+    "qt_doc_fund_ai_multietapa": [
+      "QT_DOC_FUND_AI_MULTIETAPA"
+    ],
+    "qt_doc_fund_af": [
+      "QT_DOC_FUND_AF"
+    ],
+    "qt_doc_fund_af_6": [
+      "QT_DOC_FUND_AF_6"
+    ],
+    "qt_doc_fund_af_7": [
+      "QT_DOC_FUND_AF_7"
+    ],
+    "qt_doc_fund_af_8": [
+      "QT_DOC_FUND_AF_8"
+    ],
+    "qt_doc_fund_af_9": [
+      "QT_DOC_FUND_AF_9"
+    ],
+    "qt_doc_fund_af_multi": [
+      "QT_DOC_FUND_AF_MULTI"
+    ],
+    "qt_doc_fund_af_corrfluxo": [
+      "QT_DOC_FUND_AF_CORRFLUXO"
+    ],
+    "qt_doc_med": [
+      "QT_DOC_MED"
+    ],
+    "qt_doc_med_1": [
+      "QT_DOC_MED_1"
+    ],
+    "qt_doc_med_2": [
+      "QT_DOC_MED_2"
+    ],
+    "qt_doc_med_3": [
+      "QT_DOC_MED_3"
+    ],
+    "qt_doc_med_4": [
+      "QT_DOC_MED_4"
+    ],
+    "qt_doc_med_ns": [
+      "QT_DOC_MED_NS"
+    ],
+    "qt_doc_med_prop": [
+      "QT_DOC_MED_PROP"
+    ],
+    "qt_doc_med_prop_1": [
+      "QT_DOC_MED_PROP_1"
+    ],
+    "qt_doc_med_prop_2": [
+      "QT_DOC_MED_PROP_2"
+    ],
+    "qt_doc_med_prop_3": [
+      "QT_DOC_MED_PROP_3"
+    ],
+    "qt_doc_med_prop_4": [
+      "QT_DOC_MED_PROP_4"
+    ],
+    "qt_doc_med_prop_ns": [
+      "QT_DOC_MED_PROP_NS"
+    ],
+    "qt_doc_med_iftp_ct": [
+      "QT_DOC_MED_IFTP_CT"
+    ],
+    "qt_doc_med_iftp_ct_1": [
+      "QT_DOC_MED_IFTP_CT_1"
+    ],
+    "qt_doc_med_iftp_ct_2": [
+      "QT_DOC_MED_IFTP_CT_2"
+    ],
+    "qt_doc_med_iftp_ct_3": [
+      "QT_DOC_MED_IFTP_CT_3"
+    ],
+    "qt_doc_med_iftp_ct_4": [
+      "QT_DOC_MED_IFTP_CT_4"
+    ],
+    "qt_doc_med_iftp_ct_ns": [
+      "QT_DOC_MED_IFTP_CT_NS"
+    ],
+    "qt_doc_med_iftp_qp": [
+      "QT_DOC_MED_IFTP_QP"
+    ],
+    "qt_doc_med_iftp_qp_1": [
+      "QT_DOC_MED_IFTP_QP_1"
+    ],
+    "qt_doc_med_iftp_qp_2": [
+      "QT_DOC_MED_IFTP_QP_2"
+    ],
+    "qt_doc_med_iftp_qp_3": [
+      "QT_DOC_MED_IFTP_QP_3"
+    ],
+    "qt_doc_med_iftp_qp_4": [
+      "QT_DOC_MED_IFTP_QP_4"
+    ],
+    "qt_doc_med_iftp_qp_ns": [
+      "QT_DOC_MED_IFTP_QP_NS"
+    ],
+    "qt_doc_med_nm": [
+      "QT_DOC_MED_NM"
+    ],
+    "qt_doc_med_nm_1": [
+      "QT_DOC_MED_NM_1"
+    ],
+    "qt_doc_med_nm_2": [
+      "QT_DOC_MED_NM_2"
+    ],
+    "qt_doc_med_nm_3": [
+      "QT_DOC_MED_NM_3"
+    ],
+    "qt_doc_med_nm_4": [
+      "QT_DOC_MED_NM_4"
+    ],
+    "qt_doc_prof": [
+      "QT_DOC_PROF"
+    ],
+    "qt_doc_prof_tec": [
+      "QT_DOC_PROF_TEC"
+    ],
+    "qt_doc_prof_tec_conc": [
+      "QT_DOC_PROF_TEC_CONC"
+    ],
+    "qt_doc_prof_tec_subs": [
+      "QT_DOC_PROF_TEC_SUBS"
+    ],
+    "qt_doc_prof_tec_misto": [
+      "QT_DOC_PROF_TEC_MISTO"
+    ],
+    "qt_doc_prof_tec_iftp_ct": [
+      "QT_DOC_PROF_TEC_IFTP_CT"
+    ],
+    "qt_doc_prof_nao_tec": [
+      "QT_DOC_PROF_NAO_TEC"
+    ],
+    "qt_doc_prof_iftp_qp": [
+      "QT_DOC_PROF_IFTP_QP"
+    ],
+    "qt_doc_prof_fic_conc": [
+      "QT_DOC_PROF_FIC_CONC"
+    ],
+    "qt_doc_eja": [
+      "QT_DOC_EJA"
+    ],
+    "qt_doc_eja_fund": [
+      "QT_DOC_EJA_FUND"
+    ],
+    "qt_doc_eja_fund_nprof": [
+      "QT_DOC_EJA_FUND_NPROF"
+    ],
+    "qt_doc_eja_fund_ai": [
+      "QT_DOC_EJA_FUND_AI"
+    ],
+    "qt_doc_eja_fund_af": [
+      "QT_DOC_EJA_FUND_AF"
+    ],
+    "qt_doc_eja_fund_fic": [
+      "QT_DOC_EJA_FUND_FIC"
+    ],
+    "qt_doc_eja_med": [
+      "QT_DOC_EJA_MED"
+    ],
+    "qt_doc_eja_med_nprof": [
+      "QT_DOC_EJA_MED_NPROF"
+    ],
+    "qt_doc_eja_med_fic": [
+      "QT_DOC_EJA_MED_FIC"
+    ],
+    "qt_doc_eja_med_tec": [
+      "QT_DOC_EJA_MED_TEC"
+    ],
+    "qt_doc_esp": [
+      "QT_DOC_ESP"
+    ],
+    "qt_doc_esp_cc": [
+      "QT_DOC_ESP_CC"
+    ],
+    "qt_doc_esp_ce": [
+      "QT_DOC_ESP_CE"
+    ],
+    "qt_doc_bas_fem": [
+      "QT_DOC_BAS_FEM"
+    ],
+    "qt_doc_bas_masc": [
+      "QT_DOC_BAS_MASC"
+    ],
+    "qt_doc_bas_nd": [
+      "QT_DOC_BAS_ND"
+    ],
+    "qt_doc_bas_branca": [
+      "QT_DOC_BAS_BRANCA"
+    ],
+    "qt_doc_bas_preta": [
+      "QT_DOC_BAS_PRETA"
+    ],
+    "qt_doc_bas_parda": [
+      "QT_DOC_BAS_PARDA"
+    ],
+    "qt_doc_bas_amarela": [
+      "QT_DOC_BAS_AMARELA"
+    ],
+    "qt_doc_bas_indigena": [
+      "QT_DOC_BAS_INDIGENA"
+    ],
+    "qt_doc_bas_0_24": [
+      "QT_DOC_BAS_0_24"
+    ],
+    "qt_doc_bas_25_29": [
+      "QT_DOC_BAS_25_29"
+    ],
+    "qt_doc_bas_30_39": [
+      "QT_DOC_BAS_30_39"
+    ],
+    "qt_doc_bas_40_49": [
+      "QT_DOC_BAS_40_49"
+    ],
+    "qt_doc_bas_50_54": [
+      "QT_DOC_BAS_50_54"
+    ],
+    "qt_doc_bas_55_59": [
+      "QT_DOC_BAS_55_59"
+    ],
+    "qt_doc_bas_60_mais": [
+      "QT_DOC_BAS_60_MAIS"
+    ],
+    "qt_doc_bas_pcd": [
+      "QT_DOC_BAS_PCD"
+    ],
+    "qt_doc_bas_zr_urb": [
+      "QT_DOC_BAS_ZR_URB"
+    ],
+    "qt_doc_bas_zr_rur": [
+      "QT_DOC_BAS_ZR_RUR"
+    ],
+    "qt_doc_bas_zr_na": [
+      "QT_DOC_BAS_ZR_NA"
+    ],
+    "qt_doc_bas_esco_ef": [
+      "QT_DOC_BAS_ESCO_EF"
+    ],
+    "qt_doc_bas_esco_em": [
+      "QT_DOC_BAS_ESCO_EM"
+    ],
+    "qt_doc_bas_esco_sup_grad": [
+      "QT_DOC_BAS_ESCO_SUP_GRAD"
+    ],
+    "qt_doc_bas_esco_sup_grad_licen": [
+      "QT_DOC_BAS_ESCO_SUP_GRAD_LICEN"
+    ],
+    "qt_doc_bas_esco_sup_grad_slicen": [
+      "QT_DOC_BAS_ESCO_SUP_GRAD_SLICEN"
+    ],
+    "qt_doc_bas_esco_sup_pos_espec": [
+      "QT_DOC_BAS_ESCO_SUP_POS_ESPEC"
+    ],
+    "qt_doc_bas_esco_sup_pos_mestra": [
+      "QT_DOC_BAS_ESCO_SUP_POS_MESTRA"
+    ],
+    "qt_doc_bas_esco_sup_pos_douto": [
+      "QT_DOC_BAS_ESCO_SUP_POS_DOUTO"
+    ],
+    "qt_doc_bas_esco_sup_pos_nenhum": [
+      "QT_DOC_BAS_ESCO_SUP_POS_NENHUM"
+    ],
+    "qt_doc_bas_vinculo_concur": [
+      "QT_DOC_BAS_VINCULO_CONCUR"
+    ],
+    "qt_doc_bas_vinculo_contra": [
+      "QT_DOC_BAS_VINCULO_CONTRA"
+    ],
+    "qt_doc_bas_vinculo_terceir": [
+      "QT_DOC_BAS_VINCULO_TERCEIR"
+    ],
+    "qt_doc_bas_vinculo_clt": [
+      "QT_DOC_BAS_VINCULO_CLT"
+    ],
+    "qt_doc_bas_docente": [
+      "QT_DOC_BAS_DOCENTE"
+    ],
+    "qt_doc_bas_auxiliar": [
+      "QT_DOC_BAS_AUXILIAR"
+    ],
+    "qt_doc_bas_profi_monitor": [
+      "QT_DOC_BAS_PROFI_MONITOR"
+    ],
+    "qt_doc_bas_tradutor_libras": [
+      "QT_DOC_BAS_TRADUTOR_LIBRAS"
+    ],
+    "qt_doc_bas_titular_ead": [
+      "QT_DOC_BAS_TITULAR_EAD"
+    ],
+    "qt_doc_bas_tutor_aux_ead": [
+      "QT_DOC_BAS_TUTOR_AUX_EAD"
+    ],
+    "qt_doc_bas_guia_interprete": [
+      "QT_DOC_BAS_GUIA_INTERPRETE"
+    ],
+    "qt_doc_bas_apoio_pcd": [
+      "QT_DOC_BAS_APOIO_PCD"
+    ],
+    "qt_doc_bas_instrutor_ep": [
+      "QT_DOC_BAS_INSTRUTOR_EP"
+    ],
+    "qt_doc_bas_espec_cre": [
+      "QT_DOC_BAS_ESPEC_CRE"
+    ],
+    "qt_doc_bas_espec_pre_escola": [
+      "QT_DOC_BAS_ESPEC_PRE_ESCOLA"
+    ],
+    "qt_doc_bas_espec_anos_iniciais": [
+      "QT_DOC_BAS_ESPEC_ANOS_INICIAIS"
+    ],
+    "qt_doc_bas_espec_anos_finais": [
+      "QT_DOC_BAS_ESPEC_ANOS_FINAIS"
+    ],
+    "qt_doc_bas_espec_ens_medio": [
+      "QT_DOC_BAS_ESPEC_ENS_MEDIO"
+    ],
+    "qt_doc_bas_espec_eja": [
+      "QT_DOC_BAS_ESPEC_EJA"
+    ],
+    "qt_doc_bas_espec_ed_especial": [
+      "QT_DOC_BAS_ESPEC_ED_ESPECIAL"
+    ],
+    "qt_doc_bas_espec_bil_surdos": [
+      "QT_DOC_BAS_ESPEC_BIL_SURDOS"
+    ],
+    "qt_doc_bas_espec_ed_indigena": [
+      "QT_DOC_BAS_ESPEC_ED_INDIGENA"
+    ],
+    "qt_doc_bas_espec_campo": [
+      "QT_DOC_BAS_ESPEC_CAMPO"
+    ],
+    "qt_doc_bas_espec_ambiental": [
+      "QT_DOC_BAS_ESPEC_AMBIENTAL"
+    ],
+    "qt_doc_bas_espec_dir_humanos": [
+      "QT_DOC_BAS_ESPEC_DIR_HUMANOS"
+    ],
+    "qt_doc_bas_espec_div_sexual": [
+      "QT_DOC_BAS_ESPEC_DIV_SEXUAL"
+    ],
+    "qt_doc_bas_espec_dir_adolesc": [
+      "QT_DOC_BAS_ESPEC_DIR_ADOLESC"
+    ],
+    "qt_doc_bas_espec_afro": [
+      "QT_DOC_BAS_ESPEC_AFRO"
+    ],
+    "qt_doc_bas_espec_gestao": [
+      "QT_DOC_BAS_ESPEC_GESTAO"
+    ],
+    "qt_doc_bas_espec_educ_tic": [
+      "QT_DOC_BAS_ESPEC_EDUC_TIC"
+    ],
+    "qt_doc_bas_espec_outros": [
+      "QT_DOC_BAS_ESPEC_OUTROS"
+    ],
+    "qt_doc_bas_espec_nenhum": [
+      "QT_DOC_BAS_ESPEC_NENHUM"
+    ],
+    "qt_doc_bas_disc_lingua_port": [
+      "QT_DOC_BAS_DISC_LINGUA_PORT"
+    ],
+    "qt_doc_bas_disc_educ_fisica": [
+      "QT_DOC_BAS_DISC_EDUC_FISICA"
+    ],
+    "qt_doc_bas_disc_artes": [
+      "QT_DOC_BAS_DISC_ARTES"
+    ],
+    "qt_doc_bas_disc_lingua_ing": [
+      "QT_DOC_BAS_DISC_LINGUA_ING"
+    ],
+    "qt_doc_bas_disc_lingua_espa": [
+      "QT_DOC_BAS_DISC_LINGUA_ESPA"
+    ],
+    "qt_doc_bas_disc_lingua_franc": [
+      "QT_DOC_BAS_DISC_LINGUA_FRANC"
+    ],
+    "qt_doc_bas_disc_lingua_outra": [
+      "QT_DOC_BAS_DISC_LINGUA_OUTRA"
+    ],
+    "qt_doc_bas_disc_libras": [
+      "QT_DOC_BAS_DISC_LIBRAS"
+    ],
+    "qt_doc_bas_disc_lingua_indig": [
+      "QT_DOC_BAS_DISC_LINGUA_INDIG"
+    ],
+    "qt_doc_bas_disc_port_seg_lingua": [
+      "QT_DOC_BAS_DISC_PORT_SEG_LINGUA"
+    ],
+    "qt_doc_bas_disc_matematica": [
+      "QT_DOC_BAS_DISC_MATEMATICA"
+    ],
+    "qt_doc_bas_disc_ciencias": [
+      "QT_DOC_BAS_DISC_CIENCIAS"
+    ],
+    "qt_doc_bas_disc_fisica": [
+      "QT_DOC_BAS_DISC_FISICA"
+    ],
+    "qt_doc_bas_disc_quimica": [
+      "QT_DOC_BAS_DISC_QUIMICA"
+    ],
+    "qt_doc_bas_disc_biologia": [
+      "QT_DOC_BAS_DISC_BIOLOGIA"
+    ],
+    "qt_doc_bas_disc_historia": [
+      "QT_DOC_BAS_DISC_HISTORIA"
+    ],
+    "qt_doc_bas_disc_geografia": [
+      "QT_DOC_BAS_DISC_GEOGRAFIA"
+    ],
+    "qt_doc_bas_disc_sociologia": [
+      "QT_DOC_BAS_DISC_SOCIOLOGIA"
+    ],
+    "qt_doc_bas_disc_filosofia": [
+      "QT_DOC_BAS_DISC_FILOSOFIA"
+    ],
+    "qt_doc_bas_disc_est_sociais": [
+      "QT_DOC_BAS_DISC_EST_SOCIAIS"
+    ],
+    "qt_doc_bas_disc_est_sociais_soci": [
+      "QT_DOC_BAS_DISC_EST_SOCIAIS_SOCI"
+    ],
+    "qt_doc_bas_disc_info_computacao": [
+      "QT_DOC_BAS_DISC_INFO_COMPUTACAO"
+    ],
+    "qt_doc_bas_disc_ensino_religioso": [
+      "QT_DOC_BAS_DISC_ENSINO_RELIGIOSO"
+    ],
+    "qt_doc_bas_disc_profissiona": [
+      "QT_DOC_BAS_DISC_PROFISSIONA"
+    ],
+    "qt_doc_bas_disc_estagio_super": [
+      "QT_DOC_BAS_DISC_ESTAGIO_SUPER"
+    ],
+    "qt_doc_bas_disc_pedagogicas": [
+      "QT_DOC_BAS_DISC_PEDAGOGICAS"
+    ],
+    "qt_doc_bas_disc_projeto_de_vida": [
+      "QT_DOC_BAS_DISC_PROJETO_DE_VIDA"
+    ],
+    "qt_doc_bas_disc_outras": [
+      "QT_DOC_BAS_DISC_OUTRAS"
+    ],
+    "qt_doc_bas_libras": [
+      "QT_DOC_BAS_LIBRAS"
+    ]
+  },
+  "filtroLinhas": "regexp_full_match(co_entidade, '[0-9]+')",
+  "saida": [
+    "nu_ano_censo",
+    "no_regiao",
+    "co_regiao",
+    "no_uf",
+    "sg_uf",
+    "co_uf",
+    "no_municipio",
+    "co_municipio",
+    "no_regiao_geog_interm",
+    "co_regiao_geog_interm",
+    "no_regiao_geog_imed",
+    "co_regiao_geog_imed",
+    "no_distrito",
+    "co_distrito",
+    "no_subdistrito",
+    "co_subdistrito",
+    "no_entidade",
+    "co_entidade",
+    "co_rede",
+    "tp_dependencia",
+    "tp_categoria_escola_privada",
+    "tp_localizacao",
+    "tp_localizacao_diferenciada",
+    "in_poder_publico_parceria",
+    "tp_poder_publico_parceria",
+    "qt_doc_bas",
+    "qt_doc_inf",
+    "qt_doc_inf_cre",
+    "qt_doc_inf_pre",
+    "qt_doc_fund",
+    "qt_doc_fund_ai",
+    "qt_doc_fund_ai_1",
+    "qt_doc_fund_ai_2",
+    "qt_doc_fund_ai_3",
+    "qt_doc_fund_ai_4",
+    "qt_doc_fund_ai_5",
+    "qt_doc_fund_ai_multietapa",
+    "qt_doc_fund_af",
+    "qt_doc_fund_af_6",
+    "qt_doc_fund_af_7",
+    "qt_doc_fund_af_8",
+    "qt_doc_fund_af_9",
+    "qt_doc_fund_af_multi",
+    "qt_doc_fund_af_corrfluxo",
+    "qt_doc_med",
+    "qt_doc_med_1",
+    "qt_doc_med_2",
+    "qt_doc_med_3",
+    "qt_doc_med_4",
+    "qt_doc_med_ns",
+    "qt_doc_med_prop",
+    "qt_doc_med_prop_1",
+    "qt_doc_med_prop_2",
+    "qt_doc_med_prop_3",
+    "qt_doc_med_prop_4",
+    "qt_doc_med_prop_ns",
+    "qt_doc_med_iftp_ct",
+    "qt_doc_med_iftp_ct_1",
+    "qt_doc_med_iftp_ct_2",
+    "qt_doc_med_iftp_ct_3",
+    "qt_doc_med_iftp_ct_4",
+    "qt_doc_med_iftp_ct_ns",
+    "qt_doc_med_iftp_qp",
+    "qt_doc_med_iftp_qp_1",
+    "qt_doc_med_iftp_qp_2",
+    "qt_doc_med_iftp_qp_3",
+    "qt_doc_med_iftp_qp_4",
+    "qt_doc_med_iftp_qp_ns",
+    "qt_doc_med_nm",
+    "qt_doc_med_nm_1",
+    "qt_doc_med_nm_2",
+    "qt_doc_med_nm_3",
+    "qt_doc_med_nm_4",
+    "qt_doc_prof",
+    "qt_doc_prof_tec",
+    "qt_doc_prof_tec_conc",
+    "qt_doc_prof_tec_subs",
+    "qt_doc_prof_tec_misto",
+    "qt_doc_prof_tec_iftp_ct",
+    "qt_doc_prof_nao_tec",
+    "qt_doc_prof_iftp_qp",
+    "qt_doc_prof_fic_conc",
+    "qt_doc_eja",
+    "qt_doc_eja_fund",
+    "qt_doc_eja_fund_nprof",
+    "qt_doc_eja_fund_ai",
+    "qt_doc_eja_fund_af",
+    "qt_doc_eja_fund_fic",
+    "qt_doc_eja_med",
+    "qt_doc_eja_med_nprof",
+    "qt_doc_eja_med_fic",
+    "qt_doc_eja_med_tec",
+    "qt_doc_esp",
+    "qt_doc_esp_cc",
+    "qt_doc_esp_ce",
+    "qt_doc_bas_fem",
+    "qt_doc_bas_masc",
+    "qt_doc_bas_nd",
+    "qt_doc_bas_branca",
+    "qt_doc_bas_preta",
+    "qt_doc_bas_parda",
+    "qt_doc_bas_amarela",
+    "qt_doc_bas_indigena",
+    "qt_doc_bas_0_24",
+    "qt_doc_bas_25_29",
+    "qt_doc_bas_30_39",
+    "qt_doc_bas_40_49",
+    "qt_doc_bas_50_54",
+    "qt_doc_bas_55_59",
+    "qt_doc_bas_60_mais",
+    "qt_doc_bas_pcd",
+    "qt_doc_bas_zr_urb",
+    "qt_doc_bas_zr_rur",
+    "qt_doc_bas_zr_na",
+    "qt_doc_bas_esco_ef",
+    "qt_doc_bas_esco_em",
+    "qt_doc_bas_esco_sup_grad",
+    "qt_doc_bas_esco_sup_grad_licen",
+    "qt_doc_bas_esco_sup_grad_slicen",
+    "qt_doc_bas_esco_sup_pos_espec",
+    "qt_doc_bas_esco_sup_pos_mestra",
+    "qt_doc_bas_esco_sup_pos_douto",
+    "qt_doc_bas_esco_sup_pos_nenhum",
+    "qt_doc_bas_vinculo_concur",
+    "qt_doc_bas_vinculo_contra",
+    "qt_doc_bas_vinculo_terceir",
+    "qt_doc_bas_vinculo_clt",
+    "qt_doc_bas_docente",
+    "qt_doc_bas_auxiliar",
+    "qt_doc_bas_profi_monitor",
+    "qt_doc_bas_tradutor_libras",
+    "qt_doc_bas_titular_ead",
+    "qt_doc_bas_tutor_aux_ead",
+    "qt_doc_bas_guia_interprete",
+    "qt_doc_bas_apoio_pcd",
+    "qt_doc_bas_instrutor_ep",
+    "qt_doc_bas_espec_cre",
+    "qt_doc_bas_espec_pre_escola",
+    "qt_doc_bas_espec_anos_iniciais",
+    "qt_doc_bas_espec_anos_finais",
+    "qt_doc_bas_espec_ens_medio",
+    "qt_doc_bas_espec_eja",
+    "qt_doc_bas_espec_ed_especial",
+    "qt_doc_bas_espec_bil_surdos",
+    "qt_doc_bas_espec_ed_indigena",
+    "qt_doc_bas_espec_campo",
+    "qt_doc_bas_espec_ambiental",
+    "qt_doc_bas_espec_dir_humanos",
+    "qt_doc_bas_espec_div_sexual",
+    "qt_doc_bas_espec_dir_adolesc",
+    "qt_doc_bas_espec_afro",
+    "qt_doc_bas_espec_gestao",
+    "qt_doc_bas_espec_educ_tic",
+    "qt_doc_bas_espec_outros",
+    "qt_doc_bas_espec_nenhum",
+    "qt_doc_bas_disc_lingua_port",
+    "qt_doc_bas_disc_educ_fisica",
+    "qt_doc_bas_disc_artes",
+    "qt_doc_bas_disc_lingua_ing",
+    "qt_doc_bas_disc_lingua_espa",
+    "qt_doc_bas_disc_lingua_franc",
+    "qt_doc_bas_disc_lingua_outra",
+    "qt_doc_bas_disc_libras",
+    "qt_doc_bas_disc_lingua_indig",
+    "qt_doc_bas_disc_port_seg_lingua",
+    "qt_doc_bas_disc_matematica",
+    "qt_doc_bas_disc_ciencias",
+    "qt_doc_bas_disc_fisica",
+    "qt_doc_bas_disc_quimica",
+    "qt_doc_bas_disc_biologia",
+    "qt_doc_bas_disc_historia",
+    "qt_doc_bas_disc_geografia",
+    "qt_doc_bas_disc_sociologia",
+    "qt_doc_bas_disc_filosofia",
+    "qt_doc_bas_disc_est_sociais",
+    "qt_doc_bas_disc_est_sociais_soci",
+    "qt_doc_bas_disc_info_computacao",
+    "qt_doc_bas_disc_ensino_religioso",
+    "qt_doc_bas_disc_profissiona",
+    "qt_doc_bas_disc_estagio_super",
+    "qt_doc_bas_disc_pedagogicas",
+    "qt_doc_bas_disc_projeto_de_vida",
+    "qt_doc_bas_disc_outras",
+    "qt_doc_bas_libras"
+  ],
+  "chave": [
+    "nu_ano_censo",
+    "co_entidade"
+  ],
+  "municipioCodigo": {
+    "coluna": "co_municipio",
+    "tipo": "IBGE7"
+  },
+  "validacoes": {
+    "linhasMinPorAba": 150000,
+    "chaveUnica": true,
+    "obrigatorias": [
+      "nu_ano_censo",
+      "co_entidade",
+      "co_municipio"
+    ]
+  }
+}

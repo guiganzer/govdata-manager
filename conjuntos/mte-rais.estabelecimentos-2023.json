@@ -1,0 +1,126 @@
+{
+  "$schema": "../../docs/conjunto-v3.schema.json",
+  "conjunto": "mte-rais.estabelecimentos-2023",
+  "nome": "RAIS - estabelecimentos, formato 2023+ (microdados anuais)",
+  "versaoDefinicao": 1,
+  "tipo": "ORGANIZADO",
+  "edicaoPor": "ARQUIVO",
+  "fontes": {
+    "funcao": "mte-rais",
+    "arquivos": [
+      "mte-rais-estab-pub-2023",
+      "mte-rais-estab-pub-2024"
+    ],
+    "membros": [
+      "*.COMT"
+    ],
+    "formatoMembro": "csv",
+    "encoding": "windows-1252",
+    "delimiter": ","
+  },
+  "cabecalho": {
+    "linha": 1
+  },
+  "colunas": {
+    "bairros_sp_codigo": [
+      "Bairros SP - Código"
+    ],
+    "bairros_fortaleza_codigo": [
+      "Bairros Fortaleza - Código"
+    ],
+    "bairros_rj_codigo": [
+      "Bairros RJ - Código"
+    ],
+    "cnae_2_0_classe_codigo": [
+      "CNAE 2.0 Classe - Código"
+    ],
+    "cnae_95_classe_codigo": [
+      "CNAE 95 Classe - Código"
+    ],
+    "distritos_sp_codigo": [
+      "Distritos SP - Código"
+    ],
+    "qtd_vinculos_clt": [
+      "Qtd Vínculos CLT"
+    ],
+    "qtd_vinculos_ativos": [
+      "Qtd Vínculos Ativos"
+    ],
+    "qtd_vinculos_estatutarios": [
+      "Qtd Vínculos Estatutários"
+    ],
+    "ind_atividade_ano_codigo": [
+      "Ind Atividade Ano - Código"
+    ],
+    "ind_cei_vinculado_codigo": [
+      "Ind CEI Vinculado - Código"
+    ],
+    "ind_estab_participante_pat_codigo": [
+      "Ind Estab Participante PAT - Código"
+    ],
+    "ind_rais_negativa_codigo": [
+      "Ind RAIS Negativa - Código"
+    ],
+    "ind_estab_participante_simples_codigo": [
+      "Ind Estab Participante SIMPLES - Código"
+    ],
+    "municipio_codigo": [
+      "Município - Código"
+    ],
+    "natureza_juridica_codigo": [
+      "Natureza Jurídica - Código"
+    ],
+    "regiao_adm_df_codigo": [
+      "Região Adm DF - Código"
+    ],
+    "cnae_2_0_subclasse_codigo": [
+      "CNAE 2.0 Subclasse - Codigo"
+    ],
+    "tamanho_estabelecimento_codigo": [
+      "Tamanho Estabelecimento - Código"
+    ],
+    "tipo_estabelecimento_codigo": [
+      "Tipo Estabelecimento - Código"
+    ],
+    "uf_codigo": [
+      "UF - Código"
+    ],
+    "ibge_subsetor_codigo": [
+      "IBGE Subsetor - Código"
+    ],
+    "cep_estab": [
+      "CEP Estab"
+    ]
+  },
+  "filtroLinhas": "true",
+  "saida": [
+    "bairros_sp_codigo",
+    "bairros_fortaleza_codigo",
+    "bairros_rj_codigo",
+    "cnae_2_0_classe_codigo",
+    "cnae_95_classe_codigo",
+    "distritos_sp_codigo",
+    "qtd_vinculos_clt",
+    "qtd_vinculos_ativos",
+    "qtd_vinculos_estatutarios",
+    "ind_atividade_ano_codigo",
+    "ind_cei_vinculado_codigo",
+    "ind_estab_participante_pat_codigo",
+    "ind_rais_negativa_codigo",
+    "ind_estab_participante_simples_codigo",
+    "municipio_codigo",
+    "natureza_juridica_codigo",
+    "regiao_adm_df_codigo",
+    "cnae_2_0_subclasse_codigo",
+    "tamanho_estabelecimento_codigo",
+    "tipo_estabelecimento_codigo",
+    "uf_codigo",
+    "ibge_subsetor_codigo",
+    "cep_estab"
+  ],
+  "chave": [],
+  "validacoes": {
+    "linhasMinPorAba": 1,
+    "chaveUnica": false
+  }
+}

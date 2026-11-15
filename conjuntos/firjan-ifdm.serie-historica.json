@@ -1,0 +1,326 @@
+{
+  "conjunto": "firjan-ifdm.serie-historica",
+  "nome": "IFDM 2025: série histórica 2013 a 2023 por dimensão",
+  "versaoDefinicao": 1,
+  "tipo": "ORGANIZADO",
+  "edicaoPor": "ARQUIVO",
+  "fontes": {
+    "funcao": "firjan-ifdm",
+    "arquivos": [
+      "firjan-ifdm-2025-serie-historica"
+    ],
+    "abas": [
+      "IFDM*"
+    ]
+  },
+  "cabecalho": {
+    "linha": 1
+  },
+  "colunas": {
+    "codigo_ibge6": [
+      "COD_MUNIC"
+    ],
+    "uf": [
+      "SIGLA_UF"
+    ],
+    "municipio": [
+      "NOME_MUNIC"
+    ],
+    "ranking_estadual_2013": [
+      "Ranking Estadual IFDM 2013",
+      "Ranking Estadual IFDM Educação 2013",
+      "Ranking Estadual IFDM Saúde 2013",
+      "Ranking Estadual IFDM Emprego 2013"
+    ],
+    "ranking_nacional_2013": [
+      "Ranking IFDM 2013",
+      "Ranking IFDM Educação 2013",
+      "Ranking IFDM Saúde 2013",
+      "Ranking IFDM Emprego 2013"
+    ],
+    "ifdm_2013": [
+      "IFDM 2013",
+      "IFDM Educação 2013",
+      "IFDM Saúde 2013",
+      "IFDM Emprego 2013"
+    ],
+    "ranking_estadual_2014": [
+      "Ranking Estadual IFDM 2014",
+      "Ranking Estadual IFDM Educação 2014",
+      "Ranking Estadual IFDM Saúde 2014",
+      "Ranking Estadual IFDM Emprego 2014"
+    ],
+    "ranking_nacional_2014": [
+      "Ranking IFDM 2014",
+      "Ranking IFDM Educação 2014",
+      "Ranking IFDM Saúde 2014",
+      "Ranking IFDM Emprego 2014"
+    ],
+    "ifdm_2014": [
+      "IFDM 2014",
+      "IFDM Educação 2014",
+      "IFDM Saúde 2014",
+      "IFDM Emprego 2014"
+    ],
+    "ranking_estadual_2015": [
+      "Ranking Estadual IFDM 2015",
+      "Ranking Estadual IFDM Educação 2015",
+      "Ranking Estadual IFDM Saúde 2015",
+      "Ranking Estadual IFDM Emprego 2015"
+    ],
+    "ranking_nacional_2015": [
+      "Ranking IFDM 2015",
+      "Ranking IFDM Educação 2015",
+      "Ranking IFDM Saúde 2015",
+      "Ranking IFDM Emprego 2015"
+    ],
+    "ifdm_2015": [
+      "IFDM 2015",
+      "IFDM Educação 2015",
+      "IFDM Saúde 2015",
+      "IFDM Emprego 2015"
+    ],
+    "ranking_estadual_2016": [
+      "Ranking Estadual IFDM 2016",
+      "Ranking Estadual IFDM Educação 2016",
+      "Ranking Estadual IFDM Saúde 2016",
+      "Ranking Estadual IFDM Emprego 2016"
+    ],
+    "ranking_nacional_2016": [
+      "Ranking IFDM 2016",
+      "Ranking IFDM Educação 2016",
+      "Ranking IFDM Saúde 2016",
+      "Ranking IFDM Emprego 2016"
+    ],
+    "ifdm_2016": [
+      "IFDM 2016",
+      "IFDM Educação 2016",
+      "IFDM Saúde 2016",
+      "IFDM Emprego 2016"
+    ],
+    "ranking_estadual_2017": [
+      "Ranking Estadual IFDM 2017",
+      "Ranking Estadual IFDM Educação 2017",
+      "Ranking Estadual IFDM Saúde 2017",
+      "Ranking Estadual IFDM Emprego 2017"
+    ],
+    "ranking_nacional_2017": [
+      "Ranking IFDM 2017",
+      "Ranking IFDM Educação 2017",
+      "Ranking IFDM Saúde 2017",
+      "Ranking IFDM Emprego 2017"
+    ],
+    "ifdm_2017": [
+      "IFDM 2017",
+      "IFDM Educação 2017",
+      "IFDM Saúde 2017",
+      "IFDM Emprego 2017"
+    ],
+    "ranking_estadual_2018": [
+      "Ranking Estadual IFDM 2018",
+      "Ranking Estadual IFDM Educação 2018",
+      "Ranking Estadual IFDM Saúde 2018",
+      "Ranking Estadual IFDM Emprego 2018"
+    ],
+    "ranking_nacional_2018": [
+      "Ranking IFDM 2018",
+      "Ranking IFDM Educação 2018",
+      "Ranking IFDM Saúde 2018",
+      "Ranking IFDM Emprego 2018"
+    ],
+    "ifdm_2018": [
+      "IFDM 2018",
+      "IFDM Educação 2018",
+      "IFDM Saúde 2018",
+      "IFDM Emprego 2018"
+    ],
+    "ranking_estadual_2019": [
+      "Ranking Estadual IFDM 2019",
+      "Ranking Estadual IFDM Educação 2019",
+      "Ranking Estadual IFDM Saúde 2019",
+      "Ranking Estadual IFDM Emprego 2019"
+    ],
+    "ranking_nacional_2019": [
+      "Ranking IFDM 2019",
+      "Ranking IFDM Educação 2019",
+      "Ranking IFDM Saúde 2019",
+      "Ranking IFDM Emprego 2019"
+    ],
+    "ifdm_2019": [
+      "IFDM 2019",
+      "IFDM Educação 2019",
+      "IFDM Saúde 2019",
+      "IFDM Emprego 2019"
+    ],
+    "ranking_estadual_2020": [
+      "Ranking Estadual IFDM 2020",
+      "Ranking Estadual IFDM Educação 2020",
+      "Ranking Estadual IFDM Saúde 2020",
+      "Ranking Estadual IFDM Emprego 2020"
+    ],
+    "ranking_nacional_2020": [
+      "Ranking IFDM 2020",
+      "Ranking IFDM Educação 2020",
+      "Ranking IFDM Saúde 2020",
+      "Ranking IFDM Emprego 2020"
+    ],
+    "ifdm_2020": [
+      "IFDM 2020",
+      "IFDM Educação 2020",
+      "IFDM Saúde 2020",
+      "IFDM Emprego 2020"
+    ],
+    "ranking_estadual_2021": [
+      "Ranking Estadual IFDM 2021",
+      "Ranking Estadual IFDM Educação 2021",
+      "Ranking Estadual IFDM Saúde 2021",
+      "Ranking Estadual IFDM Emprego 2021"
+    ],
+    "ranking_nacional_2021": [
+      "Ranking IFDM 2021",
+      "Ranking IFDM Educação 2021",
+      "Ranking IFDM Saúde 2021",
+      "Ranking IFDM Emprego 2021"
+    ],
+    "ifdm_2021": [
+      "IFDM 2021",
+      "IFDM Educação 2021",
+      "IFDM Saúde 2021",
+      "IFDM Emprego 2021"
+    ],
+    "ranking_estadual_2022": [
+      "Ranking Estadual IFDM 2022",
+      "Ranking Estadual IFDM Educação 2022",
+      "Ranking Estadual IFDM Saúde 2022",
+      "Ranking Estadual IFDM Emprego 2022"
+    ],
+    "ranking_nacional_2022": [
+      "Ranking IFDM 2022",
+      "Ranking IFDM Educação 2022",
+      "Ranking IFDM Saúde 2022",
+      "Ranking IFDM Emprego 2022"
+    ],
+    "ifdm_2022": [
+      "IFDM 2022",
+      "IFDM Educação 2022",
+      "IFDM Saúde 2022",
+      "IFDM Emprego 2022"
+    ],
+    "ranking_estadual_2023": [
+      "Ranking Estadual IFDM 2023",
+      "Ranking Estadual IFDM Educação 2023",
+      "Ranking Estadual IFDM Saúde 2023",
+      "Ranking Estadual IFDM Emprego 2023"
+    ],
+    "ranking_nacional_2023": [
+      "Ranking IFDM 2023",
+      "Ranking IFDM Educação 2023",
+      "Ranking IFDM Saúde 2023",
+      "Ranking IFDM Emprego 2023"
+    ],
+    "ifdm_2023": [
+      "IFDM 2023",
+      "IFDM Educação 2023",
+      "IFDM Saúde 2023",
+      "IFDM Emprego 2023"
+    ]
+  },
+  "derivadas": {
+    "dimensao": "_aba"
+  },
+  "filtroLinhas": "codigo_ibge6 IS NOT NULL AND uf IS NOT NULL",
+  "saida": [
+    "dimensao",
+    "codigo_ibge6",
+    "uf",
+    "municipio",
+    "ranking_estadual_2013",
+    "ranking_nacional_2013",
+    "ifdm_2013",
+    "ranking_estadual_2014",
+    "ranking_nacional_2014",
+    "ifdm_2014",
+    "ranking_estadual_2015",
+    "ranking_nacional_2015",
+    "ifdm_2015",
+    "ranking_estadual_2016",
+    "ranking_nacional_2016",
+    "ifdm_2016",
+    "ranking_estadual_2017",
+    "ranking_nacional_2017",
+    "ifdm_2017",
+    "ranking_estadual_2018",
+    "ranking_nacional_2018",
+    "ifdm_2018",
+    "ranking_estadual_2019",
+    "ranking_nacional_2019",
+    "ifdm_2019",
+    "ranking_estadual_2020",
+    "ranking_nacional_2020",
+    "ifdm_2020",
+    "ranking_estadual_2021",
+    "ranking_nacional_2021",
+    "ifdm_2021",
+    "ranking_estadual_2022",
+    "ranking_nacional_2022",
+    "ifdm_2022",
+    "ranking_estadual_2023",
+    "ranking_nacional_2023",
+    "ifdm_2023"
+  ],
+  "chave": [
+    "dimensao",
+    "codigo_ibge6"
+  ],
+  "municipioCodigo": {
+    "coluna": "codigo_ibge6",
+    "tipo": "IBGE6"
+  },
+  "validacoes": {
+    "linhasMinPorAba": 5000,
+    "chaveUnica": true,
+    "obrigatorias": [
+      "codigo_ibge6",
+      "uf",
+      "municipio"
+    ],
+    "colunasPresentes": [
+      "codigo_ibge6",
+      "uf",
+      "municipio",
+      "ranking_estadual_2013",
+      "ranking_nacional_2013",
+      "ifdm_2013",
+      "ranking_estadual_2014",
+      "ranking_nacional_2014",
+      "ifdm_2014",
+      "ranking_estadual_2015",
+      "ranking_nacional_2015",
+      "ifdm_2015",
+      "ranking_estadual_2016",
+      "ranking_nacional_2016",
+      "ifdm_2016",
+      "ranking_estadual_2017",
+      "ranking_nacional_2017",
+      "ifdm_2017",
+      "ranking_estadual_2018",
+      "ranking_nacional_2018",
+      "ifdm_2018",
+      "ranking_estadual_2019",
+      "ranking_nacional_2019",
+      "ifdm_2019",
+      "ranking_estadual_2020",
+      "ranking_nacional_2020",
+      "ifdm_2020",
+      "ranking_estadual_2021",
+      "ranking_nacional_2021",
+      "ifdm_2021",
+      "ranking_estadual_2022",
+      "ranking_nacional_2022",
+      "ifdm_2022",
+      "ranking_estadual_2023",
+      "ranking_nacional_2023",
+      "ifdm_2023"
+    ]
+  }
+}

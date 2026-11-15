@@ -1,0 +1,163 @@
+{
+  "$schema": "../../docs/conjunto-v3.schema.json",
+  "conjunto": "tcu-fpm.coeficientes",
+  "nome": "Coeficientes individuais do FPM por município (TCU), 2014 a 2026",
+  "versaoDefinicao": 1,
+  "tipo": "ORGANIZADO",
+  "edicaoPor": "ARQUIVO",
+  "fontes": {
+    "funcao": "tcu-fpm-coeficientes",
+    "arquivos": [
+      "tcu-fpm-coeficientes-*"
+    ],
+    "abas": [
+      "Capital",
+      "Reserva",
+      "AC",
+      "AL",
+      "AM",
+      "AP",
+      "BA",
+      "CE",
+      "ES",
+      "GO",
+      "MA",
+      "MG",
+      "MS",
+      "MT",
+      "PA",
+      "PB",
+      "PE",
+      "PI",
+      "PR",
+      "RJ",
+      "RN",
+      "RO",
+      "RR",
+      "RS",
+      "SC",
+      "SE",
+      "SP",
+      "TO"
+    ]
+  },
+  "cabecalho": {
+    "contemUmDe": [
+      "Seq"
+    ]
+  },
+  "colunas": {
+    "campo_c2": [
+      "c2"
+    ],
+    "campo_c3": [
+      "c3"
+    ],
+    "campo_c4": [
+      "c4"
+    ],
+    "campo_c5": [
+      "c5"
+    ],
+    "campo_c6": [
+      "c6"
+    ],
+    "campo_c7": [
+      "c7"
+    ],
+    "campo_c8": [
+      "c8"
+    ],
+    "campo_c9": [
+      "c9"
+    ],
+    "campo_c10": [
+      "c10"
+    ],
+    "campo_c11": [
+      "c11"
+    ],
+    "campo_c12": [
+      "c12"
+    ],
+    "campo_c13": [
+      "c13"
+    ],
+    "campo_c14": [
+      "c14"
+    ],
+    "campo_c15": [
+      "c15"
+    ],
+    "campo_c16": [
+      "c16"
+    ],
+    "campo_c17": [
+      "c17"
+    ],
+    "campo_c18": [
+      "c18"
+    ]
+  },
+  "derivadas": {
+    "exercicio": "right(_arquivo, 4)",
+    "lc198": "right(_arquivo, 4) >= '2024'",
+    "categoria": "case when _aba = 'Capital' then 'CAPITAL' when _aba = 'Reserva' then 'RESERVA' else 'INTERIOR' end",
+    "cod_ibge6": "regexp_replace(trim(campo_c2), '\\.0+$', '')",
+    "uf": "trim(campo_c3)",
+    "nome_bruto": "trim(campo_c4)",
+    "municipio": "trim(regexp_replace(nome_bruto, '\\s*\\(.*\\)\\s*$', ''))",
+    "observacao": "nullif(regexp_extract(nome_bruto, '\\((.*)\\)', 1), '')",
+    "populacao": "regexp_replace(trim(case when categoria <> 'CAPITAL' and lc198 then campo_c6 else campo_c5 end), '\\.0+$', '')",
+    "fator_populacao": "case when categoria = 'CAPITAL' then campo_c6 when categoria = 'RESERVA' and lc198 then campo_c7 when categoria = 'RESERVA' then campo_c6 end",
+    "renda_per_capita": "case when categoria = 'CAPITAL' then campo_c7 when categoria = 'RESERVA' and lc198 then campo_c8 when categoria = 'RESERVA' then campo_c7 end",
+    "fator_renda": "case when categoria = 'CAPITAL' then campo_c8 when categoria = 'RESERVA' and lc198 then campo_c9 when categoria = 'RESERVA' then campo_c8 end",
+    "coef_apurado": "case when categoria = 'CAPITAL' then campo_c9 when categoria = 'RESERVA' and lc198 then campo_c10 when categoria = 'RESERVA' then campo_c9 when lc198 then campo_c7 else campo_c6 end",
+    "coef_final": "case when categoria = 'CAPITAL' then campo_c9 when categoria = 'RESERVA' and lc198 then campo_c12 when categoria = 'RESERVA' then campo_c9 when lc198 then campo_c9 else campo_c6 end",
+    "coef_ref_2023": "case when lc198 and categoria <> 'CAPITAL' then campo_c5 end",
+    "ganho_adicional": "case when lc198 and categoria = 'RESERVA' then campo_c11 when lc198 and categoria = 'INTERIOR' then campo_c8 end",
+    "coef_sem_redutor": "case when categoria = 'RESERVA' and lc198 then campo_c15 when categoria = 'INTERIOR' and lc198 then campo_c12 else coef_final end",
+    "participacao_relativa": "case when categoria = 'CAPITAL' then campo_c10 when categoria = 'RESERVA' and lc198 then campo_c18 when categoria = 'RESERVA' then campo_c10 when lc198 then campo_c15 else campo_c7 end"
+  },
+  "filtroLinhas": "regexp_full_match(cod_ibge6, '[0-9]{6}')",
+  "saida": [
+    "exercicio",
+    "categoria",
+    "cod_ibge6",
+    "uf",
+    "municipio",
+    "observacao",
+    "populacao",
+    "fator_populacao",
+    "renda_per_capita",
+    "fator_renda",
+    "coef_apurado",
+    "coef_final",
+    "coef_ref_2023",
+    "ganho_adicional",
+    "coef_sem_redutor",
+    "participacao_relativa"
+  ],
+  "chave": [
+    "exercicio",
+    "categoria",
+    "cod_ibge6"
+  ],
+  "municipioCodigo": {
+    "coluna": "cod_ibge6",
+    "tipo": "IBGE6"
+  },
+  "validacoes": {
+    "linhasMinPorAba": 10,
+    "chaveUnica": true,
+    "obrigatorias": [
+      "exercicio",
+      "categoria",
+      "cod_ibge6",
+      "uf",
+      "municipio",
+      "populacao",
+      "coef_apurado"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "organizationId": null,
+  "functionId": null,
+  "outputRoot": "organization-output",
+  "requireAllFiles": true,
+  "force": false,
+  "duckDbMemoryMb": 1536,
+  "duckDbThreads": 1,
+  "captureBatchRows": 4096,
+  "massiveCsvThresholdMb": 256,
+  "progressIntervalSeconds": 5,
+  "conjuntoPatterns": ["*"]
+}
