@@ -45,6 +45,6 @@ Os scripts Linux recuperados ainda pressupõem caminhos/usuários do ambiente or
 
 ## Situação da distribuição
 
-Código próprio sob licença MIT, Copyright (c) 2026 Guilherme Ceolin Ganzer. Consulte `LICENSE` e `THIRD_PARTY_NOTICES.md`; os termos das dependências são preservados. Publicação e versão de release ainda serão preparadas. Entrevistas, relatório acadêmico, dados, logs de produção, credenciais e SDK não pertencem ao repositório público.
+Código próprio sob licença MIT, Copyright (c) 2026 Guilherme Ceolin Ganzer. Consulte `LICENSE` e `THIRD_PARTY_NOTICES.md`; os termos das dependências são preservados. Repositório: [guiganzer/govdata-manager](https://github.com/guiganzer/govdata-manager). O histórico começa na consolidação pública do projeto, sem reconstruir commits da implantação. Entrevistas, relatório acadêmico, dados, logs de produção, credenciais e SDK não pertencem ao repositório público.
 
 As regras históricas em `REGRAS-DE-NEGOCIO.md` devem ser lidas junto da atualização de escopo: TUI e API são componentes separados; não há host HTTP embutido no Worker nem reprocessamento automático pela API.
