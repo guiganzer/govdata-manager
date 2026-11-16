@@ -41,7 +41,7 @@ Cada fonte recebe uma subpasta `GovData/ID` dentro do destino, com `originais`, 
 
 Controles padrão MAUI, nomes semânticos, cabeçalhos, textos explicativos, estados por escrito, navegação de teclado, botões de pelo menos 48 unidades, contraste de texto escuro em fundo claro e janela redimensionável com rolagem. As etapas podem ser revistas antes da confirmação. A automação reduz a digitação repetitiva e dispensa edição manual de JSON para o recorte suportado.
 
-Essas medidas concretizam aspectos dos sete Princípios do Desenho Universal; não constituem certificação de acessibilidade. Validar com Narrador, ampliação de tela e pessoas sem familiaridade técnica antes de declarar atendimento integral. O cadastro de um CSV ainda exige reconhecer cabeçalho, separador e codificação.
+Essas medidas concretizam aspectos dos sete Princípios do Desenho Universal. Em 16/11/2026, o responsável pelo projeto informou que a validação de acessibilidade foi realizada e autorizou considerá-la concluída nesta entrega. O registro não especifica ferramentas assistivas, participantes ou protocolo de avaliação e não equivale a certificação independente. O cadastro de um CSV ainda exige reconhecer cabeçalho, separador e codificação.
 
 ## Verificar o fluxo
 
