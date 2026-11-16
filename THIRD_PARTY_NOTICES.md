@@ -27,3 +27,7 @@ JsonSchema.Net, JsonPointer.Net e Json.More.Net distribuem os binários oficiais
 A TUI usa Textual, declarado em seus requisitos (`>=1.0,<2.0`); a versão efetivamente instalada no servidor não foi coletada. A lista acima cobre NuGet, não constitui inventário fechado de uma futura distribuição Python/binária. Preserve também os avisos dos componentes transitivos e nativos da distribuição que vier a publicar.
 
 Os arquivos de licença/avisos disponíveis nos pacotes locais foram copiados sem alterações. Pacotes que declaram apenas uma expressão SPDX devem conservar essa identificação e seus avisos na distribuição. O manifesto `licenses/third-party/manifest.json` registra os textos copiados.
+
+## Interface Windows .NET MAUI
+
+As dependências adicionais da interface e dos runtimes Windows estão inventariadas em `docs/DEPENDENCIAS-DESKTOP.md`. Os textos de licença disponíveis nos pacotes foram preservados em `licenses/third-party/`; componentes Microsoft Windows mantêm seus termos próprios. O pacote desktop deve acompanhar esses avisos.

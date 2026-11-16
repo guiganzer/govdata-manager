@@ -7,6 +7,7 @@ Gerencia fontes de dados públicos, downloads autônomos, organização em Parqu
 | Componente | Responsabilidade |
 |---|---|
 | `GovData.Downloads.Core` | Catálogo, downloads, recibos, fila, limites e retomada. |
+| `GovData.Downloads.Desktop` | Assistente gráfico Windows em .NET MAUI: cadastro CSV guiado e fluxo de download/organização. |
 | `GovData.Downloads.Worker.Cli` | Serviço autônomo de downloads. |
 | `eng/download-worker` | TUI Textual para acompanhar/controlar o Worker. |
 | `GovData.Downloads.Organizer.Cli` | Planejamento e organização por órgão/função em lotes Parquet. |
@@ -48,3 +49,4 @@ Os scripts Linux recuperados ainda pressupõem caminhos/usuários do ambiente or
 Código próprio sob licença MIT, Copyright (c) 2026 Guilherme Ceolin Ganzer. Consulte `LICENSE` e `THIRD_PARTY_NOTICES.md`; os termos das dependências são preservados. Repositório: [guiganzer/govdata-manager](https://github.com/guiganzer/govdata-manager). O histórico começa na consolidação pública do projeto, sem reconstruir commits da implantação. Entrevistas, relatório acadêmico, dados, logs de produção, credenciais e SDK não pertencem ao repositório público.
 
 As regras históricas em `REGRAS-DE-NEGOCIO.md` devem ser lidas junto da atualização de escopo: TUI e API são componentes separados; não há host HTTP embutido no Worker nem reprocessamento automático pela API.
+- [Assistente gráfico Windows e primeiro uso](docs/DESKTOP-WINDOWS.md).

@@ -1,0 +1,8 @@
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GovData.Downloads.Desktop.App">
+ <Application.Resources><ResourceDictionary>
+ <Style TargetType="Label"><Setter Property="TextColor" Value="#172B4D"/><Setter Property="FontSize" Value="17"/></Style>
+ <Style TargetType="Entry"><Setter Property="TextColor" Value="#172B4D"/><Setter Property="BackgroundColor" Value="White"/><Setter Property="FontSize" Value="18"/><Setter Property="MinimumHeightRequest" Value="48"/></Style>
+ <Style TargetType="Picker"><Setter Property="TextColor" Value="#172B4D"/><Setter Property="FontSize" Value="18"/><Setter Property="MinimumHeightRequest" Value="48"/></Style>
+ <Style TargetType="Button"><Setter Property="FontSize" Value="17"/><Setter Property="MinimumHeightRequest" Value="48"/><Setter Property="CornerRadius" Value="8"/><Setter Property="BackgroundColor" Value="#164C80"/><Setter Property="TextColor" Value="White"/><Setter Property="Padding" Value="18,12"/></Style>
+ </ResourceDictionary></Application.Resources>
+</Application>

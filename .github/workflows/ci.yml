@@ -36,3 +36,23 @@ jobs:
         run: |
           dotnet run --project GovData.Downloads.Api.Tests -c Release --no-build
           exit $LASTEXITCODE
+      - name: Guided CSV flow checks
+        shell: pwsh
+        run: |
+          dotnet run --project GovData.Downloads.Desktop.Flow.Tests -c Release
+          exit $LASTEXITCODE
+  desktop-windows:
+    runs-on: windows-latest
+    env:
+      DOTNET_INSTALL_DIR: ${{ github.workspace }}/.dotnet
+      DOTNET_NOLOGO: true
+      DOTNET_CLI_TELEMETRY_OPTOUT: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.401
+      - name: Prepare MAUI Windows
+        run: dotnet workload install maui-windows --skip-manifest-update
+      - name: Publish self-contained Windows desktop
+        run: dotnet publish GovData.Downloads.Desktop/GovData.Downloads.Desktop.csproj -c Release -o dist/desktop-win-x64

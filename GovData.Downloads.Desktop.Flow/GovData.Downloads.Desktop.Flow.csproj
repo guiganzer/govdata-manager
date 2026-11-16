@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><TargetFramework>net10.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable></PropertyGroup>
+  <ItemGroup><ProjectReference Include="../GovData.Downloads.Server/GovData.Downloads.Server.csproj" /></ItemGroup>
+  <ItemGroup><EmbeddedResource Include="../conjuntos/ibge-censo-2022.municipios-basico.json" LogicalName="ibge.json" /></ItemGroup>
+</Project>

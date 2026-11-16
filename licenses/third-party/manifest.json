@@ -40,11 +40,151 @@
     "sha256": "5c805ac94dfdb4a3be55547f04a2f4b9f1bb87d7e9ee6d6fe54b0e72093900c3"
   },
   {
+    "arquivo": "licenses/third-party/Microsoft.Extensions.Configuration/10.0.0/THIRD-PARTY-NOTICES.TXT",
+    "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21"
+  },
+  {
+    "arquivo": "licenses/third-party/Microsoft.Extensions.Configuration.Abstractions/10.0.0/THIRD-PARTY-NOTICES.TXT",
+    "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21"
+  },
+  {
+    "arquivo": "licenses/third-party/Microsoft.Extensions.DependencyInjection/10.0.0/THIRD-PARTY-NOTICES.TXT",
+    "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21"
+  },
+  {
     "arquivo": "licenses/third-party/Microsoft.Extensions.DependencyInjection.Abstractions/10.0.0/THIRD-PARTY-NOTICES.TXT",
+    "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21"
+  },
+  {
+    "arquivo": "licenses/third-party/Microsoft.Extensions.Diagnostics.Abstractions/10.0.0/THIRD-PARTY-NOTICES.TXT",
+    "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21"
+  },
+  {
+    "arquivo": "licenses/third-party/Microsoft.Extensions.FileProviders.Abstractions/10.0.0/THIRD-PARTY-NOTICES.TXT",
+    "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21"
+  },
+  {
+    "arquivo": "licenses/third-party/Microsoft.Extensions.Hosting.Abstractions/10.0.0/THIRD-PARTY-NOTICES.TXT",
+    "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21"
+  },
+  {
+    "arquivo": "licenses/third-party/Microsoft.Extensions.Logging/10.0.0/THIRD-PARTY-NOTICES.TXT",
     "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21"
   },
   {
     "arquivo": "licenses/third-party/Microsoft.Extensions.Logging.Abstractions/10.0.0/THIRD-PARTY-NOTICES.TXT",
     "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21"
+  },
+  {
+    "arquivo": "licenses/third-party/Microsoft.Extensions.Options/10.0.0/THIRD-PARTY-NOTICES.TXT",
+    "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21"
+  },
+  {
+    "arquivo": "licenses/third-party/Microsoft.Extensions.Primitives/10.0.0/THIRD-PARTY-NOTICES.TXT",
+    "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21"
+  },
+  {
+    "arquivo": "licenses/third-party/Microsoft.Maui.Controls/10.0.0/LICENSE.TXT",
+    "sha256": "d7a68596ab69b06f51ca278a6545148e4269a9381c26d597c13df5d88e08cf5b"
+  },
+  {
+    "arquivo": "licenses/third-party/Microsoft.Maui.Controls/10.0.0/THIRD-PARTY-NOTICES.TXT",
+    "sha256": "45fb89606fe922d1615ee62be7f42342db766685af2ebaf2fe8d2a187100687c"
+  },
+  {
+    "arquivo": "licenses/third-party/Microsoft.Maui.Controls.Build.Tasks/10.0.0/LICENSE.TXT",
+    "sha256": "d7a68596ab69b06f51ca278a6545148e4269a9381c26d597c13df5d88e08cf5b"
+  },
+  {
+    "arquivo": "licenses/third-party/Microsoft.Maui.Controls.Build.Tasks/10.0.0/THIRD-PARTY-NOTICES.TXT",
+    "sha256": "45fb89606fe922d1615ee62be7f42342db766685af2ebaf2fe8d2a187100687c"
+  },
+  {
+    "arquivo": "licenses/third-party/Microsoft.Maui.Controls.Core/10.0.0/LICENSE.TXT",
+    "sha256": "d7a68596ab69b06f51ca278a6545148e4269a9381c26d597c13df5d88e08cf5b"
+  },
+  {
+    "arquivo": "licenses/third-party/Microsoft.Maui.Controls.Core/10.0.0/THIRD-PARTY-NOTICES.TXT",
+    "sha256": "45fb89606fe922d1615ee62be7f42342db766685af2ebaf2fe8d2a187100687c"
+  },
+  {
+    "arquivo": "licenses/third-party/Microsoft.Maui.Controls.Xaml/10.0.0/LICENSE.TXT",
+    "sha256": "d7a68596ab69b06f51ca278a6545148e4269a9381c26d597c13df5d88e08cf5b"
+  },
+  {
+    "arquivo": "licenses/third-party/Microsoft.Maui.Controls.Xaml/10.0.0/THIRD-PARTY-NOTICES.TXT",
+    "sha256": "45fb89606fe922d1615ee62be7f42342db766685af2ebaf2fe8d2a187100687c"
+  },
+  {
+    "arquivo": "licenses/third-party/Microsoft.Maui.Core/10.0.0/LICENSE.TXT",
+    "sha256": "d7a68596ab69b06f51ca278a6545148e4269a9381c26d597c13df5d88e08cf5b"
+  },
+  {
+    "arquivo": "licenses/third-party/Microsoft.Maui.Core/10.0.0/THIRD-PARTY-NOTICES.TXT",
+    "sha256": "45fb89606fe922d1615ee62be7f42342db766685af2ebaf2fe8d2a187100687c"
+  },
+  {
+    "arquivo": "licenses/third-party/Microsoft.Maui.Essentials/10.0.0/LICENSE.TXT",
+    "sha256": "d7a68596ab69b06f51ca278a6545148e4269a9381c26d597c13df5d88e08cf5b"
+  },
+  {
+    "arquivo": "licenses/third-party/Microsoft.Maui.Essentials/10.0.0/THIRD-PARTY-NOTICES.TXT",
+    "sha256": "45fb89606fe922d1615ee62be7f42342db766685af2ebaf2fe8d2a187100687c"
+  },
+  {
+    "arquivo": "licenses/third-party/Microsoft.Maui.Graphics/10.0.0/LICENSE.TXT",
+    "sha256": "d7a68596ab69b06f51ca278a6545148e4269a9381c26d597c13df5d88e08cf5b"
+  },
+  {
+    "arquivo": "licenses/third-party/Microsoft.Maui.Graphics/10.0.0/THIRD-PARTY-NOTICES.TXT",
+    "sha256": "45fb89606fe922d1615ee62be7f42342db766685af2ebaf2fe8d2a187100687c"
+  },
+  {
+    "arquivo": "licenses/third-party/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/10.0.0/LICENSE.TXT",
+    "sha256": "d7a68596ab69b06f51ca278a6545148e4269a9381c26d597c13df5d88e08cf5b"
+  },
+  {
+    "arquivo": "licenses/third-party/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/10.0.0/THIRD-PARTY-NOTICES.TXT",
+    "sha256": "45fb89606fe922d1615ee62be7f42342db766685af2ebaf2fe8d2a187100687c"
+  },
+  {
+    "arquivo": "licenses/third-party/Microsoft.Maui.Resizetizer/10.0.0/LICENSE.TXT",
+    "sha256": "d7a68596ab69b06f51ca278a6545148e4269a9381c26d597c13df5d88e08cf5b"
+  },
+  {
+    "arquivo": "licenses/third-party/Microsoft.Maui.Resizetizer/10.0.0/THIRD-PARTY-NOTICES.TXT",
+    "sha256": "45fb89606fe922d1615ee62be7f42342db766685af2ebaf2fe8d2a187100687c"
+  },
+  {
+    "arquivo": "licenses/third-party/microsoft.netcore.app.runtime.win-x64/10.0.12/LICENSE.TXT",
+    "sha256": "d7a68596ab69b06f51ca278a6545148e4269a9381c26d597c13df5d88e08cf5b"
+  },
+  {
+    "arquivo": "licenses/third-party/microsoft.netcore.app.runtime.win-x64/10.0.12/THIRD-PARTY-NOTICES.TXT",
+    "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21"
+  },
+  {
+    "arquivo": "licenses/third-party/Microsoft.Web.WebView2/1.0.3179.45/LICENSE.txt",
+    "sha256": "0af8f1b807512aae39c2ac1aa4d0cae65cabecb6fd554b8439a5162a0d6eca55"
+  },
+  {
+    "arquivo": "licenses/third-party/Microsoft.Web.WebView2/1.0.3179.45/NOTICE.txt",
+    "sha256": "106423785c5b7eba0a8e61d1837f2132e9c828e20ad530f565d981c1df60dd90"
+  },
+  {
+    "arquivo": "licenses/third-party/Microsoft.WindowsAppSDK/1.7.250909003/license.txt",
+    "sha256": "f9ed00147604bdc48c7e62d127d73245781ce53903cef9c3863f8a7ef8120cc2"
+  },
+  {
+    "arquivo": "licenses/third-party/Microsoft.WindowsAppSDK/1.7.250909003/NOTICE.txt",
+    "sha256": "e25393c0d340a1821827b093fa4dbbfcccd8feb7bf769e7fa773e3955cd5314b"
+  },
+  {
+    "arquivo": "licenses/third-party/Microsoft.WindowsAppSDK/1.7.250909003/tools/NOTICE.txt",
+    "sha256": "4a9321fd173ebf4e8bbc79130794d4c3fe233acccbf7db8765e0addb8fbfb8ca"
+  },
+  {
+    "arquivo": "licenses/third-party/microsoft.windowsdesktop.app.runtime.win-x64/10.0.12/LICENSE",
+    "sha256": "a89886665765362eb77e0f8e26602c924520041d1711b2eedc136434fe4d01ab"
   }
 ]
